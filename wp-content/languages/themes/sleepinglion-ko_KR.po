@@ -1,0 +1,101 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: sl\n"
+"POT-Creation-Date: 2015-11-11 14:29+0900\n"
+"PO-Revision-Date: 2015-11-11 14:30+0900\n"
+"Last-Translator: \n"
+"Language-Team: sl <admin@sleepinglion.pe.kr>\n"
+"Language: korean\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__\n"
+"X-Poedit-Basepath: /home/toughjjh/Documents/Aptana Studio 3 Workspace/dojisa/"
+"wp-content/themes/sleepinglion\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: /home/toughjjh/Documents/Aptana Studio 3 Workspace/"
+"dojisa/wp-content/themes/sleepinglion\n"
+
+#: /home/toughjjh/Documents/Aptana Studio 3
+#: Workspace/dojisa/wp-content/themes/sleepinglion/single.php:5
+msgid "Detail"
+msgstr ""
+
+#: /home/toughjjh/Documents/Aptana Studio 3
+#: Workspace/dojisa/wp-content/themes/sleepinglion/footer.php:9
+msgid "Address"
+msgstr "442-781 수원시 팔달구 효원로1(매산로 3가)"
+
+#: /home/toughjjh/Documents/Aptana Studio 3
+#: Workspace/dojisa/wp-content/themes/sleepinglion/footer.php:19
+msgid "Sitemap"
+msgstr "사이트맵"
+
+#: /home/toughjjh/Documents/Aptana Studio 3
+#: Workspace/dojisa/wp-content/themes/sleepinglion/footer.php:20
+msgid "Home"
+msgstr "홈"
+
+#: /home/toughjjh/Documents/Aptana Studio 3
+#: Workspace/dojisa/wp-content/themes/sleepinglion/content.php:39
+msgid "Read More"
+msgstr ""
+
+#: /home/toughjjh/Documents/Aptana Studio 3
+#: Workspace/dojisa/wp-content/themes/sleepinglion/content.php:41
+msgid "Pages:"
+msgstr ""
+
+#: /home/toughjjh/Documents/Aptana Studio 3
+#: Workspace/dojisa/wp-content/themes/sleepinglion/content.php:47
+msgid "Next page"
+msgstr ""
+
+#: /home/toughjjh/Documents/Aptana Studio 3
+#: Workspace/dojisa/wp-content/themes/sleepinglion/content.php:48
+msgid "Previous page"
+msgstr ""
+
+#: /home/toughjjh/Documents/Aptana Studio 3
+#: Workspace/dojisa/wp-content/themes/sleepinglion/category.php:5
+#, php-format
+msgid "Category Archives: %s"
+msgstr ""
+
+#: /home/toughjjh/Documents/Aptana Studio 3
+#: Workspace/dojisa/wp-content/themes/sleepinglion/category.php:20
+msgid "Older posts"
+msgstr ""
+
+#: /home/toughjjh/Documents/Aptana Studio 3
+#: Workspace/dojisa/wp-content/themes/sleepinglion/category.php:24
+msgid "Newer posts"
+msgstr ""
+
+#: /home/toughjjh/Documents/Aptana Studio 3
+#: Workspace/dojisa/wp-content/themes/sleepinglion/header.php:27
+msgid "GG Home Page"
+msgstr "굿모닝 경기도"
+
+#: /home/toughjjh/Documents/Aptana Studio 3
+#: Workspace/dojisa/wp-content/themes/sleepinglion/header.php:28
+msgid "Site Map"
+msgstr "사이트맵"
+
+#: /home/toughjjh/Documents/Aptana Studio 3
+#: Workspace/dojisa/wp-content/themes/sleepinglion/search.php:5
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: /home/toughjjh/Documents/Aptana Studio 3
+#: Workspace/dojisa/wp-content/themes/sleepinglion/front-page.php:85
+#: Workspace/dojisa/wp-content/themes/sleepinglion/front-page.php:176
+msgid "No Article"
+msgstr ""
+
+#: /home/toughjjh/Documents/Aptana Studio 3
+#: Workspace/dojisa/wp-content/themes/sleepinglion/sl_lib/menu/menu_rendering.php:20
+msgid "Main Menu"
+msgstr ""
