@@ -2,6 +2,7 @@ wp-config.php
 wp-db-config.php
 wp-content/uploads
 wp-content/cache
+*.tar.gz
 *.sql
 *.log
 .idea
