@@ -233,6 +233,7 @@ hgroup h3 {font-size:160%;color:#333}
 #sub_top_nav_menu li.sub_menu {position:relative;float:left;list-style:none;margin:0;padding:0;width:45%;overflow:hidden;height:60px}
 #sub_top_nav_menu li.over {overflow: visible}
 #sub_top_nav_menu li.sub_menu a {display:block;padding:18px;text}
+#sub_top_nav_menu li.sub_menu  span {display:block;position:absolute;top:20px;right:20px;cursor:pointer;z-index:80}
 #sub_top_nav_menu li.depth-home {text-align:center;width:10%}
 #sub_top_nav_menu li.sub_menu a span.text{float:left;width:1px;height:1px;display:block;text-indent:-9999px}
 #sub_top_nav_menu li.sub_menu .menu {position:absolute;top:0;left:0;z-index:0;margin:0;padding:0;width:100%;background:#fff;border:1px solid #ccc;border-top:none;height:61px}

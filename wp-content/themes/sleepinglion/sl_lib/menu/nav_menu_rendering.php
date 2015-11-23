@@ -55,8 +55,8 @@ function my_wp_nav_menu_objects_sub_menu( $sorted_menu_items, $args ) {
 		<nav class="row">
 			<ul class="col-sm-12 col-md-8 col-lg-9">
 				<li class="sub_menu depth-home"><a href="<?php echo get_home_url(); ?>"><span class="glyphicon glyphicon-home" aria-hidden="true"></span><span class="text">Home</span></a></li>
-				<li class="sub_menu">&nbsp;<?php wp_nav_menu(array('theme_location'  => 'sleepinglion','menu'=>'primary','menu_id'=>'primary_nav_menu','container' => 'li','fallback_cb' => false,'depth'=>1)) ?></li>
-				<li class="sub_menu">&nbsp;<?php wp_nav_menu(array('theme_location'  => 'sleepinglion','menu'=>'primary','menu_id'=>'sub_nav_menu','container' => 'li','fallback_cb' => false,'sub_menu' => true)) ?></li>
+				<li class="sub_menu">&nbsp;<?php wp_nav_menu(array('theme_location'  => 'sleepinglion','menu'=>'primary','menu_id'=>'primary_nav_menu','container' => 'li','fallback_cb' => false,'depth'=>1)) ?><span class="glyphicon glyphicon-chevron-down">&nbsp;</span></li>
+				<li class="sub_menu">&nbsp;<?php wp_nav_menu(array('theme_location'  => 'sleepinglion','menu'=>'primary','menu_id'=>'sub_nav_menu','container' => 'li','fallback_cb' => false,'sub_menu' => true)) ?><span class="glyphicon glyphicon-chevron-down">&nbsp;</span></li>
 			</ul>
 		</nav>
 	</div>
