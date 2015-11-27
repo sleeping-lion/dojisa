@@ -13,7 +13,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 html,body {margin:0;padding:0;height: 100%}
-body { font-family: "Nanum Gothic","나눔고딕","Malgun Gothic","맑은 고딕","굴림",gulim,"돋움",Dotum,Arial,Helvetica, sans-serif;color:#333}
+body { font-family: NanumGothic, "Nanum Gothic","나눔고딕","Malgun Gothic","맑은 고딕","굴림",gulim,"돋움",Dotum,Arial,Helvetica, sans-serif;color:#333}
 label {vertical-align:middle;cursor:pointer}
 a img {border:none}
 input {vertical-align:middle}
@@ -39,8 +39,9 @@ mark, rp, rt, ruby, summary, time {display:inline;}
 #main {float:left;width:100%}
 #sub_main_wrap {position:relative;float:left;width:100%;border-top:1px solid #ccc;z-index:1}
 #sub_main {padding-bottom:5%}
+#sub_main h1{font-size :1.625em; font-weight:700;}
 .page-header {float:left;width:100%}
-.page-header h1 {float:left;margin:0.7em 0 0;padding:0;font-weight:bold;color:#666}
+.page-header h1 {float:left;margin:0.7em 0 0;padding:0;font-weight:bold;color:#;}
 .page-header .breadcrumb  {float:right;margin:0}
 .alert-success {clear:both}
 #sl_ad {clear:both;margin-bottom:10px}
@@ -68,11 +69,11 @@ mark, rp, rt, ruby, summary, time {display:inline;}
 
 .carousel .item {
     width: 100%; /*slider width*/
-    max-height: 700px; /*slider height*/
+    max-height: 840px; /*slider height*/
 }
 .carousel-inner > .item > a > img, .carousel-inner > .item > img, .thumbnail a > img, .thumbnail > img {
     width: 100%; /*img width*/
-   height: 700px;   
+   height: 840px;
 }
 
 
@@ -106,8 +107,8 @@ header #top_menu li:first-child:before {content:'|'}
 header .btn-group {float:right}
 
 /* aside */ 
-aside {float:right;width:350px;margin:0}
-aside h3 {font-size:22px;padding:0 0 10px;border-bottom:1px solid #ccc}
+aside {float:right;width:350px;margin:0;}
+aside h3 {font-size :1.625em; font-weight:700; padding:0 0 10px;border-bottom:1px solid #ccc}
 
 #current_post {float:left;width:100%;margin-bottom:30px}
 #current_post ul {float:left;width:100%;margin:0;padding:0}
@@ -127,19 +128,20 @@ hgroup {text-align:center;color:#000;margin:5% 0}
 hgroup h2 {font-size:250%;font-weight:bold}
 hgroup h3 {font-size:160%;color:#333}
 
-.main_card_view article {border:1px solid #ccc;border-bottom-width:2px;margin:0;padding:2%;background:#fff}
-.main_card_view article img {height:280px}
+.main_card_view article {border:1px solid #ccc;border-bottom-width:2px;margin:0;padding:10px; background:#fff;}
+.main_card_view article img { width:398px; height:279px;}
 
 .carousel-indicators li {width:50px;height:10px;border-radius:0;background:#fff;border:none}
 .carousel-indicators li.active {width:50px;background:#cc6666}
 
 #sl_main_message {background:#333 url('/wp-content/uploads/page_img/bg_brown.jpg')}
-#sl_main_message q {font-size:40px;font-weight}
-#sl_main_message h1 {text-align:center;font-size:230%;line-height:220%;color:#fff}
+#sl_main_message q {line-height:30px; }
+#sl_main_message q div{ line-height:36px;  margin-top:10px;}
+#sl_main_message h1 {text-align:center;font-size:2em;color:#fff; padding:56px 0 56px 0;}
 
 #sl_main_news {background:#eee;padding-bottom:6%}
 #sl_main_news article h2 {margin:10% 10% 5%;text-align:center;font-size:16px;line-height:150%}
-#sl_main_news article h2 a {color:#333}
+#sl_main_news article h2 a {color:#333; font-weight:700;}
 #sl_main_news article p {text-align:center;color:#666;font-size:16px}
 
 #sl_main_field article {position:relative}
@@ -249,9 +251,9 @@ hgroup h3 {font-size:160%;color:#333}
 .social_link a:hover {color:#fff;text-decoration:none} 
 .social_link a span {display:block;text-indent:-9999px;height:1px}
 .social_link a span.point {font-size:25px;font-weight:bold;text-indent:0;width:37px;height:37px;margin:0;padding:0;text-align:center;border-radius:50%;background:red;text-transform:lowercase}
-.social_link a.facebook_link span.point {background-color:#333399} 
-.social_link a.twitter_link span.point {background-color:#0099cc}
-.social_link a.blog_link span.point {background-color:#006633;text-transform:uppercase}
+.social_link a.facebook_link span.point {background-color:#314a84} 
+.social_link a.twitter_link span.point {background-color:#1299c8}
+.social_link a.blog_link span.point {background-color:#2db400;text-transform:uppercase}
 
 .sl_post {float:left;width:100%;margin-bottom:10%}
 .sl_post h2 {font-size:20px;color:#333;margin-bottom:2%}
@@ -264,9 +266,9 @@ hgroup h3 {font-size:160%;color:#333}
 
 
 /* footer */
-footer {float:left;width:100%;margin:0;padding:0;height:80px;background:#666;color:#fff}
-footer address {margin:10px 0 0;padding:0;color:#fff;line-height:180%}
-footer li {float:right;list-style:none;margin:0 3%;}
+footer {float:left;width:100%;margin-top:45px;padding:0;height:90px;background:#3f4446;color:#fff; padding-top:25px;}
+footer address {margin:0px 0 0;padding:0;color:#fff;line-height:180%; border:0px solid red;}
+footer li {float:right;list-style:none;margin:0 6%;}
 footer li a {line-height:37px} 
 footer p,footer a {color:#fff}
 footer ul:nth-child(2) li:nth-child(2):after {content:'|'}

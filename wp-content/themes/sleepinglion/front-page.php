@@ -64,7 +64,7 @@ if(count($slide_info)>0):
 <section id="sl_main_message">
 	<div class="container">
 		<div class="row">
-			<h1><q><br />싸우지 않고 소통하며 상생과 통합의 정치로 도민을 행복하게<br /></q></h1>
+			<h1><q><br /><div>싸우지 않고 소통하며<br> 상생과 통합의 정치로 도민을 행복하게</div><br /></q></h1>
 		</div>		
 	</div>
 </section>
