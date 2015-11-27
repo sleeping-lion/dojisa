@@ -73,7 +73,6 @@ mark, rp, rt, ruby, summary, time {display:inline;}
 }
 .carousel-inner > .item > a > img, .carousel-inner > .item > img, .thumbnail a > img, .thumbnail > img {
     width: 100%; /*img width*/
-   height: 840px;
 }
 
 
