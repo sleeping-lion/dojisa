@@ -29,6 +29,11 @@ h2 {font-size :140%}
 h3 {font-size :120%}
 h4,h5,h6 {font-size : 100%}
 
+p {
+    line-height: 160%;
+    padding-bottom: 1%;
+}
+
 /* Getting the new tags to behave */
 article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {display:block;}
 mark, rp, rt, ruby, summary, time {display:inline;}
@@ -264,6 +269,119 @@ hgroup h3 {font-size:160%;color:#333}
 .sl_post img.img-responsive {width:100%;height:auto;max-height:450px}
 .sl_post_footer .dd {font-size:30px;text-align:center}
 .sl_post_footer .social_link {margin-top:30px}
+
+
+
+/*10대공약추가*/
+.infoText .content p {
+	margin:0
+}
+.infoText .content {
+	background: #f7f7f7;
+	border: 1px dotted #CCC;
+	border-radius: 5px;
+	padding: 10px !important;
+	margin: 10px 0 0 0;
+}
+h4.title {
+color: #000 !important;
+padding: 0 0 10px 20px;
+font-weight: bold;
+font-size: 14px !important;
+background: url('http://www.gg.go.kr/wp-content/uploads/gg/site/ggnet/2011/images/common/bul_etc.gif') 
+ no-repeat left 2px;
+}
+.infoText .content ul {
+	margin: 0px 0 0 10px !important;
+}
+.infoText .content .list02 li {
+overflow: hidden;
+clear: both;
+font-size: 12px;
+line-height: 1.6;
+padding: 0 0 5px 15px;
+background: url('http://www.gg.go.kr/wp-content/uploads/gg/site/ggnet/2011/images/common/bul_dd.gif') no-repeat 0 3px;
+}
+.bg01 {
+	background:#ff8e61;
+	margin-left:2px;
+	padding:4px;
+	border-radius:4px;
+	color:#fff;
+	font-size:14px;
+	font-weight:bold
+} /*05*/
+.bg02 {
+	background:#f6716f;
+	margin-left:2px;
+	padding:4px;
+	border-radius:4px;
+	color:#fff;
+	font-size:14px;
+	font-weight:bold
+}
+.bg03 {
+	background:#afcf6a;
+	margin-left:2px;
+	padding:4px;
+	border-radius:4px;
+	color:#fff;
+	font-size:14px;
+	font-weight:bold
+} /*01*/
+.bg04 {
+	background:#2B5686;
+	margin-left:2px;
+	padding:4px;
+	border-radius:4px;
+	color:#fff;
+	font-size:14px;
+	font-weight:bold
+} /*02*/
+.bg05 {
+	background:#47B0BB;
+	margin-left:2px;
+	padding:4px;
+	border-radius:4px;
+	color:#fff;
+	font-size:14px;
+	font-weight:bold
+} /*03*/
+.bg06 {
+	background:#3E2E2E;
+	margin-left:2px;
+	padding:4px;
+	border-radius:4px;
+	color:#fff;
+	font-size:14px;
+	font-weight:bold
+} /*04*/
+.bg07 {
+	background:#8080FF;
+	margin-left:2px;
+	padding:4px;
+	border-radius:4px;
+	color:#fff;
+	font-size:14px;
+	font-weight:bold
+} /*06*/
+.go {
+	background: url('http://www.gg.go.kr/wp-content/themes/ggdo/images/sotong/sotong_net_arr.png') no-repeat 93% 49%;
+	border: 1px solid #CCC;
+	font-size: 12px;
+	padding: 5px 10px 5px 5px;
+	border-radius: 4px;
+	margin-left:2px;
+}
+.ques {
+	background: #5D658F;
+	padding: 10px;
+	color: #fff;
+	border-radius: 5px;
+	margin: 5px 0 20px 0;
+	font-weight: bold;
+}/*10대공약끝*/
+
 
 
 /* footer */
