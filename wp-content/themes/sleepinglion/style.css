@@ -78,7 +78,6 @@ mark, rp, rt, ruby, summary, time {display:inline;}
 }
 .carousel-inner > .item > a > img, .carousel-inner > .item > img, .thumbnail a > img, .thumbnail > img {
     width: 100%; /*img width*/
-   height: 840px;
 }
 
 
@@ -134,7 +133,7 @@ hgroup h2 {font-size:250%;font-weight:bold}
 hgroup h3 {font-size:160%;color:#333}
 
 .main_card_view article {border:1px solid #ccc;border-bottom-width:2px;margin:0;padding:10px; background:#fff;}
-.main_card_view article img { width:398px; height:279px;}
+.main_card_view article img { width:350px; height:244px;}
 
 .carousel-indicators li {width:50px;height:10px;border-radius:0;background:#fff;border:none}
 .carousel-indicators li.active {width:50px;background:#cc6666}
@@ -150,7 +149,7 @@ hgroup h3 {font-size:160%;color:#333}
 #sl_main_news article p {text-align:center;color:#666;font-size:16px}
 
 #sl_main_field article {position:relative}
-#sl_main_field article h2 {position:absolute;top:260px;width:80%;margin:0 10%;padding:10px;background:#cc6666;color:#fff;text-align:center;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
+#sl_main_field article h2 {position:absolute;top:235px;width:80%;margin:0 10%;padding:10px;background:#c74a4a;color:#fff;text-align:center;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
 #sl_main_field article h2 a {color:#fff}
 #sl_main_field article p {margin:10%}
 #sl_main_field article p a {font-size:16px}
