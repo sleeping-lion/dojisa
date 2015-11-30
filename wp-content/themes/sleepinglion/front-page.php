@@ -3,7 +3,7 @@
 $t = time();
 $time = date("Y.m.d h:i A",$t);
 
-$slide_info =  get_post_meta( '122198', '_sol_slider_data'); //main_banner  post ID = 122198
+$slide_info =  get_post_meta('122627', '_sol_slider_data'); //main_banner  post ID = 122198
 //print_r ($slide_info);
 if(count($slide_info)>0):
 	$slide=$slide_info[0]['slider'];

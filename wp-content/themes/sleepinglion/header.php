@@ -2,7 +2,7 @@
 <html <?php language_attributes() ?>>
 <head>
 	<!--[if IE]>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">``
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<![endif]-->
   <meta charset="<?php bloginfo('charset'); ?>" />
 	<title><?php echo get_the_title() ?> | <?php bloginfo( 'name' ) ?></title>

@@ -89,7 +89,7 @@ header h1 a {display:block;text-indent:-9999px}
 header h1 a:active {color:red}
 header nav {position:absolute;top:0;float:left;background:#fff;height:350px;margin:0;padding:0;background:#fff;z-index: 999;overflow:hidden}
 header nav div.menu-primary-container {float:left;width:100%}
-header nav ul { float: left; margin: 1.5em 0 0 0; padding: 0}
+header nav ul { float: left; margin: 15px 0 0 0; padding: 0}
 header nav li { float: left; list-style: none; margin: 0}
 header nav ul > li > a { float: left; display:block;padding:10px 0;color:#f2f2f2;font-weight:600}
 header nav a {color: #191919;font-weight:bold;text-decoration: none;font-size:22px}
@@ -102,7 +102,8 @@ header nav ul li ul li a {float:none;text-align:center}
 header #top_right {float:right;margin-left:0;padding-left:0;display:none}
 header #top_right div.col-lg-12 {margin-left:0;padding-left:0}
 header #top_right ul {float:right}
-header #top_right form {float:right;margin-right:0}
+header #top_right form {float:right;margin-right:0;width:180px}
+header #top_right form div {float:left}
 header #top_menu ul {width:100%;margin:0 0 10px;padding:0}
 header #top_menu li {float:right;list-style:none;margin:0 0 0 2%;padding:0}
 header #top_menu li a {float:right;display:block;margin-left:20px}
@@ -113,11 +114,14 @@ header .btn-group {float:right}
 /* aside */ 
 aside {float:right;width:350px;margin:0;}
 aside h3 {font-size :1.625em; font-weight:700; padding:0 0 10px;border-bottom:1px solid #ccc}
+aside #current_post,aside #menu_link,aside #side_banner {float:left;width:100%;margin-bottom:30px}
 
-#current_post {float:left;width:100%;margin-bottom:30px}
 #current_post ul {float:left;width:100%;margin:0;padding:0}
 #current_post ul li {float:left;width:100%;margin:0 0 10px;padding:0;list-style:none}
-#current_post ul li .img {float:left;margin-right:8px}
+#current_post ul li .aside_img {float:left;margin:0;padding:0}
+#current_post ul li .aside_text {float:right;width:145px;height:70px;overflow:hidden;text-overflow:ellipsis}
+#current_post ul li .aside_text p {margin-bottom:2px}
+#current_post ul li .aside_text h4 {line-height:150%;margin:0;padding:0}
 
 #top_image {float:left;width:100%;border-top:1px solid red;height:297px;background:url('/wp-content/uploads/page_img/sub_back.jpg') center center no-repeat;
   -webkit-background-size: cover;
@@ -126,6 +130,13 @@ aside h3 {font-size :1.625em; font-weight:700; padding:0 0 10px;border-bottom:1p
   background-size: cover;
 }
 
+
+#profile {margin-top:3%}
+#profile .et_slidecontent li {margin-bottom:10px}
+
+#single_content .blog_header {}
+#single_content .blog_header .date {margin-top:10px}
+#respond {clear:both}
 
 /* content */
 hgroup {text-align:center;color:#000;margin:5% 0}
@@ -217,8 +228,7 @@ hgroup h3 {font-size:160%;color:#333}
 /*searchbox*/
 .search-area input,.search-area select{border:none;}
 .blue-box{border:1px solid #92bdf2;padding:5px 10px;/*width:50%*/;line-height:25px}
-.search-area input.btn-search{float:right;display:inline-block;width:25px;height:25px;background:url
-(../images/btn-search.gif) 0 0 no-repeat;text-indent:-9999px;}
+.search-area input.btn-search{float:right;display:inline-block;width:25px;height:25px;background:url(../images/btn-search.gif) 0 0 no-repeat;text-indent:-9999px;}
 .search-area input[type=text]{width:250px;height:20px;}
 
 /*모바일용 버튼*/
@@ -227,28 +237,24 @@ hgroup h3 {font-size:160%;color:#333}
 /*PC-gnb*/
  .gnb:after{content:""; display:block; clear:both;}
  .gnb > li{position:relative; float:left; padding:0;}
- .gnb > li > a{/*padding:15px 30px 13px 25px; */border:0;  font-size:1.333em; color:#5c5959; line-height
-:1; letter-spacing:-1px; text-align:center; font-weight:600; background:url(../images/common/dot_nav
-.gif) no-repeat left center;}
+ .gnb > li > a{border:0;  font-size:1.333em; color:#5c5959; line-height:1; letter-spacing:-1px; text-align:center; font-weight:600; background:url(../images/common/dot_nav.gif) no-repeat left center;}
  .gnb > li.menu-item-97 > a{background:none}
- .gnb > li.active > a{/*border-bottom:3px solid #2296ef;*/ color:#5c5959;}
- .gnb > li > ul{display:block; position:absolute; left:0; top:40px; width:100%; padding:0; background
-:none;}    
- .gnb > li > ul > li > a{display:block; padding:7px 0; font-size:1.063em; color:#757575; letter-spacing
-:-1px;}
+ .gnb > li.active > a{ color:#5c5959;}
+ .gnb > li > ul{display:block; position:absolute; left:0; top:40px; width:100%; padding:0; background:none;}    
+ .gnb > li > ul > li > a{display:block; padding:7px 0; font-size:1.063em; color:#757575; letter-spacing:-1px;}
  .gnb > li > ul > li > a:hover{color:#4b5ab3;}
- .bg_subnav{position:absolute; left:175; top:244px; width:100%;max-width:1024px; height:0; background
-: url(../images/bg_subnav.png) repeat-x 0 0; border-bottom:1px solid #e1e1e1; z-index:1000;}
+ .bg_subnav{position:absolute; left:175; top:244px; width:100%;max-width:1024px; height:0; background: url(../images/bg_subnav.png) repeat-x 0 0; border-bottom:1px solid #e1e1e1; z-index:1000;}
  .gnb > li > ul > li > a > span{display:block;}
  .gnb > li > ul > li > ul{display:none}
 #menu-gnb > li {float:left;text-align:center}
-#menu-gnb > li > a{font-weight:600;color:#353535}
+#menu-gnb > li > a{font-weight:600;color:#353535;white-space:nowrap}
 
 #sub_top_nav_menu {float:left;width:100%;height:60px}
 #sub_top_nav_menu ul.col-sm-12 {position:relative;float:left;margin:0;padding:0;border-left:1px solid #ccc;border-right:1px solid #ccc;height:60px}
 #sub_top_nav_menu li.sub_menu {position:relative;float:left;list-style:none;margin:0;padding:0;width:45%;overflow:hidden;height:60px}
 #sub_top_nav_menu li.over {overflow: visible}
-#sub_top_nav_menu li.sub_menu a {display:block;padding:18px;text}
+#sub_top_nav_menu li.depth-home a {display:block;padding:18px}
+#sub_top_nav_menu li.sub_menu a {display:block;padding:18px}
 #sub_top_nav_menu li.sub_menu  span {display:block;position:absolute;top:20px;right:20px;cursor:pointer;z-index:80}
 #sub_top_nav_menu li.depth-home {text-align:center;width:10%}
 #sub_top_nav_menu li.sub_menu a span.text{float:left;width:1px;height:1px;display:block;text-indent:-9999px}
@@ -857,17 +863,17 @@ footer .social_link {float:right}
 @media all and (min-width: 992px) and (max-width: 1200px) {
 	header h1 a {width:150px;height:65px;background:url('/wp-content/uploads/page_img/logo.jpg') center center no-repeat}
 	header nav {float:left;margin:0;right:5%}
- 	header nav ul > li > a {padding:0 15%}	
+ 	header nav ul > li > a {padding:15px 15px}	
 	#sl_intro_index #sl_intro_right dd {width:200px}
 	footer {border-top:1px solid #e7e7e7}
-	#mom {margin:60em 0 80px;min-height:100%}
-	#main {padding-top:60px;padding-bottom:5em}	
+	#mom {margin:6em 0 80px;min-height:100%}
+	#main {padding-top:6em;padding-bottom:5em}	
 }
 
 @media all and (min-width: 1200px) {
 	header h1 a {width:150px;height:65px;background:url('/wp-content/uploads/page_img/logo.jpg') center center no-repeat}
 	header nav {float:left;margin-left:3%;	left:150px;}
- 	header nav ul > li > a {padding-left:15%;padding-right:15%}	
+ 	header nav ul > li > a {padding:15px 20px}	
 	header .btn-group {display:none}
 
 	#sl_intro_index #sl_intro_right dd {width:200px}
@@ -878,9 +884,9 @@ footer .social_link {float:right}
 }
 
 @media all and (min-width: 1300px) {
-	header .btn-group {display:block}
+	header .btn-group {float:right;display:block}
 	header nav {float:left;margin-left:6%}	
- 	header nav ul > li > a {padding-left:18%;padding-right:18%}
+ 	header nav ul > li > a {padding:15px 25px}
  	header #top_right form {margin-right:10px}
 }
 

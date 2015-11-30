@@ -2,7 +2,7 @@
 <html <?php language_attributes() ?>>
 <head>
 	<!--[if IE]>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">``
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<![endif]-->
   <meta charset="<?php bloginfo('charset'); ?>" />
 	<title><?php echo get_the_title() ?> | <?php bloginfo( 'name' ) ?></title>
@@ -37,9 +37,9 @@
         	<button aria-label="Center Align" class="btn btn-default" type="button">F</button>
         	<button aria-label="Justify" class="btn btn-default" type="button">B</button>
       	</div>			
-					<form action="" style="float:right">
+					<form action="">
 						<div class="input-group form-group-sm">
-      <input type="search" class="form-control" placeholder="검색어를 넣어주세요" style="width:150px">
+      <input type="search" class="form-control" placeholder="검색어를 넣어주세요">
       <span class="input-group-btn">
         <button class="btn btn-default btn-sm" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
       </span>
