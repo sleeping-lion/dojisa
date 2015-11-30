@@ -4,7 +4,7 @@
 		<a  href="<?php the_permalink(); ?>">
 			
 <? if( has_post_thumbnail( $post_id ) ): ?>
-        <img title="image title" alt="thumb image" class="img-responsive"  src="<?=wp_get_attachment_url( get_post_thumbnail_id() ); ?>" />
+        <img title="image title" alt="thumb image" class="img-responsive"  src="<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>" />
 <? endif; ?></a>
 	<?php endif ?>
 	

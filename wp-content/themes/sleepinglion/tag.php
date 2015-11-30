@@ -1,38 +1,28 @@
 <?php get_header(); ?>
-<div class="top-title-wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-sm-12 page-info">
-                <h1 class="h1-page-title"><?php printf( __( 'Tag Archives: %s', 'weblizar' ), single_tag_title("", false)); ?></h1>				
-            </div>
-        </div>
-    </div>
-</div>
-<div class="space-sep20"></div>	
-<div class="content-wrapper">
-	<div class="body-wrapper">
-		<div class="container">	
-			<div class="row">		
-				<!--Blog Content-->
-				<div class="col-md-9 col-sm-9">
-					<?php if ( have_posts() ) : ?>	
-					<?php while(have_posts()): the_post(); 
-					get_template_part( 'content', get_post_format() );
-					endwhile; ?>		
-					<div class="pagination">
-						<?php if ( get_next_posts_link() ): ?>
-						<?php next_posts_link('<span class="prev">&larr;</span>'.__('Older posts', 'weblizar' ) ); ?>
-						<?php endif; ?>
-						<?php if ( get_previous_posts_link() ): ?>
-						<?php previous_posts_link( __( 'Newer posts', 'weblizar' ). '<span class="next">&rarr;</span>' ); ?>
-						<?php endif; ?>
+<div id="sub_main_wrap">
+<div class="container">	
+	<div class="row">
+		<div id="sub_main" class="col-sm-12 col-md-8 col-lg-9">
+			<h1 class="h1-page-title"><?php printf( __( 'Tag Archives: %s', 'sleepinglion' ), single_tag_title("", false)); ?></h1>
+					<?php
+				while(have_posts()):the_post();
+				global $more; $more = 0;
+				get_template_part('list');
+				endwhile; ?>		
+					<div class="pagination"><?php 
+						if ( get_next_posts_link() ): 
+						next_posts_link('<span class="prev">&larr;</span>'.__('Older posts', 'sleepinglion' ) ); 
+						endif;
+						
+						if ( get_previous_posts_link() ): 
+						previous_posts_link( __( 'Newer posts', 'sleepinglion' ). '<span class="next">&rarr;</span>' ); 
+						endif; ?>
 					</div>
-					<?php endif; ?>
+				<?php wp_link_pages(); ?>					
 				</div>
-				<?php wp_link_pages();?>
-				<?php get_sidebar(); ?>	
-			</div>
-		</div>
-	</div>
+			<?php get_sidebar(); ?>	
+		</div>			
+	</div>	
+</div>
 </div>
 <?php get_footer(); ?>
