@@ -16,4 +16,13 @@
 		<h3>소통현장속으로</h3>
 		<?php require ABSPATH.'wp-content'.DIRECTORY_SEPARATOR.'cache'.DIRECTORY_SEPARATOR.'aside_menu.html' ?>   
 	</div>
+	<div id="side_banner">
+		<a href="" title="">
+			<img src="/wp-content/themes/sleepinglion/images/banner_invest.jpg" alt="" class="img-responsive" />
+		</a>
+		<br />
+		<a href="" title="">
+			<img src="/wp-content/themes/sleepinglion/images/banner_vilage.jpg" alt="" class="img-responsive" />
+		</a>
+	</div>
 </aside>

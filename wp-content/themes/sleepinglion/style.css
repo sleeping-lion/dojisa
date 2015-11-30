@@ -162,9 +162,18 @@ hgroup h3 {font-size:160%;color:#333}
 #sl_main_sub_message h3 a:hover {text-decoration:none}
 #sl_main_sub_message .carousel-inner div {text-align:center}
 #sl_main_sub_message .carousel-inner a {display:block}
-#sl_main_sub_message .carousel-control.left,#sl_main_sub_message .carousel-control.right {background-image:none}
+
+#sl_main_sub_message .carousel-control.left,#sl_menu_content .carousel-control.left,#sl_main_sub_message .carousel-control.right,#sl_menu_content .carousel-control.right {background-image:none}
+#sl_menu_content .carousel-control {width:40px;z-index:9}
+#sl_menu_content .left {left:-40px}
+#sl_menu_content .right {right:-40px}
 #sl_main_sub_message .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {left:30%}
 #sl_main_sub_message .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {right:30%}
+
+#sl_menu_content .carousel-indicators {
+	bottom:-30px
+}
+
 
 #sl_main_field h2 {color:#cc6666}
 

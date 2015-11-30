@@ -91,42 +91,91 @@ if(count($slide_info)>0):
 <section id="sl_menu_content">
 	<div class="container">
 		<div class="row">
+			<div id="carousel-example-generic3" class="carousel slide" data-ride="carousel">
+			
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
 			<div class="col-xs-6 col-sm-6 col-md-3">
-				<a href="" title="소통">
+				<a href="" title="연합정치">
 				<article>
-					<img width="150" height="150" src="/wp-content/uploads/2015/10/cute_puppy.jpg" alt="" class="img-circle hidden-xs" />					
-					<h3>소통</h3>
-					<p>경기도민의 행복한 삶을 위해 경청하겠습니다</p>
-				</article>
-				</a>
-			</div>
-			<div class="col-xs-6 col-sm-6 col-md-3">
-				<a href="" title="연합정치">					
-				<article>
-					<img width="150" height="150" src="/wp-content/uploads/2015/10/cute_puppy.jpg" alt="" class="img-circle hidden-xs" />					
+					<img width="150" height="150" src="/wp-content/themes/sleepinglion/images/banner02_01.png" alt="" class="img-circle hidden-xs" />					
 					<h3>연합정치</h3>
-					<p>경기도민의 행복한 삶을 위해 경청하겠습니다</p>			
+					<p>권한을 나누어 싹을 틔우는 경기연정</p>
 				</article>
 				</a>
 			</div>
+
 			<div class="col-xs-6 col-sm-6 col-md-3">
-				<a href="" title="안전">						
+				<a href="" title="안전">
 				<article>
-					<img width="150" height="150" src="/wp-content/uploads/2015/10/cute_puppy.jpg" alt="" class="img-circle hidden-xs" />					
+					<img width="150" height="150" src="/wp-content/themes/sleepinglion/images/banner02_02.png" alt="" class="img-circle hidden-xs" />					
 					<h3>안전</h3>
-					<p>경기도민의 행복한 삶을 위해 경청하겠습니다</p>			
+					<p>안전한 경기도 꼭 실현하겠습니다.</p>
+				</article>
+				</a>
+			</div>
+			
+			<div class="col-xs-6 col-sm-6 col-md-3">
+				<a href="" title="일자리">
+				<article>
+					<img width="150" height="150" src="/wp-content/themes/sleepinglion/images/banner02_03.png" alt="" class="img-circle hidden-xs" />					
+					<h3>일자리</h3>
+					<p>일자리 넘치는 경기도를 만들겠습니다.</p>
+				</article>
+				</a>
+			</div>
+			
+			<div class="col-xs-6 col-sm-6 col-md-3">
+				<a href="" title="북부발전">
+				<article>
+					<img width="150" height="150" src="/wp-content/themes/sleepinglion/images/banner02_04.png" alt="" class="img-circle hidden-xs" />					
+					<h3>북부발전</h3>
+					<p>경제, 통일의 도시로 거듭나겠습니다.</p>
+				</article>
+				</a>
+			</div>									
+		</div>
+
+    <div class="item">
+			<div class="col-xs-6 col-sm-6 col-md-3">
+				<a href="" title="플러스복지">					
+				<article>
+					<img width="150" height="150" src="/wp-content/themes/sleepinglion/images/banner02_05.png" alt="" class="img-circle hidden-xs" />					
+					<h3>플러스복지</h3>
+					<p>따뜻한 복지공동체, 경기도가 따뜻해집니다.</p>			
 				</article>
 				</a>
 			</div>
 			<div class="col-xs-6 col-sm-6 col-md-3">
-				<a href="" title="경제활성화">						
+				<a href="" title="교통">						
 				<article>
-					<img width="150" height="150" src="/wp-content/uploads/2015/10/cute_puppy.jpg" alt="" class="img-circle hidden-xs" />					
-					<h3>경제활성화</h3>
-					<p>경기도민의 행복한 삶을 위해 경청하겠습니다</p>			
+					<img width="150" height="150" src="/wp-content/themes/sleepinglion/images/banner02_06.png" alt="" class="img-circle hidden-xs" />					
+					<h3>교통</h3>
+					<p>안전하고 편리한 교통은 기본입니다.</p>			
 				</article>
 				</a>
 			</div>
+			<div class="col-xs-6 col-sm-6 col-md-3">
+				<a href="" title="경제">						
+				<article>
+					<img width="150" height="150" src="/wp-content/themes/sleepinglion/images/banner02_07.png" alt="" class="img-circle hidden-xs" />					
+					<h3>경제</h3>
+					<p>사회적 경제활성화는 서민경제의 희망입니다.</p>		
+				</article>
+				</a>
+			</div>
+		</div>
+	
+    		
+			</div>			
+		
+		
+  <ol class="carousel-indicators">
+  	<?php foreach (range(0,1) as $index=>$value): ?>  	
+    <li data-target="#carousel-example-generic3" data-slide-to="<?php echo $index ?>" <?php if(!$index): ?>class="active"<?php endif ?>></li>
+    <?php endforeach ?>
+  </ol>
+		
 		</div>
 	</div>
 </section>
