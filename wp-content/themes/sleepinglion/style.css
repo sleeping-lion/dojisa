@@ -256,7 +256,7 @@ hgroup h3 {font-size:160%;color:#333}
 #sub_top_nav_menu li.over {overflow: visible}
 #sub_top_nav_menu li.depth-home a {display:block;padding:18px}
 #sub_top_nav_menu li.sub_menu a {display:block;padding:18px}
-#sub_top_nav_menu li.sub_menu  span {display:block;position:absolute;top:20px;right:20px;cursor:pointer;z-index:80}
+#sub_top_nav_menu li.sub_menu >span {display:block;position:absolute;top:20px;right:20px;cursor:pointer;z-index:80}
 #sub_top_nav_menu li.depth-home {text-align:center;width:10%}
 #sub_top_nav_menu li.sub_menu a span.text{float:left;width:1px;height:1px;display:block;text-indent:-9999px}
 #sub_top_nav_menu li.sub_menu .menu {position:absolute;top:0;left:0;z-index:0;margin:0;padding:0;width:100%;background:#fff;border:1px solid #ccc;border-top:none;height:61px}
@@ -818,7 +818,8 @@ a.big-button, a.small-button, a.icon-button { cursor: pointer; }
 #propose_menus a {display:block;margin:0;padding:0;border:1px solid #ccc;height:380px}
 #propose_menus a:hover {text-decoration:none;background:#993}
 #propose_menus article {text-align:center;padding:40px 20px 10px}
-#propose_menus article .specail {background:#ccc}
+#propose_menus article .specail {background:#993;padding:10px;font-weight:bold;color:#fff}
+#propose_menus a:hover article .specail {background:#fff;color:#993}
 #propose_menus article .icon {display:block;width:135px;height:135px;margin:0 auto;background-image:url('/wp-content/themes/sleepinglion/images/icon_wish.png');background-repeat:no-repeat}
 #propose_menus .article1 .icon {background-position:top center;}
 #propose_menus .article2 .icon {background-position:center center;}

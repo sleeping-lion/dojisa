@@ -3,7 +3,8 @@
 				
 		<h1><?php the_title(); ?></h1>
 		<div class="space-sep20"></div>
-		<div class="blog-post-body"><?php the_content( __( 'Read More' , 'weblizar' ) ); ?>
+		<div class="blog-post-body">
+			<?php the_content( __( 'Read More' , 'weblizar' ) ); ?>
 		</div>
 		
 	</div>
