@@ -83,16 +83,16 @@ mark, rp, rt, ruby, summary, time {display:inline;}
 
 
 /* header */
-header {position:relative;height:75px}
+header {position:relative}
 header h1 {float:left;margin:5px 0 0;padding:0}
 header h1 a {display:block;text-indent:-9999px}
 header h1 a:active {color:red}
-header nav {position:absolute;top:0;float:left;background:#fff;height:350px;margin:0;padding:0;background:#fff;z-index: 999;overflow:hidden}
+header nav {position:absolute;top:0;float:left;background:#fff;margin:0;padding:0;background:#fff;z-index: 999;overflow:hidden}
 header nav div.menu-primary-container {float:left;width:100%}
 header nav ul { float: left; margin: 15px 0 0 0; padding: 0}
 header nav li { float: left; list-style: none; margin: 0}
-header nav ul > li > a { float: left; display:block;padding:10px 0;color:#f2f2f2;font-weight:600}
-header nav a {color: #191919;font-weight:bold;text-decoration: none;font-size:22px}
+header nav ul > li > a { float: left; display:block;padding:10px 0;color:#f2f2f2;font-weight:600;}
+header nav a {color: #191919;font-weight:bold;text-decoration: none;font-size:22px;text-align:center}
 header nav a:hover {color:#000;text-decoration:none;font-weight:bolder}
 header nav a:visited {color:#666}
 header nav a:active {color:red}
@@ -242,7 +242,7 @@ hgroup h3 {font-size:160%;color:#333}
 /*PC-gnb*/
  .gnb:after{content:""; display:block; clear:both;}
  .gnb > li{position:relative; float:left; padding:0;}
- .gnb > li > a{border:0;  font-size:1.333em; color:#5c5959; line-height:1; letter-spacing:-1px; text-align:center; font-weight:600; background:url(../images/common/dot_nav.gif) no-repeat left center;}
+ .gnb > li > a{border:0;  font-size:1.333em; color:#5c5959; line-height:1; letter-spacing:-1px; font-weight:600; background:url(../images/common/dot_nav.gif) no-repeat left center;}
  .gnb > li.menu-item-97 > a{background:none}
  .gnb > li.active > a{ color:#5c5959;}
  .gnb > li > ul{display:block; position:absolute; left:0; top:40px; width:100%; padding:0; background:none;}    
@@ -833,7 +833,7 @@ a.big-button, a.small-button, a.icon-button { cursor: pointer; }
 
 
 /* footer */
-footer {float:left;width:100%;padding:0;height:90px;background:#3f4446;color:#fff;}
+footer {float:left;width:100%;padding:0;background:#3f4446;color:#fff;}
 footer .container {margin-top:15px}
 footer address {margin:0px 0 0;padding:0;color:#fff;line-height:180%; border:0px solid red;}
 footer li {float:right;list-style:none;margin:0 6%;}
@@ -847,6 +847,7 @@ footer .social_link {float:right}
 
 @media all and (max-width: 768px) {
 	html,body {background:#ccc}
+	header {margin-bottom:10px;background:#fff;border-bottom-right-radius:5px;border-bottom-left-radius:5px}
 	header h1 a {float:left;background:none;text-indent:0;width:100%;font-weight:bold}
 	header h1 a:hover {text-decoration:none}  
 	header h1 a:active {color:red}
@@ -856,13 +857,13 @@ footer .social_link {float:right}
 	header nav ul li,header ul li a {clear:both;float:left;width:100%;text-align:left}
 	header nav ul.nav-pills > li + li {margin-left:0}
 	header nav ul li {margin:0;padding:0}
-	header nav ul li a {display:block;border-bottom:1px solid #f3f3f3;text-indent:1em;padding:10px;border-radius:5px}
+	header nav ul li a {display:block;border-bottom:1px solid #f3f3f3;text-align:left;text-indent:1em;padding:10px;border-radius:5px}
 	header nav ul li a:hover {text-decoration:none;background:#eee}
 	header nav ul li a:active {color:red}
 	header nav ul li a .glyphicon {margin-right:1em}
 	.nav-pills > li + li {margin:0}
 	#mom {float:left;clear:both;width:100%;margin:0}
-	#main {float:left;margin:0;padding:0;width:100%;padding:3%;border-radius:5px;background:#fff;}
+	#main {float:left;margin:0;padding:0;width:100%;border-radius:5px;background:#fff;}
 	.sub_main {clear:both;width:100%}
 	#sl_main_blog li {margin-bottom:10px}
 	#main_main article ul {margin:0;padding:0;list-style:none}
@@ -870,20 +871,26 @@ footer .social_link {float:right}
 	header nav ul a:hover {color:#000}
 	header nav ul a:active {color:red}
 	.page-header {float:left;margin:0 0 10px}
-	
+	.triangle {display:none}
 	#sl_main_news .container .row div img {height:50px}
 	#sl_main_news .container .row article:nth-child(1) {display:none}	
 	 
 	#sl_menu_content article {padding:5%} 
-	#sl_menu_content article h3 {margin:2% 0} 	
+	#sl_menu_content article h3 {margin:2% 0}
 	
 	#sl_intro_index #sl_intro_right, #sl_gallery_index #sl_gallery_right {width:100%;margin:0}
 	#sl_intro_index #sl_intro_left {width:100%}
 	footer {background:#fff;border-radius:5px;width:100%;margin:1% 0}
+	footer address {color:#333;text-align:center}
+}
+
+@media all and (min-width: 768px) {
+	header {height:75px}
+	header nav {height:350px}
+	footer {height:90px}	
 }
  
 @media all and (min-width: 768px) and (max-width: 992px) {
-
  	header nav ul > li > a {padding:0 16%}	
 }
  
@@ -915,3 +922,7 @@ footer .social_link {float:right}
  	header #top_right form {margin-right:10px}
 }
 
+@media all and (min-width: 1400px) { 
+	header h1 {margin-left:8%}
+	header nav {float:left;margin-left:13%}	
+}
