@@ -242,12 +242,62 @@ if(count($slide_info)>0):
 				<h2>소통 현장속으로</h2>
 				<h3>안전하고 따뜻한 경기도를 함께 만들어 나가겠습니다</h3>
 			</hgroup>
-			<?php $query = new WP_Query(array( 'category_name' => 'field','posts_per_page' => 3,'meta_query' => array(array( 'key' => '_thumbnail_id')))) ?>
-			<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
-			<?php get_template_part('main_field'); ?>
+			<?php $query = new WP_Query(array('cat' => 2130,'posts_per_page' => 1,'meta_query' => array(array( 'key' => '_thumbnail_id')))) ?>
+			<?php if ( $query->have_posts() ) :
+			while ( $query->have_posts() ) : $query->the_post(); ?>
+<div class="col- col-sm-4 col-md-4">
+<article>
+		<?php if(has_post_thumbnail()): ?>
+		<div class="img">
+			<?php $defalt_arg =array('class' => "img-responsive" ); ?>						
+			<a  href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail', $defalt_arg); ?></a>
+		</div>
+		<?php endif; ?>	
+	<h2><a href="/category/meet_dojisa" title="<?php the_title_attribute(); ?>" ><?php echo '도지사가 갑니다' ?></a></h2>
+	<p><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" ><?php the_title(); ?></a></p>
+</article>
+</div>
 			<?php endwhile; wp_reset_postdata(); else: ?>
 			<?php __('No Article','sleepinglion') ?>
 			<?php endif ?>
+			
+			<?php $query = new WP_Query(array('cat' => 2559,'posts_per_page' => 1,'meta_query' => array(array( 'key' => '_thumbnail_id')))) ?>
+			<?php if ( $query->have_posts() ) :
+			while ( $query->have_posts() ) : $query->the_post(); ?>
+<div class="col- col-sm-4 col-md-4">
+<article>
+		<?php if(has_post_thumbnail()): ?>
+		<div class="img">
+			<?php $defalt_arg =array('class' => "img-responsive" ); ?>						
+			<a  href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail', $defalt_arg); ?></a>
+		</div>
+		<?php endif; ?>	
+	<h2><a href="/category/meet_dojisa_bujisa" title="<?php the_title_attribute(); ?>" ><?php echo '도지사와 부지사가 갑니다' ?></a></h2>
+	<p><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" ><?php the_title(); ?></a></p>
+</article>
+</div>
+			<?php endwhile; wp_reset_postdata(); else: ?>
+			<?php __('No Article','sleepinglion') ?>
+			<?php endif ?>
+					
+			<?php $query = new WP_Query(array('cat' => 2558,'posts_per_page' => 1,'meta_query' => array(array( 'key' => '_thumbnail_id')))) ?>
+			<?php if ( $query->have_posts() ) :
+			 while ( $query->have_posts() ) : $query->the_post(); ?>
+<div class="col- col-sm-4 col-md-4">
+<article>
+		<?php if(has_post_thumbnail()): ?>
+		<div class="img">
+			<?php $defalt_arg =array('class' => "img-responsive" ); ?>						
+			<a  href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail', $defalt_arg); ?></a>
+		</div>
+		<?php endif; ?>	
+	<h2><a href="/category/company_visit" title="<?php the_title_attribute(); ?>" ><?php echo '기업애로현장방문' ?></a></h2>
+	<p><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" ><?php the_title(); ?></a></p>
+</article>
+</div>
+			<?php endwhile; wp_reset_postdata(); else: ?>
+			<?php __('No Article','sleepinglion') ?>
+			<?php endif ?>					
 		</div>
 	</div>
 </section>

@@ -83,8 +83,8 @@ mark, rp, rt, ruby, summary, time {display:inline;}
 
 
 /* header */
-header {position:relative;height:70px}
-header h1 {float:left;margin:0;padding:0}
+header {position:relative;height:75px}
+header h1 {float:left;margin:5px 0 0;padding:0}
 header h1 a {display:block;text-indent:-9999px}
 header h1 a:active {color:red}
 header nav {position:absolute;top:0;float:left;background:#fff;height:350px;margin:0;padding:0;background:#fff;z-index: 999;overflow:hidden}
@@ -122,6 +122,10 @@ aside #current_post,aside #menu_link,aside #side_banner {float:left;width:100%;m
 #current_post ul li .aside_text {float:right;width:145px;height:70px;overflow:hidden;text-overflow:ellipsis}
 #current_post ul li .aside_text p {margin-bottom:2px}
 #current_post ul li .aside_text h4 {line-height:150%;margin:0;padding:0}
+
+#menu_link ul {margin:0;padding:0}
+#menu_link li {margin:0;padding:0 0 0 20px;list-style:none;background:url('/wp-content/themes/sleepinglion/images/icon_listbar.jpg') no-repeat center left}
+#menu_link li a {display:block;padding:3px}
 
 #top_image {float:left;width:100%;border-top:1px solid red;height:297px;background:url('/wp-content/uploads/page_img/sub_back.jpg') center center no-repeat;
   -webkit-background-size: cover;
@@ -846,8 +850,9 @@ footer .social_link {float:right}
 	header h1 a {float:left;background:none;text-indent:0;width:100%;font-weight:bold}
 	header h1 a:hover {text-decoration:none}  
 	header h1 a:active {color:red}
-	header nav.container {width:100%;margin:0;padding:0}
+	header nav  {position:relative;width:100%;margin:0;padding:0}
 	header nav ul {width:100%;margin:2% 0 0;padding:0;background:#fff;border-radius:5px}
+	header nav ul.sub-menu {display:none}
 	header nav ul li,header ul li a {clear:both;float:left;width:100%;text-align:left}
 	header nav ul.nav-pills > li + li {margin-left:0}
 	header nav ul li {margin:0;padding:0}
@@ -903,8 +908,9 @@ footer .social_link {float:right}
 }
 
 @media all and (min-width: 1300px) {
+	header h1 {margin-left:5%}
 	header .btn-group {float:right;display:block}
-	header nav {float:left;margin-left:6%}
+	header nav {float:left;margin-left:10%}
  	header nav ul > li > a {padding:15px 25px}
  	header #top_right form {margin-right:10px}
 }
