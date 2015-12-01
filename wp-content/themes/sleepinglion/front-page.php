@@ -242,7 +242,7 @@ if(count($slide_info)>0):
 				<h2>소통 현장속으로</h2>
 				<h3>안전하고 따뜻한 경기도를 함께 만들어 나가겠습니다</h3>
 			</hgroup>
-			<?php $query = new WP_Query(array( 'category_name' => 'field','posts_per_page' => 3)) ?>
+			<?php $query = new WP_Query(array( 'category_name' => 'field','posts_per_page' => 3,'meta_query' => array(array( 'key' => '_thumbnail_id')))) ?>
 			<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 			<?php get_template_part('main_field'); ?>
 			<?php endwhile; wp_reset_postdata(); else: ?>
