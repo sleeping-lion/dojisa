@@ -3,7 +3,7 @@
 <head>
 	<!--[if IE]>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<![endif]-->
+	<![endif]-->	
   <meta charset="<?php bloginfo('charset'); ?>" />
 	<title><?php echo get_the_title() ?> | <?php bloginfo( 'name' ) ?></title>
 	<meta name="description" content="<?php if ( is_single() ) {
@@ -14,7 +14,10 @@
     ?>" />
   <link rel="shortcut icon" href="/wp-content/themes/ggdo/images/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<?php wp_head(); ?>  
+	<?php wp_head(); ?>
+    <!--[if lt IE 9]>
+    	<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->	  
 </head>
 <body <?php body_class() ?>>
 <header id="header">

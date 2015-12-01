@@ -14,7 +14,10 @@
     ?>" />
   <link rel="shortcut icon" href="/wp-content/themes/ggdo/images/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<?php wp_head(); ?>  
+	<?php wp_head(); ?>
+    <!--[if lt IE 9]>
+    	<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->	
 </head>
 <body <?php body_class() ?>>
 <header id="header">

@@ -1,4 +1,4 @@
-<aside class="col-md-4 col-lg-3 visible-md visible-lg">
+<aside class="col-lg-3 visible-lg">
 	<div id="current_post">
 		<h3>최신글</h3>
 		<?php $query = new WP_Query(array('posts_per_page' => 5) ); ?>

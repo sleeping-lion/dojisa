@@ -137,8 +137,7 @@
 			</div>			
 		</div>			
 	</div>	
-</div>
-</div>
+	
 <?php
 	wp_enqueue_script('profile-js', get_template_directory_uri() . '/js/profile.js', '1.0.0', true); 
 get_footer() 

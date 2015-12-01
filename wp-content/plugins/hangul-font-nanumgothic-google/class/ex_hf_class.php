@@ -21,9 +21,7 @@ final class ex_hf_Main_class {
     public $dir;
     public $lib;
 
-    /**
-     * 새로운 인스턴스
-     */
+
     public static function instance($fontName, $fontNmEng, $dir) {
         $hfmp = new ex_hf_Main_class($fontName, $fontNmEng, $dir);
         $hfmp->hooks();
