@@ -40,8 +40,8 @@ mark, rp, rt, ruby, summary, time {display:inline;}
 
 /* layout */
 
-#mom {clear:both;float:left;width:100%;padding:0}
-#main {float:left;width:100%}
+#mom {clear:both;float:left;width:100%;padding:0;margin:-75px 0 -80px;min-height:100%}
+#main {float:left;width:100%;padding-top:75px;padding-bottom:80px}
 #sub_main_wrap {position:relative;float:left;width:100%;border-top:1px solid #ccc;z-index:1}
 #sub_main {padding-bottom:5%}
 #sub_main h1{font-size :1.625em; font-weight:700;}
@@ -83,7 +83,7 @@ mark, rp, rt, ruby, summary, time {display:inline;}
 
 
 /* header */
-header {position:relative;height:60px}
+header {position:relative;height:70px}
 header h1 {float:left;margin:0;padding:0}
 header h1 a {display:block;text-indent:-9999px}
 header h1 a:active {color:red}
@@ -159,7 +159,8 @@ hgroup h3 {font-size:160%;color:#333}
 #sl_main_news article h2 a {color:#333; font-weight:700;}
 #sl_main_news article p {text-align:center;color:#666;font-size:16px}
 
-#sl_main_field article {position:relative}
+#sl_main_field {padding-bottom:6%}
+#sl_main_field article {position:relative;}
 #sl_main_field article h2 {position:absolute;top:235px;width:80%;margin:0 10%;padding:10px;background:#c74a4a;color:#fff;text-align:center;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
 #sl_main_field article h2 a {color:#fff}
 #sl_main_field article p {margin:10%}
@@ -808,7 +809,8 @@ a.big-button, a.small-button, a.icon-button { cursor: pointer; }
 }
 
 /* footer */
-footer {float:left;width:100%;margin-top:45px;padding:0;height:90px;background:#3f4446;color:#fff; padding-top:25px;}
+footer {float:left;width:100%;padding:0;height:90px;background:#3f4446;color:#fff;}
+footer .container {margin-top:15px}
 footer address {margin:0px 0 0;padding:0;color:#fff;line-height:180%; border:0px solid red;}
 footer li {float:right;list-style:none;margin:0 6%;}
 footer li a {line-height:37px} 
@@ -866,8 +868,6 @@ footer .social_link {float:right}
  	header nav ul > li > a {padding:15px 15px}	
 	#sl_intro_index #sl_intro_right dd {width:200px}
 	footer {border-top:1px solid #e7e7e7}
-	#mom {margin:6em 0 80px;min-height:100%}
-	#main {padding-top:6em;padding-bottom:5em}	
 }
 
 @media all and (min-width: 1200px) {
@@ -877,8 +877,6 @@ footer .social_link {float:right}
 	header .btn-group {display:none}
 
 	#sl_intro_index #sl_intro_right dd {width:200px}
-	#mom {margin:-6em 0 -5em;min-height:100%}
-	#main {padding-top:6em;padding-bottom:5em}
 	#sub_main {border-right:1px solid #ccc}
 
 }
