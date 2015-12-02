@@ -134,6 +134,10 @@ aside #current_post,aside #menu_link,aside #side_banner {float:left;width:100%;m
   background-size: cover;
 }
 
+.page-id-81461 #top_image,.category-media #top_image,.category-speech #top_image,.page-id-122666 #top_image  {background-image:url('/wp-content/themes/sleepinglion/images/sub_top1.jpg')}
+.category-news #top_image,.category-meet #top_image,.category-meet_dojisa_bujisa #top_image,.category-company_visit #top_image {background-image:url('/wp-content/themes/sleepinglion/images/sub_top2.jpg')}
+.page-id-81456 #top_image,.page-id-122624 #top_image {background-image:url('/wp-content/themes/sleepinglion/images/sub_top3.jpg')}
+.page-id-122646 #top_image,.page-id-122652 #top_image,.page-id-122649 #top_image,.page-id-105413 #top_image,.page-id-105413 #top_image {background-image:url('/wp-content/themes/sleepinglion/images/sub_top4.jpg')}
 
 #profile {margin-top:3%}
 #profile .et_slidecontent li {margin-bottom:10px}
@@ -291,7 +295,24 @@ hgroup h3 {font-size:160%;color:#333}
 .sl_post_footer .dd {font-size:30px;text-align:center}
 .sl_post_footer .social_link {margin-top:30px}
 
+.mainfesto_category .content {display:none}
+.boxRed {
+    background: #c00 none repeat scroll 0 0;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 2px;
+    padding: 4px;
+}
 
+.boxGreen01 {
+    background: #2f8f27 none repeat scroll 0 0;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 2px;
+    padding: 4px;
+}
 
 /*10대공약추가*/
 .infoText .content p {
@@ -831,6 +852,35 @@ a.big-button, a.small-button, a.icon-button { cursor: pointer; }
 #propose_menus .article3 .icon {background-position:bottom center;}
 #propose_menus article h3 {font-weight:bold;margin:30px 0 20px}
 /* 도지사에게 바란다 끝 */
+
+
+#management_card {margin:40px 0}
+#management_card h2 {
+    border-bottom: 1px dotted #dddddd;
+    color: #4b90c9;
+    font-size: 24px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+#management_card .category_list li.category_name {margin-bottom:50px;list-style:none}
+#management_card article {margin:0 0 5px;padding:0 0 0 20px}
+#management_card article a{ display:block;padding:10px 0}
+#management_card h3 {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    color: #666666;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 7px;
+    text-shadow: none;
+}
+
+#management_card h3 span {float:right}
+#management_card article .content {background:#efefef;border-radius:5px}
+#management_card article .content li {margin-bottom:10px}
 
 
 /* footer */

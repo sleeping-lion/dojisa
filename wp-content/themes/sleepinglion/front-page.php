@@ -184,8 +184,8 @@ if(count($slide_info)>0):
 	<div class="container">
 		<div class="row">	
 			<hgroup>
-				<h2>함께 만드는 미래  <span class="focus">NEXT 경기</span></h2>
-				<h3>경기도는 도민 여러분과 함께 합니다</h3>
+				<h2>소통과 참여</h2>
+				<h3>다양한 방법으로 의견을 듣겠습니다</h3>
 			</hgroup>
 			<div id="carousel-example-generic2" class="carousel slide" data-ride="carousel">
 				
@@ -194,29 +194,21 @@ if(count($slide_info)>0):
     <div class="item active">
     	<div class="col-md-4">    	
       	<a href="" title=""><img width="175" height="175" src="/wp-content/uploads/page_img/banner01_01.png" alt="" class="img-circle" /></a>
-      	<h3><a href="" title="민선 6기 공약 실천계획">민선 6기 공약 실천계획</a></h3>
+      	<h3><a href="" title="도지사에게 바란다">도지사에게 바란다</a></h3>
     	</div>
     	<div class="col-md-4">
       	<a href="" title=""><img width="175" height="175" src="/wp-content/uploads/page_img/banner01_02.png" alt="" class="img-circle" /></a>
-      	<h3><a href="" title="NEXT경기를 소개합니다.">NEXT경기를 소개합니다.</a></h3>
+      	<h3><a href="" title="Next 경기를 소개합니다.">Next 경기를 소개합니다</a></h3>
     	</div>
     	<div class="col-md-4">
       	<a href="" title=""><img width="175" height="175" src="/wp-content/uploads/page_img/banner01_03.png" alt="" class="img-circle" /></a>
-      	<h3><a href="" title="도지사에게 바란다">도지사에게 바란다</a></h3>
+      	<h3><a href="" title="민선 6기 공약 실천 계획">민선 6기 공약 실천 계획</a></h3>
     	</div>
     </div>
     <div class="item">
     	<div class="col-md-4">
       	<a href="" title=""><img width="175" height="175" src="/wp-content/uploads/page_img/banner01_01.png" alt="" class="img-circle" /></a>
-      	<h3><a href="" title="민선 6기 공약 실천계획2">민선 6기 공약 실천계획2</a></h3>
-    	</div>
-    	<div class="col-md-4">
-      	<a href="" title=""><img width="175" height="175" src="/wp-content/uploads/page_img/banner01_02.png" alt="" class="img-circle" /></a>
-      	<h3><a href="" title="NEXT경기를 소개합니다2">NEXT경기를 소개합니다.2</a></h3>
-    	</div>
-    	<div class="col-md-4">
-      	<a href="" title=""><img width="175" height="175" src="/wp-content/uploads/page_img/banner01_03.png" alt="" class="img-circle" /></a>
-      	<h3><a href="" title="도지사에게 바란다2">도지사에게 바란다2</a></h3>
+      	<h3><a href="" title="민선 6기 1주년 성과와 비전">민선 6기 1주년 성과와 비전</a></h3>
     	</div>
     </div>
   </div>			
@@ -243,6 +235,7 @@ if(count($slide_info)>0):
 				<h3>안전하고 따뜻한 경기도를 함께 만들어 나가겠습니다</h3>
 			</hgroup>
 			<?php $query = new WP_Query(array('cat' => 2130,'posts_per_page' => 1,'meta_query' => array(array( 'key' => '_thumbnail_id')))) ?>
+			<?php $category_link = get_category_link(2130) ?>			
 			<?php if ( $query->have_posts() ) :
 			while ( $query->have_posts() ) : $query->the_post(); ?>
 <div class="col- col-sm-4 col-md-4">
@@ -253,7 +246,7 @@ if(count($slide_info)>0):
 			<a  href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail', $defalt_arg); ?></a>
 		</div>
 		<?php endif; ?>	
-	<h2><a href="/category/meet_dojisa" title="<?php the_title_attribute(); ?>" ><?php echo '도지사가 갑니다' ?></a></h2>
+	<h2><a href="<?php echo esc_url( $category_link ); ?>" title="<?php the_title_attribute(); ?>" ><?php echo '도지사가 갑니다' ?></a></h2>
 	<p><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" ><?php the_title(); ?></a></p>
 </article>
 </div>
@@ -262,6 +255,7 @@ if(count($slide_info)>0):
 			<?php endif ?>
 			
 			<?php $query = new WP_Query(array('cat' => 2559,'posts_per_page' => 1,'meta_query' => array(array( 'key' => '_thumbnail_id')))) ?>
+			<?php $category_link = get_category_link(2559) ?>
 			<?php if ( $query->have_posts() ) :
 			while ( $query->have_posts() ) : $query->the_post(); ?>
 <div class="col- col-sm-4 col-md-4">
@@ -272,7 +266,7 @@ if(count($slide_info)>0):
 			<a  href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail', $defalt_arg); ?></a>
 		</div>
 		<?php endif; ?>	
-	<h2><a href="/category/meet_dojisa_bujisa" title="<?php the_title_attribute(); ?>" ><?php echo '도지사와 부지사가 갑니다' ?></a></h2>
+	<h2><a href="<?php echo esc_url( $category_link ); ?>" title="<?php the_title_attribute(); ?>" ><?php echo '도지사와 부지사가 갑니다' ?></a></h2>
 	<p><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" ><?php the_title(); ?></a></p>
 </article>
 </div>
@@ -281,6 +275,7 @@ if(count($slide_info)>0):
 			<?php endif ?>
 					
 			<?php $query = new WP_Query(array('cat' => 2558,'posts_per_page' => 1,'meta_query' => array(array( 'key' => '_thumbnail_id')))) ?>
+			<?php $category_link = get_category_link(2558); ?>
 			<?php if ( $query->have_posts() ) :
 			 while ( $query->have_posts() ) : $query->the_post(); ?>
 <div class="col- col-sm-4 col-md-4">
@@ -291,7 +286,7 @@ if(count($slide_info)>0):
 			<a  href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail', $defalt_arg); ?></a>
 		</div>
 		<?php endif; ?>	
-	<h2><a href="/category/company_visit" title="<?php the_title_attribute(); ?>" ><?php echo '기업애로현장방문' ?></a></h2>
+	<h2><a href="<?php echo esc_url( $category_link ); ?>" title="<?php the_title_attribute(); ?>" ><?php echo '기업애로현장방문' ?></a></h2>
 	<p><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" ><?php the_title(); ?></a></p>
 </article>
 </div>

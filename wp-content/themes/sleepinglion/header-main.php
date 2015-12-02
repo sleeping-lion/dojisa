@@ -24,7 +24,7 @@
 	<div class="container-fluid">	
 		<div class="row">
 				<div class="col-md-12 col-lg-9">
-					<h1 stlye="float:left"><a href="<?php echo home_url('/') ?>" title="<?php echo get_bloginfo() ?>"><?php echo get_bloginfo() ?></a></h1>
+					<h1><a href="<?php echo home_url('/') ?>" title="<?php echo get_bloginfo() ?>"><?php echo get_bloginfo() ?></a></h1>
 					<?php require ABSPATH.'wp-content'.DIRECTORY_SEPARATOR.'cache'.DIRECTORY_SEPARATOR.'main_menu.html' ?>   
 				</div>
 				<div id="top_right" class="visible-lg col-lg-3">

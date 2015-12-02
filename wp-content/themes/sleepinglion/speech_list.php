@@ -5,19 +5,7 @@
 	<?php if(get_the_tag_list() != ''): ?>
 			<div class="tags">
 				<span class="glyphicon glyphicon-tags" aria-hidden="true"></span>
-				<?php
-				$posttags = get_the_tags();
-$count=0;
-if ($posttags) {
-	$output = '';
-	foreach($posttags as $tag) {
-		$count++;
-		$output .=' <a href="/tag/'. $tag->name . '" style="color:red" title="태그 '. $tag->name .'로 보기">#'. $tag->name . '</a> &nbsp; ';
-		if( $count >4 ) break;
-	}
-}
-echo $output;
-				 ?>									
+			<?php the_tags('<span style="color:red">#</span>', '&nbsp; <span style="color:red">#</span>', '<br />'); ?>										
 			</div>
 	<?php endif ?>
 	

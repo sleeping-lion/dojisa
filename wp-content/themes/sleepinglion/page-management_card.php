@@ -3,17 +3,17 @@
 	<div class="container">
 		<div class="row">
 			<div id="sub_main" class="col-sm-12 col-lg-9">
+				<h1><?php the_title(); ?></h1>					
+				<section id="management_card">				
 <?php
+$show=false;
+
 
  $terms = get_terms("manifesto-category", array( 	'hide_empty' => 0, 'parent' => 0 ) );
- $count = count($terms);
- 
- if ( $count > 0 ){
-     echo '<ul class="man-root-cat">';
+ if (count($terms)){
+     echo '<ul class="category_list">';
      foreach ( $terms as $term ) {
-       echo '<li><h3 class="man-root-cat-title">' . $term->name . '</h3>';
-
-
+       echo '<li class="category_name"><h2>' . $term->name . '</h2>';
 
 $term_id = $term->term_id;
 $taxonomy_name = 'manifesto-category';
@@ -21,10 +21,18 @@ $termchildren = get_term_children( $term_id, $taxonomy_name );
 
 foreach ( $termchildren as $child ) {
 	$term = get_term_by( 'id', $child, $taxonomy_name );
-	echo '<div class="et-learn-more clearfix">';
-	echo '		<h3 class="heading-more">'.$term->name.'<span class="et_learnmore_arrow"><span></span></span></h3>';
-	echo '		<div class="learn-more-content" style="visibility: visible; display: none;">';
+	$show=false;
 	
+	if(isset($_GET['mainfesto_category_id'])) {
+	 	if($_GET['mainfesto_category_id']==$term->term_id) {
+	 		$show=true;
+		 } 
+	}
+?>	
+<article class="mainfesto_category">
+	<h3 id="mainfesto_category_<?php echo $term->term_id ?>"><a href="?mainfesto_category_id=<?php echo $term->term_id ?>#mainfesto_category_<?php echo $term->term_id ?>"><?php echo $term->name ?><span class="glyphicon <?php if($show): ?>glyphicon-chevron-up<?php else: ?>glyphicon-chevron-down<?php endif ?>">&nbsp;</span></h3></a>
+	<div class="content" <?php if($show): ?>style="display:block"<?php endif ?>>
+<?php	
 
 			$args = array(
 				'post_type' => 'manifesto',
@@ -58,7 +66,7 @@ foreach ( $termchildren as $child ) {
 		wp_reset_query();
 
 			echo '</div>';
-	echo '</div>';
+	echo '</article>';
 	
 	
 }
@@ -71,12 +79,13 @@ echo "</li>";
 
 
 ?>
+</section>
 			</div>				
 			<?php get_sidebar() ?>	
 		</div>			
 	</div>			
 </div>
 <?php
-	wp_enqueue_script('profile-js', get_template_directory_uri() . '/js/profile.js', '1.0.0', true); 
+	wp_enqueue_script('management-js', get_template_directory_uri() . '/js/management_card.js', '1.0.0', true); 
 get_footer() 
 ?>

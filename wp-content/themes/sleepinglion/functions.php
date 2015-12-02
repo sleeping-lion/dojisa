@@ -26,8 +26,16 @@ function sleepinglion_language_setup(){
 	load_theme_textdomain('sleepinglion', get_template_directory() . '/languages');
 }
 
+add_filter( 'body_class', 'my_class_names' );
+function my_class_names( $classes ) {
+	
+	$menu_object = wp_get_nav_menu_object( $menu );
 
-
+	// add 'class-name' to the $classes array
+	$classes[] = 'class-name';
+	// return the $classes array
+	return $classes;
+}
 
 /**
  * Add manifesto Type - 유지보수 요청
