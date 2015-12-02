@@ -1,4 +1,10 @@
 $(document).ready(function(){
+	$("#sub_main .social_link a").click(function(){
+		window.open($(this).attr('href'), 'twitter', 'width=650, height=450');
+		return false;
+	});
+	
+	
 	var menu_focus=false;
 	$("#menu-gnb>li>a").mouseover(function(){			
 		$(this).focus().triggerHandler("focus");
@@ -13,6 +19,8 @@ $(document).ready(function(){
 		if(!menu_focus)
 			$("#gnb").animate({'height': '350px'}, 300);
 	});
+		
+	
 	/*
 	$("html").click(function(){		
 		if(menu_focus)

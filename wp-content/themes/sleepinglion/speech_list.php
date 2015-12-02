@@ -8,18 +8,5 @@
 			<?php the_tags('<span style="color:red">#</span>', '&nbsp; <span style="color:red">#</span>', '<br />'); ?>										
 			</div>
 	<?php endif ?>
-	
-	<div class="sl_post_footer col-xs-12 col-sm-6 col-lg-4 col-lg-offset-4 col-offset-3">
-		<p class="dd">
-			<br />
-			.
-			<br />
-			.
-			</p>
-			<ul class="social_link">
-				<li><a href="" class="blog_link" title="Blog"><span class="point">B</span><span>log</span></a></li>
-				<li><a href="" class="twitter_link" title="Twitter"><span class="point">T</span><span>witter</span></a></li>
-				<li><a href="" class="facebook_link" title="Facebook"><span class="point">F</span><span>ace Book</span></a></li>
-			</ul>
-	</div>
+	<?php include 'social_share.php' ?>
 </article>

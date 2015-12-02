@@ -30,15 +30,15 @@
 			<div id="top_right" class="visible-lg col-lg-3">
 				<div id="top_menu" class="col-lg-12">
 					<ul>
-						<li><a href="" title=""><?php echo __('GG Home Page','sleepinglion') ?></a></li>
-						<li><a href="" title=""><?php echo __('Site Map','sleepinglion') ?></a></li>
+						<li><a href="/" title="홈으로"><?php echo __('GG Home Page','sleepinglion') ?></a></li>
+						<li><a href="/sitemap" title="사이트맵"><?php echo __('Site Map','sleepinglion') ?></a></li>
 					</ul>
 				</div>
 				<div class="col-lg-12">
 					<div class="btn-group btn-group-sm" style="float:right">
-						<button aria-label="Left Align" class="btn btn-default" type="button">T</button>
-						<button aria-label="Center Align" class="btn btn-default" type="button">F</button>
-						<button aria-label="Justify" class="btn btn-default" type="button">B</button>
+        		<a href="https://twitter.com/yesKP" target="_blank" aria-label="Left Align" class="btn btn-default" type="button"title="새창에서 열림(도지사 남경필 Twitter)">T</a>
+        		<a href="https://www.facebook.com/NamKyungpil" target="_blank" aria-label="Center Align" class="btn btn-default" type="button" title="새창에서 열림(도지사 남경필 Facebook)">F</a>
+        		<a href="http://blog.naver.com/npil2580" target="_blank" aria-label="Justify" class="btn btn-default" type="button" title="새창에서 열림(도지사 남경필 Blog)">B</a>
         	</div>
         	<form action="/">
       		<div class="input-group form-group-sm">
@@ -58,4 +58,4 @@
 	<!--  open main -->
 	<div id="main">
 		<div id="top_image">&nbsp;</div>
-		<?php include ABSPATH.'wp-content'.DIRECTORY_SEPARATOR.'themes'.DIRECTORY_SEPARATOR.'sleepinglion'.DIRECTORY_SEPARATOR.'sl_lib'.DIRECTORY_SEPARATOR.'menu'.DIRECTORY_SEPARATOR.'nav_menu_rendering.php' ?>
+		<?php require ABSPATH.'wp-content'.DIRECTORY_SEPARATOR.'themes'.DIRECTORY_SEPARATOR.'sleepinglion'.DIRECTORY_SEPARATOR.'sl_lib'.DIRECTORY_SEPARATOR.'menu'.DIRECTORY_SEPARATOR.'nav_menu_rendering.php' ?>

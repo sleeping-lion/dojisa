@@ -64,7 +64,7 @@ if(count($slide_info)>0):
 <section id="sl_main_message">
 	<div class="container">
 		<div class="row">
-			<h1><q><br /><div>싸우지 않고 소통하며<br> 상생과 통합의 정치로 도민을 행복하게</div><br /></q></h1>
+			<h1><q><br /><div>이념과 정파를 뛰어넘은 소통과 협력만이<br />1260만 경기도민을 더욱 안전하고 따뜻하게 만들 수 있습니다.</div><br /></q></h1>
 		</div>		
 	</div>
 </section>
@@ -201,13 +201,13 @@ if(count($slide_info)>0):
       	<h3><a href="" title="Next 경기를 소개합니다.">Next 경기를 소개합니다</a></h3>
     	</div>
     	<div class="col-md-4">
-      	<a href="" title=""><img width="175" height="175" src="/wp-content/uploads/page_img/banner01_03.png" alt="" class="img-circle" /></a>
-      	<h3><a href="" title="민선 6기 공약 실천 계획">민선 6기 공약 실천 계획</a></h3>
+      	<a href="/management_card" title=""><img width="175" height="175" src="/wp-content/uploads/page_img/banner01_03.png" alt="" class="img-circle" /></a>
+      	<h3><a href="/management_card" title="민선 6기 공약 실천 계획">민선 6기 공약 실천 계획</a></h3>
     	</div>
     </div>
     <div class="item">
     	<div class="col-md-4">
-      	<a href="" title=""><img width="175" height="175" src="/wp-content/uploads/page_img/banner01_01.png" alt="" class="img-circle" /></a>
+      	<a href="/" title=""><img width="175" height="175" src="/wp-content/uploads/page_img/banner01_01.png" alt="" class="img-circle" /></a>
       	<h3><a href="" title="민선 6기 1주년 성과와 비전">민선 6기 1주년 성과와 비전</a></h3>
     	</div>
     </div>

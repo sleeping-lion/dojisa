@@ -937,7 +937,7 @@ footer .social_link {float:right}
 
 @media all and (min-width: 768px) {
 	header {height:75px}
-	header nav {height:350px}
+	header nav {height:300px}
 	footer {height:90px}	
 }
  

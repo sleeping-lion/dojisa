@@ -17,7 +17,7 @@
 	<?php wp_head(); ?>
     <!--[if lt IE 9]>
     	<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->	
+    <![endif]-->
 </head>
 <body <?php body_class() ?>>
 <header id="header">
@@ -30,8 +30,8 @@
 				<div id="top_right" class="visible-lg col-lg-3">
 			<div id="top_menu" class="col-lg-12">
 				<ul>
-					<li><a href="/" title=""><?php echo __('GG Home Page','sleepinglion') ?></a></li>
-					<li><a href="/sitemap" title=""><?php echo __('Site Map','sleepinglion') ?></a></li>
+					<li><a href="/" title="홈으로"><?php echo __('GG Home Page','sleepinglion') ?></a></li>
+					<li><a href="/sitemap" title="사이트맵"><?php echo __('Site Map','sleepinglion') ?></a></li>
 				</ul>
 			</div>
 			<div class="col-lg-12">
