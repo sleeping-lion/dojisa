@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('nonav') ?>
 <div id="sub_main_wrap">
 <div class="container">	
 	<div class="row">

@@ -40,10 +40,10 @@
 						<button aria-label="Center Align" class="btn btn-default" type="button">F</button>
 						<button aria-label="Justify" class="btn btn-default" type="button">B</button>
         	</div>
-        	<form action="/">
+        	<form action="" style="float:right">
       		<div class="input-group form-group-sm">
-      <input type="search" name="s" class="form-control" placeholder="검색어를 넣어주세요">
-      <span class="input-group-btn">
+      			<input type="search" class="form-control" <?php if(isset($_GET['s'])): ?>value="<?php echo $_GET['s'] ?>"<?php endif ?> placeholder="검색어를 넣어주세요" style="width:140px">
+      			<span class="input-group-btn">
       				<button class="btn btn-default btn-sm" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
       			</span>
       			</div>
@@ -58,4 +58,4 @@
 	<!--  open main -->
 	<div id="main">
 		<div id="top_image">&nbsp;</div>
-		<?php include ABSPATH.'wp-content'.DIRECTORY_SEPARATOR.'themes'.DIRECTORY_SEPARATOR.'sleepinglion'.DIRECTORY_SEPARATOR.'sl_lib'.DIRECTORY_SEPARATOR.'menu'.DIRECTORY_SEPARATOR.'nav_menu_rendering.php' ?>
+		

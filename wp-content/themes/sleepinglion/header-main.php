@@ -30,19 +30,19 @@
 				<div id="top_right" class="visible-lg col-lg-3">
 			<div id="top_menu" class="col-lg-12">
 				<ul>
-					<li><a href="" title=""><?php echo __('GG Home Page','sleepinglion') ?></a></li>
-					<li><a href="" title=""><?php echo __('Site Map','sleepinglion') ?></a></li>
+					<li><a href="/" title=""><?php echo __('GG Home Page','sleepinglion') ?></a></li>
+					<li><a href="/sitemap" title=""><?php echo __('Site Map','sleepinglion') ?></a></li>
 				</ul>
 			</div>
 			<div class="col-lg-12">
 				<div class="btn-group btn-group-sm" style="float:right">
-        	<button aria-label="Left Align" class="btn btn-default" type="button">T</button>
-        	<button aria-label="Center Align" class="btn btn-default" type="button">F</button>
-        	<button aria-label="Justify" class="btn btn-default" type="button">B</button>
+        	<a href="https://twitter.com/yesKP" target="_blank" aria-label="Left Align" class="btn btn-default" type="button"title="새창에서 열림(Twitter)">T</a>
+        	<a href="https://www.facebook.com/NamKyungpil" target="_blank" aria-label="Center Align" class="btn btn-default" type="button" title="새창에서 열림(Facebook)">F</a>
+        	<a href="http://blog.naver.com/npil2580" target="_blank" aria-label="Justify" class="btn btn-default" type="button" title="새창에서 열림(Blog)">B</a>
       	</div>			
-					<form action="">
+					<form action="/">
 						<div class="input-group form-group-sm">
-      <input type="search" class="form-control" placeholder="검색어를 넣어주세요">
+      <input type="search" name="s" class="form-control" placeholder="검색어를 넣어주세요">
       <span class="input-group-btn">
         <button class="btn btn-default btn-sm" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
       </span>

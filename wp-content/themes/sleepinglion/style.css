@@ -867,14 +867,14 @@ a.big-button, a.small-button, a.icon-button { cursor: pointer; }
 }
 #management_card .category_list li.category_name {margin-bottom:50px;list-style:none}
 #management_card article {margin:0 0 5px;padding:0 0 0 20px}
-#management_card article a{ display:block;padding:10px 0}
+#management_card article a{ display:block;padding:12px 0}
+#management_card article a:hover {background-color:#eee;border-radius:5px;text-decoration:none}
 #management_card h3 {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     border: medium none;
     color: #666666;
     font-size: 15px;
     font-weight: 600;
-    padding: 7px;
     text-shadow: none;
 }
 

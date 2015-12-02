@@ -96,7 +96,7 @@ if(count($slide_info)>0):
   <div class="carousel-inner" role="listbox">
     <div class="item active">
 			<div class="col-xs-6 col-sm-6 col-md-3">
-				<a href="" title="연합정치">
+				<a href="<?php echo get_tag_link(1135) ?>" title="연합정치">
 				<article>
 					<img width="150" height="150" src="/wp-content/themes/sleepinglion/images/banner02_01.png" alt="" class="img-circle hidden-xs" />					
 					<h3>연합정치</h3>
@@ -106,7 +106,7 @@ if(count($slide_info)>0):
 			</div>
 
 			<div class="col-xs-6 col-sm-6 col-md-3">
-				<a href="" title="안전">
+				<a href="<?php echo get_tag_link(1030) ?>" title="안전">
 				<article>
 					<img width="150" height="150" src="/wp-content/themes/sleepinglion/images/banner02_02.png" alt="" class="img-circle hidden-xs" />					
 					<h3>안전</h3>
@@ -116,7 +116,7 @@ if(count($slide_info)>0):
 			</div>
 			
 			<div class="col-xs-6 col-sm-6 col-md-3">
-				<a href="" title="일자리">
+				<a href="<?php echo get_tag_link(1036) ?>" title="일자리">
 				<article>
 					<img width="150" height="150" src="/wp-content/themes/sleepinglion/images/banner02_03.png" alt="" class="img-circle hidden-xs" />					
 					<h3>일자리</h3>
@@ -126,7 +126,7 @@ if(count($slide_info)>0):
 			</div>
 			
 			<div class="col-xs-6 col-sm-6 col-md-3">
-				<a href="" title="북부발전">
+				<a href="<?php echo get_tag_link(1191) ?>" title="북부발전">
 				<article>
 					<img width="150" height="150" src="/wp-content/themes/sleepinglion/images/banner02_04.png" alt="" class="img-circle hidden-xs" />					
 					<h3>북부발전</h3>
@@ -138,7 +138,7 @@ if(count($slide_info)>0):
 
     <div class="item">
 			<div class="col-xs-6 col-sm-6 col-md-3">
-				<a href="" title="플러스복지">					
+				<a href="<?php echo get_tag_link(1631) ?>" title="플러스복지">					
 				<article>
 					<img width="150" height="150" src="/wp-content/themes/sleepinglion/images/banner02_05.png" alt="" class="img-circle hidden-xs" />					
 					<h3>플러스복지</h3>
@@ -147,7 +147,7 @@ if(count($slide_info)>0):
 				</a>
 			</div>
 			<div class="col-xs-6 col-sm-6 col-md-3">
-				<a href="" title="교통">						
+				<a href="<?php echo get_tag_link(879) ?>" title="교통">						
 				<article>
 					<img width="150" height="150" src="/wp-content/themes/sleepinglion/images/banner02_06.png" alt="" class="img-circle hidden-xs" />					
 					<h3>교통</h3>
@@ -156,7 +156,7 @@ if(count($slide_info)>0):
 				</a>
 			</div>
 			<div class="col-xs-6 col-sm-6 col-md-3">
-				<a href="" title="경제">						
+				<a href="<?php echo get_tag_link(1940) ?>" title="경제">						
 				<article>
 					<img width="150" height="150" src="/wp-content/themes/sleepinglion/images/banner02_07.png" alt="" class="img-circle hidden-xs" />					
 					<h3>경제</h3>
