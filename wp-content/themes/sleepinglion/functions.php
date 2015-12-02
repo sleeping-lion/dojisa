@@ -28,6 +28,48 @@ function sleepinglion_language_setup(){
 
 
 
+
+/**
+ * Add manifesto Type - 유지보수 요청
+ */
+function register_custom_post_type_manifesto(){
+	$labels = array(
+			'name'=>__('Manifesto','sleepinglion'),
+			'singular_name'=>__('Manifesto','sleepinglion'),
+			'add_new'=>__('New Manifesto','sleepinglion'),
+			'search_items'=>__('Search Manifesto','sleepinglion')					
+		);
+	
+	$args = array(
+		'labels'=>$labels,
+		'has_archive' => true,
+		'public'=>true,
+		'publicly_queryable'=>true,
+		'show_in_nav_menus'=>true,
+		'show_ui'=>true,
+		'menu_position'=>60,
+		'show_admin_colum'=>true,
+		'taxonomies'=>array('manifesto-category'),
+		'can_export'=> true,		
+    //'register_meta_box_cb' => 'add_maintain_meta_boxes',
+   // 'capability_type' => array('maintain','maintains'),
+		'map_meta_cap' => true,    	
+		//'supports'=>array('title','editor','thumbnail','comments'),
+		'rewrite'=>false
+	);
+	
+	register_post_type('manifesto',$args);
+}
+
+add_action('init','register_custom_post_type_manifesto');
+
+function add_manifesto_category() {
+	register_taxonomy('manifesto-category', 'manifesto',array('hierarchical'=>true, 'label'=>__('Manifesto Category','sleepinglion'),'show_admin_colum'=>true,'query_var'=>true,'rewrite'=>true));
+}
+
+add_action('init','add_manifesto_category');
+
+
 /**
  * @name Setup Theme Support
  */

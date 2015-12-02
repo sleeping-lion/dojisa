@@ -270,6 +270,7 @@ hgroup h3 {font-size:160%;color:#333}
 #sub_top_nav_menu li.over .menu li {display:block}
 #sub_top_nav_menu li.sub_menu .menu li.current-menu-parent,#sub_top_nav_menu li.sub_menu .menu li.current-menu-item {display:block}
 #sub_top_nav_menu li.sub_menu .menu li.current-menu-parent a,#sub_top_nav_menu li.sub_menu .menu li.current-menu-item a {font-weight:bold}
+#sub_top_nav_menu nav ul {margin:0;padding:0;border-left:1px solid #ccc;border-right:1px solid #ccc}
 
 
 .social_link li {list-style:none;float:left;margin:0 3%}
