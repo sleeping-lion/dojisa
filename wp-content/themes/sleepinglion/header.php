@@ -12,7 +12,7 @@
         bloginfo('name'); echo " - "; bloginfo('description');
     }
     ?>" />
-  <link rel="shortcut icon" href="/wp-content/themes/ggdo/images/favicon.ico" />
+  <link rel="shortcut icon" href="/wp-content/themes/sleepinglion/images/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<?php wp_head(); ?>
     <!--[if lt IE 9]>
