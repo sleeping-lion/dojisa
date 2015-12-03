@@ -187,43 +187,30 @@ if(count($slide_info)>0):
 				<h2>소통과 참여</h2>
 				<h3>다양한 방법으로 의견을 듣겠습니다</h3>
 			</hgroup>
-			<div id="carousel-example-generic2" class="carousel slide" data-ride="carousel">
-				
-				
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-    	<div class="col-md-4">    	
+<div class="col-md-12">
+    	<div class="col-xs-6 col-md-3">    	
       	<a href="" title=""><img width="175" height="175" src="/wp-content/uploads/page_img/banner01_01.png" alt="" class="img-circle" /></a>
       	<h3><a href="" title="도지사에게 바란다">도지사에게 바란다</a></h3>
     	</div>
-    	<div class="col-md-4">
+    	<div class="col-xs-6 col-md-3">
       	<a href="" title=""><img width="175" height="175" src="/wp-content/uploads/page_img/banner01_02.png" alt="" class="img-circle" /></a>
       	<h3><a href="" title="Next 경기를 소개합니다.">Next 경기를 소개합니다</a></h3>
     	</div>
-    	<div class="col-md-4">
+    	<div class="col-xs-6 col-md-3">
       	<a href="/management_card" title=""><img width="175" height="175" src="/wp-content/uploads/page_img/banner01_03.png" alt="" class="img-circle" /></a>
       	<h3><a href="/management_card" title="민선 6기 공약 실천 계획">민선 6기 공약 실천 계획</a></h3>
     	</div>
-    </div>
-    <div class="item">
-    	<div class="col-md-4">
+    	<div class="col-xs-6 col-md-3">
       	<a href="/" title=""><img width="175" height="175" src="/wp-content/uploads/page_img/banner01_01.png" alt="" class="img-circle" /></a>
       	<h3><a href="" title="민선 6기 1주년 성과와 비전">민선 6기 1주년 성과와 비전</a></h3>
     	</div>
-    </div>
-  </div>			
+  </div>
+
+		
 				
-  <a class="left carousel-control" href="#carousel-example-generic2" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic2" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>				
+		
 			</div>			
 		</div>
-	</div>
 </section>
 
 <section id="sl_main_field" class="main_card_view">

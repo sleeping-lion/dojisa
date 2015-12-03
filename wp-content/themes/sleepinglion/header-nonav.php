@@ -30,7 +30,7 @@
 			<div id="top_right" class="visible-lg col-lg-3">
 				<div id="top_menu" class="col-lg-12">
 					<ul>
-						<li><a href="/" title="홈으로"><?php echo __('GG Home Page','sleepinglion') ?></a></li>
+						<li><a href="http://www.gg.go.kr" title="새창으로 열림(경기도 홈페이지)" target="_blank"><?php echo __('GG Home Page','sleepinglion') ?></a></li>
 						<li><a href="/sitemap" title="사이트맵"><?php echo __('Site Map','sleepinglion') ?></a></li>
 					</ul>
 				</div>

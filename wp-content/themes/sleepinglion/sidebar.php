@@ -18,11 +18,11 @@
 	</div>
 	<div id="side_banner">
 		<a href="" title="">
-			<img src="/wp-content/themes/sleepinglion/images/banner_invest.jpg" alt="" class="img-responsive" />
+			<img src="/wp-content/themes/sleepinglion/images/banner_invest.jpg" width="262" height="260" alt="" class="img-responsive" />
 		</a>
 		<br />
-		<a href="" title="">
-			<img src="/wp-content/themes/sleepinglion/images/banner_vilage.jpg" alt="" class="img-responsive" />
+		<a href="http://www.gg.go.kr/vilage_making" title="새창으로 열림(따복 공동체)" target="_blank">
+			<img src="/wp-content/themes/sleepinglion/images/banner_vilage.jpg" width="262" height="260" alt="" class="img-responsive" />
 		</a>
 	</div>
 </aside>

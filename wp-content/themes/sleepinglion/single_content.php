@@ -2,7 +2,7 @@
 	<div class="blog_header">
 		<h1 class="col-sm-10 col-xs-12"><?php the_title(); ?></h1>
 		<div class="date col-sm-2 hidden-xs">
-			<?php the_date('j'); ?> <?php the_time('M , Y'); ?>, 
+			<?php the_date('Y.m.d'); ?>
 		</div>
 	</div>
 	<div class="blog-post-body col-xs-12"><?php the_content( __( 'Read More' , 'sleepinglion' ) ); ?>
