@@ -19,38 +19,40 @@
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-	background: #eee;
 }
 .su-tabs-nav span {
 	display: inline-block;
-	margin-right: 3px;
 	padding: 10px 15px;
 	font-size: 13px;
 	min-height: 40px;
 	line-height: 20px;
-	-webkit-border-top-left-radius: 3px;
-	-moz-border-radius-topleft: 3px;
-	border-top-left-radius: 3px;
-	-webkit-border-top-right-radius: 3px;
-	-moz-border-radius-topright: 3px;
-	border-top-right-radius: 3px;
 	color: #333;
 	cursor: pointer;
 	-webkit-transition: all .2s;
 	-moz-transition: all .2s;
 	-o-transition: all .2s;
 	transition: all .2s;
+	line-height:48px;
+	border-left:1px solid #ccc;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	background:#f9f9f9;	
 }
+
+.su-tabs-nav span:last-child {
+	border-right:1px solid #ccc;
+}
+
 .su-tabs-nav span:hover { background: #f5f5f5; }
-.su-tabs-nav span.su-tabs-current { background: #fff; cursor: default; }
+.su-tabs-nav span.su-tabs-current { background: #c74a4a;font-weight:bold;color:#fff; cursor: default; }
 .su-tabs-nav span.su-tabs-disabled {
 	opacity: 0.5;
 	filter: alpha(opacity=50);
 	cursor: default;
 }
 .su-tabs-pane {
-	padding: 15px;
-	font-size: 13px;
+	padding: 15px 0;
+	font-size: 14px;
 	-webkit-border-bottom-right-radius: 3px;
 	-moz-border-radius-bottomright: 3px;
 	border-bottom-right-radius: 3px;
@@ -102,10 +104,10 @@
 .su-tabs-nav span,
 .su-tabs-panes,
 .su-tabs-pane {
-	-webkit-box-sizing: border-box !important;
-	-moz-box-sizing: border-box !important;
+
 	box-sizing: border-box !important;
 }
+
 /* Styles for screens that are less than 768px */
 @media only screen and (max-width: 768px) {
 	.su-tabs-nav span { display: block; }
@@ -117,6 +119,10 @@
 		float: none;
 		width: auto;
 	}
+}
+
+.blog-post-body {
+	margin:30px 0 0;
 }
 
 /*		Spoiler + Accordion

@@ -111,7 +111,7 @@ function my_wp_nav_menu_objects_sub_menu($sorted_menu_items, $args) {
 <div id="sub_top_nav_menu">
 	<div class="container">
 		<nav class="row">
-			<ul class="col-xs-12 col-md-8 col-lg-9">
+			<ul class="col-md-12 col-lg-9">
 				<li class="sub_menu depth-home">
 					<a href="<?php echo get_home_url(); ?>"><span class="glyphicon glyphicon-home" aria-hidden="true"></span><span class="text">Home</span></a>
 				</li>

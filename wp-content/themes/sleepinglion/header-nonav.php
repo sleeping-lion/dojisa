@@ -15,9 +15,10 @@
   <link rel="shortcut icon" href="/wp-content/themes/sleepinglion/images/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<?php wp_head(); ?>
-    <!--[if lt IE 9]>
-    	<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->	  
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" href="/wp-content/themes/sleepinglion/css/ie.css" />  			
+		<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->  
 </head>
 <body <?php body_class() ?>>
 <header id="header">
