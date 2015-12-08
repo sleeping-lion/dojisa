@@ -16,7 +16,7 @@
 			<article>
 			<h2><q><span>다양한</span> 방법으로 <span>의견</span>을 듣겠습니다</q></h2>
 			<h3>민원관련 문의 콜센터 : 031-120</h3>
-			</article>				
+			</article>		
 		</section>
 
 		

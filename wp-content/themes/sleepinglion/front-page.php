@@ -79,9 +79,11 @@ if(count($slide_info)>0):
 				<h3>함께 만들어가는 NEXT 경기 이야기</h3>
 			</hgroup>
 			<?php $query = new WP_Query(array( 'category_name' => 'news','posts_per_page' => 3) ); ?>
-			<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+			<?php if ( $query->have_posts() ) : $index=0; while ( $query->have_posts() ) : $query->the_post(); ?>
+			<div class="col xs-12 col-sm-6 col-md-4<?php if($index==1): ?> hidden-xs<?php endif ?><?php if($index==2): ?> hidden-sm hidden-xs<?php endif ?>">				
 			<?php get_template_part('main_content'); ?>
-			<?php endwhile; wp_reset_postdata(); else: ?>
+			</div>
+			<?php $index++;endwhile; wp_reset_postdata(); else: ?>
 			<?php __('No Article','sleepinglion') ?>
 			<?php endif ?>
 		</div>
@@ -188,19 +190,19 @@ if(count($slide_info)>0):
 				<h3>다양한 방법으로 의견을 듣겠습니다</h3>
 			</hgroup>
 <div class="col-md-12">
-    	<div class="col-xs-6 col-md-3">    	
+    	<div class="col-xs-6 col-sm-4 col-md-3">    	
       	<a href="/propose" title=""><img width="175" height="175" src="/wp-content/themes/sleepinglion/images/banner01_01.png" alt="" class="img-circle" /></a>
       	<h3><a href="/propose" title="도지사에게 바란다">도지사에게 바란다</a></h3>
     	</div>
-    	<div class="col-xs-6 col-md-3">
+    	<div class="col-xs-6 col-sm-4 col-md-3">
       	<a href="/archives/85742" title=""><img width="175" height="175" src="/wp-content/themes/sleepinglion/images/banner01_02.png" alt="" class="img-circle" /></a>
       	<h3><a href="/archives/85742" title="Next 경기를 소개합니다.">Next 경기를 소개합니다</a></h3>
     	</div>
-    	<div class="col-xs-6 col-md-3">
+    	<div class=" hidden-xs col-sm-4 col-md-3">
       	<a href="/management_card" title=""><img width="175" height="175" src="/wp-content/themes/sleepinglion/images/banner01_03.png" alt="" class="img-circle" /></a>
       	<h3><a href="/management_card" title="민선 6기 공약 실천 계획">민선 6기 공약 실천 계획</a></h3>
     	</div>
-    	<div class="col-xs-6 col-md-3">
+    	<div class="hidden-xs hidden-sm col-md-3">
       	<a href="/vision" title=""><img width="175" height="175" src="/wp-content/themes/sleepinglion/images/banner01_04.png" alt="" class="img-circle" /></a>
       	<h3><a href="/vision" title="민선 6기 1주년 성과와 비전">민선 6기 1주년 성과와 비전</a></h3>
     	</div>
@@ -225,7 +227,7 @@ if(count($slide_info)>0):
 			<?php $category_link = get_category_link(2130) ?>			
 			<?php if ( $query->have_posts() ) :
 			while ( $query->have_posts() ) : $query->the_post(); ?>
-<div class="col- col-sm-4 col-md-4">
+<div class="col-xs-12 col-sm-6 col-md-4">
 <article>
 		<?php if(has_post_thumbnail()): ?>
 		<div class="img">
@@ -245,7 +247,7 @@ if(count($slide_info)>0):
 			<?php $category_link = get_category_link(2559) ?>
 			<?php if ( $query->have_posts() ) :
 			while ( $query->have_posts() ) : $query->the_post(); ?>
-<div class="col- col-sm-4 col-md-4">
+<div class="col-sm-6 col-md-4 hidden-xs">
 <article>
 		<?php if(has_post_thumbnail()): ?>
 		<div class="img">
@@ -265,7 +267,7 @@ if(count($slide_info)>0):
 			<?php $category_link = get_category_link(2558); ?>
 			<?php if ( $query->have_posts() ) :
 			 while ( $query->have_posts() ) : $query->the_post(); ?>
-<div class="col- col-sm-4 col-md-4">
+<div class="col-md-4 hidden-xs hidden-sm">
 <article>
 		<?php if(has_post_thumbnail()): ?>
 		<div class="img">

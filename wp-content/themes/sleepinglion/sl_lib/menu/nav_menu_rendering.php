@@ -116,7 +116,7 @@ if (isset($post)) {
 	<div class="container">
 		<nav class="row">
 			<ul class="col-md-12 col-lg-9">
-				<li class="sub_menu depth-home">
+				<li class="sub_menu depth-home hidden-xs">
 					<a href="<?php echo get_home_url(); ?>"><span class="glyphicon glyphicon-home" aria-hidden="true"></span><span class="text">Home</span></a>
 				</li>
 				<li class="sub_menu">
