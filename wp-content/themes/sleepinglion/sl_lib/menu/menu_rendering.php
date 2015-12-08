@@ -1,6 +1,6 @@
 <?php
 
-$main_menu = '<nav id="gnb">';
+$main_menu = '<nav id="gnb" class="hidden-xs">';
 $main_menu.=wp_nav_menu(array('theme_location'  => 'sleepinglion','menu' => 'primary','menu_id'=>'menu-gnb','menu_class'=>'gnb','fallback_cb' => false,'echo' => 0));
 $main_menu .= '</nav>';
 

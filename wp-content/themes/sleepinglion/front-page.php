@@ -11,7 +11,7 @@ if(count($slide_info)>0):
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <?php if(count($slide)>0): ?>	
   <!-- Indicators -->
-  <ol class="carousel-indicators">
+  <ol class="carousel-indicators hidden-xs">
   	<?php $i=0 ?>
   	<?php foreach (range(0,count($slide)-1) as $index=>$value): ?>  	
     <li data-target="#carousel-example-generic" data-slide-to="<?php echo $index ?>" <?php if(!$index): ?>class="active"<?php endif ?>></li>

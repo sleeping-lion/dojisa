@@ -151,8 +151,8 @@ hgroup {text-align:center;color:#000;margin:5% 0}
 hgroup h2 {font-size:250%;font-weight:bold}
 hgroup h3 {font-size:160%;color:#333}
 
-.main_card_view article {border:1px solid #ccc;border-bottom-width:2px;margin:0;padding:10px; background:#fff;text-align:center;height:400px}
-.main_card_view article img { width:350px; height:244px;}
+.main_card_view article {border:1px solid #ccc;border-bottom-width:2px;margin:0;padding:10px; background:#fff;text-align:center}
+.main_card_view article img { width:350px; height:244px; margin:0 auto}
 
 .carousel-indicators li {width:50px;height:10px;border-radius:0;background:#fff;border:none}
 .carousel-indicators li.active {width:50px;background:#cc6666}
@@ -160,7 +160,7 @@ hgroup h3 {font-size:160%;color:#333}
 #sl_main_message {background:#333 url('/wp-content/uploads/page_img/bg_brown.jpg')}
 #sl_main_message q {line-height:30px; }
 #sl_main_message q div{ line-height:36px;  margin-top:10px;}
-#sl_main_message h1 {text-align:center;font-size:2em;color:#fff; padding:56px 0 56px 0;}
+#sl_main_message h1 {text-align:center;color:#fff;margin:0}
 
 #sl_main_news {background:#eee;padding-bottom:6%}
 #sl_main_news article h2 {margin:10% 10% 5%;text-align:center;font-size:16px;line-height:150%}
@@ -168,13 +168,12 @@ hgroup h3 {font-size:160%;color:#333}
 #sl_main_news article p {text-align:center;color:#666;font-size:16px}
 
 #sl_main_field {padding-bottom:6%}
-#sl_main_field article {position:relative;}
+#sl_main_field article {position:relative;margin-bottom:30px}
 #sl_main_field article h2 {position:absolute;top:235px;width:80%;margin:0 10%;padding:10px;background:#c74a4a;color:#fff;text-align:center;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
 #sl_main_field article h2 a {color:#fff}
-#sl_main_field article p {margin:10%}
 #sl_main_field article p a {font-size:16px}
 
-#sl_main_sub_message {padding-bottom:5%;background:#cc6666 url('/wp-content/uploads/page_img/bg_red.jpg');text-align:center}
+#sl_main_sub_message {padding-bottom:2%;background:#cc6666 url('/wp-content/uploads/page_img/bg_red.jpg');text-align:center}
 #sl_main_sub_message h2 {color:#fff}
 #sl_main_sub_message h2 .focus {color:#ffcc00}
 #sl_main_sub_message h3 {font-size:20px;color:#ccc;font-weight:bold}
@@ -182,6 +181,7 @@ hgroup h3 {font-size:160%;color:#333}
 #sl_main_sub_message h3 a:hover {text-decoration:none}
 #sl_main_sub_message .carousel-inner div {text-align:center}
 #sl_main_sub_message .carousel-inner a {display:block}
+#sl_main_sub_message .col-md-12 div {margin-bottom:5%}
 
 #sl_main_sub_message .carousel-control.left,#sl_menu_content .carousel-control.left,#sl_main_sub_message .carousel-control.right,#sl_menu_content .carousel-control.right {background-image:none}
 #sl_menu_content .carousel-control {width:40px;z-index:9}
@@ -880,8 +880,8 @@ footer .social_link {float:right}
 
 @media all and (max-width: 768px) {
 	html,body {background:#ccc}
-	header {margin-bottom:10px;background:#fff;border-bottom-right-radius:5px;border-bottom-left-radius:5px}
-	header h1 a {float:left;background:none;text-indent:0;width:100%;font-weight:bold}
+	header {margin-bottom:1%;padding-bottom:10px;background:#fff;border-bottom-right-radius:5px;border-bottom-left-radius:5px}
+	header h1 a {float:left;width:94px;height:40px;font-weight:bold;background:url('/wp-content/themes/sleepinglion/images/small_logo.jpg') center center no-repeat}
 	header h1 a:hover {text-decoration:none}  
 	header h1 a:active {color:red}
 	header nav  {position:relative;width:100%;margin:0;padding:0}
@@ -900,7 +900,7 @@ footer .social_link {float:right}
 	.sub_main {clear:both;width:100%}
 	#sl_main_blog li {margin-bottom:10px}
 	#main_main article ul {margin:0;padding:0;list-style:none}
-	#sl_intro_index #sl_intro_right {float:left;width:100%}  
+	#sl_intro_index #sl_intro_right {float:left;width:100%}	
 	header nav ul a:hover {color:#000}
 	header nav ul a:active {color:red}
 	.page-header {float:left;margin:0 0 10px}
@@ -908,10 +908,15 @@ footer .social_link {float:right}
 	#sl_main_news .container .row div img {height:50px}
 	#sl_main_news .container .row article:nth-child(1) {display:none}	
 	 
+	#sl_main_field article {border-bottom:1px solid #ccc}	 
+	#sl_main_field article p {line-height:110%}
 	#sl_menu_content article {padding:5%} 
 	#sl_menu_content article h3 {margin:2% 0}
 	#menu-gnb > li {float:left;width:100%;text-align:left}	
 	
+	#sl_main_message h1 {text-align:center;font-size:1.5em;margin:0;padding:10px 0}
+	#sl_main_message h1 br {display:none}
+	#sl_main_field article p {margin:6% 0 2%}		
 	#sl_intro_index #sl_intro_right, #sl_gallery_index #sl_gallery_right {width:100%;margin:0}
 	#sl_intro_index #sl_intro_left {width:100%}
 	footer {background:#fff;border-radius:5px;width:100%;margin:1% 0}
@@ -922,7 +927,10 @@ footer .social_link {float:right}
 	header {height:75px}
 	header nav {height:300px}
 	#menu-gnb > li {float:left;width:25%;text-align:center}
-	footer {height:90px}	
+	#sl_main_message h1 {text-align:center;font-size:2em;padding:56px 0}
+	#sl_main_field article p {margin:10%}		
+	footer {height:90px}
+	.main_card_view article {height:400px}
 }
  
 @media all and (min-width: 768px) and (max-width: 992px) {
@@ -930,7 +938,7 @@ footer .social_link {float:right}
 }
  
 @media all and (min-width: 992px) and (max-width: 1200px) {
-	header h1 a {width:150px;height:65px;background:url('/wp-content/uploads/page_img/logo.jpg') center center no-repeat}
+	header h1 a {width:150px;height:65px;background:url('/wp-content/themes/sleepinglion/images/logo.jpg') center center no-repeat}
 	header nav {float:left;margin:0;right:5%}
  	header nav ul > li > a {padding:15px 15px}	
 	#sl_intro_index #sl_intro_right dd {width:200px}
@@ -939,7 +947,7 @@ footer .social_link {float:right}
 }
 
 @media all and (min-width: 1200px) {
-	header h1 a {width:150px;height:65px;background:url('/wp-content/uploads/page_img/logo.jpg') center center no-repeat}
+	header h1 a {width:150px;height:65px;background:url('/wp-content/themes/sleepinglion/images/logo.jpg') center center no-repeat}
 	header nav {float:left;margin-left:3%;	left:150px;}
  	header nav ul > li > a {padding:15px 20px}	
 	header .btn-group {display:none}
