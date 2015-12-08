@@ -899,13 +899,13 @@ footer .social_link {float:right}
 	header nav ul {width:100%;margin:2% 0 0;padding:0;background:#fff;border-radius:5px}
 	header nav ul.sub-menu {display:none}
 	header nav ul li,header ul li a {clear:both;float:left;width:100%;text-align:left}
-	header nav ul.nav-pills > li + li {margin-left:0}
 	header nav ul li {margin:0;padding:0}
 	header nav ul li a {display:block;border-bottom:1px solid #f3f3f3;text-align:left;text-indent:1em;padding:10px;border-radius:5px}
 	header nav ul li a:hover {text-decoration:none;background:#eee}
 	header nav ul li a:active {color:red}
 	header nav ul li a .glyphicon {margin-right:1em}
-	.nav-pills > li + li {margin:0}
+	#gnb {display:none}	
+	
 	#mom {float:left;clear:both;width:100%;margin:0}
 	#main {float:left;margin:0;padding:0;width:100%;border-radius:5px;background:#fff;}
 	.sub_main {clear:both;width:100%}
@@ -944,8 +944,7 @@ footer .social_link {float:right}
 	.main_card_view article {height:400px}
 }
  
-@media all and (min-width: 768px) and (max-width: 992px) {
-	#gnb {display:none}	
+@media all and (min-width: 768px) and (max-width: 992px) {	
  	header nav ul > li > a {padding:0 16%}
 }
  
