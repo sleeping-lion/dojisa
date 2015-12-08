@@ -3,12 +3,11 @@
 add_filter('wp_nav_menu_objects', 'my_wp_nav_menu_objects_sub_menu', 10, 2);
 // filter_hook function to react on sub_menu flag
 function my_wp_nav_menu_objects_sub_menu($sorted_menu_items, $args) {
-
 	if (isset($args -> main_menu)) {
-		if (is_single()) {
-			$category=get_the_category($post->ID);
-			$term_id=$category[0] -> term_id;
+		if (isset($args->term_id)) {
+			$term_id=$args->term_id;
 			
+			echo $term_id;
 			foreach ($sorted_menu_items as $menu_item) {
 				if ($menu_item -> object_id == $term_id) {
 					$current_id = $menu_item -> menu_item_parent;
@@ -34,9 +33,8 @@ function my_wp_nav_menu_objects_sub_menu($sorted_menu_items, $args) {
 	}
 
 	if (isset($args -> sub_menu)) {
-		if(is_single()) {
-			$category=get_the_category($post->ID);
-			$term_id=$category[0] -> term_id;
+		if (isset($args->term_id)) {
+			$term_id=$args->term_id;
 			
 			foreach ($sorted_menu_items as $menu_item) {
 				if ($menu_item -> object_id == $term_id) {
@@ -105,6 +103,12 @@ function my_wp_nav_menu_objects_sub_menu($sorted_menu_items, $args) {
 	return $sorted_menu_items;
 }
 
+if (isset($post)) {
+	$category=get_the_category($post->ID);
+	$term_id=$category[0] -> term_id;
+} else {
+	$term_id=0;
+}
 
 ?>
 
@@ -116,11 +120,11 @@ function my_wp_nav_menu_objects_sub_menu($sorted_menu_items, $args) {
 					<a href="<?php echo get_home_url(); ?>"><span class="glyphicon glyphicon-home" aria-hidden="true"></span><span class="text">Home</span></a>
 				</li>
 				<li class="sub_menu">
-					&nbsp;<?php wp_nav_menu(array('theme_location'  => 'sleepinglion','menu'=>'primary','menu_id'=>'primary_nav_menu','container' => 'li','fallback_cb'=>false,'main_menu'=>true)) ?>
+					&nbsp;<?php wp_nav_menu(array('theme_location'  => 'sleepinglion','menu'=>'primary','menu_id'=>'primary_nav_menu','container' => 'li','fallback_cb'=>false,'term_id'=>$term_id,'main_menu'=>true)) ?>
 					<span class="glyphicon glyphicon-chevron-down">&nbsp;</span>
 				</li>
 				<li class="sub_menu">
-					&nbsp;<?php wp_nav_menu(array('theme_location'  => 'sleepinglion','menu'=>'primary','menu_id'=>'sub_nav_menu','container' => 'li','fallback_cb'=>false,'sub_menu' => true)) ?>
+					&nbsp;<?php wp_nav_menu(array('theme_location'  => 'sleepinglion','menu'=>'primary','menu_id'=>'sub_nav_menu','container' => 'li','fallback_cb'=>false,'term_id'=>$term_id,'sub_menu' => true)) ?>
 					<span class="glyphicon glyphicon-chevron-down">&nbsp;</span>
 				</li>
 			</ul>

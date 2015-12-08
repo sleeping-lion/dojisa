@@ -864,6 +864,8 @@ a.big-button, a.small-button, a.icon-button { cursor: pointer; }
 #management_card article .content {background:#efefef;border-radius:5px}
 #management_card article .content li {margin-bottom:10px}
 
+#sl_bottom_link .next {text-align:right}
+
 
 /* footer */
 footer {float:left;width:100%;padding:0;background:#3f4446;color:#fff;}
@@ -938,23 +940,20 @@ footer .social_link {float:right}
 }
  
 @media all and (min-width: 992px) and (max-width: 1200px) {
-	header h1 a {width:150px;height:65px;background:url('/wp-content/themes/sleepinglion/images/logo.jpg') center center no-repeat}
+	header h1 a {width:154px;height:67px;background:url('/wp-content/themes/sleepinglion/images/logo.png') center center no-repeat}
 	header nav {float:left;margin:0;right:5%}
  	header nav ul > li > a {padding:15px 15px}	
 	#sl_intro_index #sl_intro_right dd {width:200px}
 	footer {border-top:1px solid #e7e7e7}
-
 }
 
 @media all and (min-width: 1200px) {
-	header h1 a {width:150px;height:65px;background:url('/wp-content/themes/sleepinglion/images/logo.jpg') center center no-repeat}
+	header h1 a {width:154px;height:67px;background:url('/wp-content/themes/sleepinglion/images/logo.png') center center no-repeat}
 	header nav {float:left;margin-left:3%;	left:150px;}
  	header nav ul > li > a {padding:15px 20px}	
 	header .btn-group {display:none}
 	#sub_main { min-height:1500px;border-right:1px solid #ccc}	
 	#sl_intro_index #sl_intro_right dd {width:200px}
-
-
 }
 
 @media all and (min-width: 1300px) {

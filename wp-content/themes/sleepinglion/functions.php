@@ -57,7 +57,7 @@ function register_custom_post_type_manifesto(){
 		'show_ui'=>true,
 		'menu_position'=>60,
 		'show_admin_colum'=>true,
-		'taxonomies'=>array('manifesto-category'),
+		'taxonomies'=>array('category','manifesto-category'),
 		'can_export'=> true,		
     //'register_meta_box_cb' => 'add_maintain_meta_boxes',
    // 'capability_type' => array('maintain','maintains'),
