@@ -15,19 +15,20 @@
   <link rel="shortcut icon" href="/wp-content/themes/sleepinglion/images/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<?php wp_head(); ?>
-    <!--[if lt IE 9]>
-    	<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->	  
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" href="/wp-content/themes/sleepinglion/css/ie.css" />  			
+		<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 </head>
 <body <?php body_class() ?>>
 <header id="header">
-	<div class="container-fluid">	
+	<div class="container">	
 		<div class="row">
-			<div class="col-md-12 col-lg-9">
+			<div class="col-xs-12">
 				<h1><a href="<?php echo home_url('/') ?>" title="<?php echo get_bloginfo() ?>"><?php echo get_bloginfo() ?></a></h1>
 				<?php require ABSPATH.'wp-content'.DIRECTORY_SEPARATOR.'cache'.DIRECTORY_SEPARATOR.'main_menu.html' ?>
 			</div>
-			<div id="top_right" class="visible-lg col-lg-3">
+			<div id="top_right">
 				<div id="top_menu" class="col-lg-12">
 					<ul>
 						<li><a href="http://www.gg.go.kr" title="새창으로 열림(경기도 홈페이지)" target="_blank"><?php echo __('GG Home Page','sleepinglion') ?></a></li>

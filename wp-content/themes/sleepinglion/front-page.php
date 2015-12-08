@@ -11,7 +11,7 @@ if(count($slide_info)>0):
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <?php if(count($slide)>0): ?>	
   <!-- Indicators -->
-  <ol class="carousel-indicators">
+  <ol class="carousel-indicators hidden-xs">
   	<?php $i=0 ?>
   	<?php foreach (range(0,count($slide)-1) as $index=>$value): ?>  	
     <li data-target="#carousel-example-generic" data-slide-to="<?php echo $index ?>" <?php if(!$index): ?>class="active"<?php endif ?>></li>
@@ -76,7 +76,7 @@ if(count($slide_info)>0):
 			<div class="triangle">&nbsp;</div>					
 			<hgroup>
 				<h2>NEWS</h2>
-				<h3>남결필 도지사와 함께 만들어가는 이야기</h3>
+				<h3>함께 만들어가는 NEXT 경기 이야기</h3>
 			</hgroup>
 			<?php $query = new WP_Query(array( 'category_name' => 'news','posts_per_page' => 3) ); ?>
 			<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
@@ -189,19 +189,19 @@ if(count($slide_info)>0):
 			</hgroup>
 <div class="col-md-12">
     	<div class="col-xs-6 col-md-3">    	
-      	<a href="/propose" title=""><img width="175" height="175" src="/wp-content/uploads/page_img/banner01_01.png" alt="" class="img-circle" /></a>
+      	<a href="/propose" title=""><img width="175" height="175" src="/wp-content/themes/sleepinglion/images/banner01_01.png" alt="" class="img-circle" /></a>
       	<h3><a href="/propose" title="도지사에게 바란다">도지사에게 바란다</a></h3>
     	</div>
     	<div class="col-xs-6 col-md-3">
-      	<a href="/archives/85742" title=""><img width="175" height="175" src="/wp-content/uploads/page_img/banner01_02.png" alt="" class="img-circle" /></a>
+      	<a href="/archives/85742" title=""><img width="175" height="175" src="/wp-content/themes/sleepinglion/images/banner01_02.png" alt="" class="img-circle" /></a>
       	<h3><a href="/archives/85742" title="Next 경기를 소개합니다.">Next 경기를 소개합니다</a></h3>
     	</div>
     	<div class="col-xs-6 col-md-3">
-      	<a href="/management_card" title=""><img width="175" height="175" src="/wp-content/uploads/page_img/banner01_03.png" alt="" class="img-circle" /></a>
+      	<a href="/management_card" title=""><img width="175" height="175" src="/wp-content/themes/sleepinglion/images/banner01_03.png" alt="" class="img-circle" /></a>
       	<h3><a href="/management_card" title="민선 6기 공약 실천 계획">민선 6기 공약 실천 계획</a></h3>
     	</div>
     	<div class="col-xs-6 col-md-3">
-      	<a href="/vision" title=""><img width="175" height="175" src="/wp-content/uploads/page_img/banner01_01.png" alt="" class="img-circle" /></a>
+      	<a href="/vision" title=""><img width="175" height="175" src="/wp-content/themes/sleepinglion/images/banner01_04.png" alt="" class="img-circle" /></a>
       	<h3><a href="/vision" title="민선 6기 1주년 성과와 비전">민선 6기 1주년 성과와 비전</a></h3>
     	</div>
   </div>

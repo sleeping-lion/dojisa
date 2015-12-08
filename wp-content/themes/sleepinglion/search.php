@@ -7,12 +7,12 @@
 							<?php if ( have_posts() ) : 
 							while(have_posts()): the_post(); ?>							
 							<div class="blog-span"><?php /* Start the Loop */ ?>			
-								<?php get_template_part( 'content', get_post_format() ); ?>
+								<?php get_template_part( 'list', get_post_format() ); ?>
 								<div class="space-sep20"></div>
 							</div>
-							<?php endwhile; 
+							<?php endwhile;
 							else : ?>
-							<div class="blog-span">	
+							<div class="blog-span">
 							<header class="entry-header">
 								<h1 class="entry-title"><?php _e( 'Nothing Found', 'sleepinglion' ); ?></h1>
 							</header>

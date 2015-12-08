@@ -7,11 +7,11 @@
 <footer>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-xs-7 col-md-6">
 				<address><?php echo __('Address','sleepinglion') ?></address>
 				COPYRIGHT 2015 ALL RIGHTS RESERVED
 			</div>
-			<div class="col-md-6">
+			<div class="col-xs-5 col-md-6">
 				<ul class="social_link col-xs-12 col-sm-6 col-lg-4">
 					<li><a href="http://blog.naver.com/npil2580" class="blog_link" title="새창에서 열림(도지사 남경필 Blog)" target="_blank"><span class="point">B</span><span>log</span></a></li>
 					<li><a href="https://twitter.com/yesKP" class="twitter_link" title="새창에서 열림(도지사 남경필 Twitter)" target="_blank"><span class="point">T</span><span>witter</span></a></li>					
