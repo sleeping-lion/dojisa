@@ -76,7 +76,7 @@ if(count($slide_info)>0):
 			<div class="triangle">&nbsp;</div>					
 			<hgroup>
 				<h2>NEWS</h2>
-				<h3>남결필 도지사와 함께 만들어가는 이야기</h3>
+				<h3>함께 만들어가는 NEXT 경기 이야기</h3>
 			</hgroup>
 			<?php $query = new WP_Query(array( 'category_name' => 'news','posts_per_page' => 3) ); ?>
 			<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>

@@ -274,7 +274,7 @@ hgroup h3 {font-size:160%;color:#333}
 .sl_post .date {text-align:left;font-size:17px;color:#999}
 .sl_post .tags span.glyphicon-tags {margin-right:10px}
 .sl_post .tags a {color:red;font-size:16px}
-.sl_post img.img-responsive {width:100%;height:auto;max-height:450px}
+.sl_post img.img-responsive {width:100%;height:auto}
 .sl_post_footer .dd {font-size:30px;text-align:center}
 .sl_post_footer .social_link {margin-top:30px}
 
