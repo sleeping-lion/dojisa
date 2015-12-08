@@ -868,6 +868,13 @@ a.big-button, a.small-button, a.icon-button { cursor: pointer; }
 
 #sl_bottom_link .next {text-align:right}
 
+#sitemap #primary_nav_menu li {margin:1% 0}
+#sitemap #primary_nav_menu li a {display:block;padding:3px 5px 5px}
+#sitemap #primary_nav_menu {padding:2% 5%;background:#eee;}
+#sitemap #primary_nav_menu>li {margin:0 0 5%;color:#fff;list-style:none}
+#sitemap #primary_nav_menu>li>a {border-bottom:1px solid #ccc}
+#sitemap #primary_nav_menu li ul {margin:2% 0}
+#sitemap #primary_nav_menu li ul li {list-style:disc;color:#333;padding:0 0 0 10px} 
 
 /* footer */
 footer {float:left;width:100%;padding:0;background:#3f4446;color:#fff;}
