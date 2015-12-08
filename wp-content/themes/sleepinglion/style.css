@@ -40,8 +40,8 @@ mark, rp, rt, ruby, summary, time {display:inline;}
 
 /* layout */
 
-#mom {clear:both;float:left;width:100%;padding:0;margin:-75px 0 -80px;min-height:100%}
-#main {float:left;width:100%;padding-top:75px;padding-bottom:80px}
+#mom {clear:both;float:left;width:100%;padding:0;min-height:100%}
+#main {float:left;width:100%}
 #sub_main_wrap {position:relative;float:left;width:100%;border-top:1px solid #ccc;z-index:1}
 #sub_main {padding-top:2%;padding-bottom:5%}
 #sub_main h1{font-size :1.625em; font-weight:700;}
@@ -110,7 +110,7 @@ header #top_menu li a {float:right;display:block;margin-left:20px}
 header #top_menu li:first-child:before {content:'|'}
 
 header .btn-group {float:right}
-header #mobile_menu {display:block;margin:5px 0 0;text-align:right;font-size:33px;line-height:33px;height:33px;overflow:hidden}
+header #mobile_menu {position:relative;z-index:9;display:block;margin:5px 0 0;text-align:right;font-size:33px;line-height:33px;height:33px;overflow:hidden}
 header #mobile_menu:hover {text-decoration:none}
 header #mobile_menu span {display:block}
 header #mobile_menu span.text{width:1px;height:1px;text-indent:-9999px;}
@@ -182,7 +182,7 @@ hgroup h3 {font-size:160%;color:#333}
 #sl_main_sub_message {padding-bottom:2%;background:#cc6666 url('/wp-content/uploads/page_img/bg_red.jpg');text-align:center}
 #sl_main_sub_message h2 {color:#fff}
 #sl_main_sub_message h2 .focus {color:#ffcc00}
-#sl_main_sub_message h3 {font-size:20px;color:#ccc;font-weight:bold}
+#sl_main_sub_message h3 {color:#ccc;font-weight:bold}
 #sl_main_sub_message h3 a {color:#fff}
 #sl_main_sub_message h3 a:hover {text-decoration:none}
 #sl_main_sub_message .carousel-inner div {text-align:center}
@@ -265,11 +265,11 @@ hgroup h3 {font-size:160%;color:#333}
 #sub_top_nav_menu nav ul {margin:0;padding:0;border-left:1px solid #ccc;border-right:1px solid #ccc}
 
 
-.social_link li {list-style:none;float:left;margin:0 3%}
+.social_link li {list-style:none;text-align:center}
 .social_link a {font-family:"Arial Black", Arial, Helvetica, sans-serif;display:block;text-indent:-9999px;color:#eee}
 .social_link a:hover {color:#fff;text-decoration:none} 
 .social_link a span {display:block;text-indent:-9999px;height:1px}
-.social_link a span.point {font-size:25px;font-weight:bold;text-indent:0;width:37px;height:37px;margin:0;padding:0;text-align:center;border-radius:50%;background:red;text-transform:lowercase}
+.social_link a span.point {font-size:25px;font-weight:bold;text-indent:0;width:37px;height:37px;margin:0 auto;padding:0;text-align:center;border-radius:50%;background:red;text-transform:lowercase}
 .social_link a.facebook_link span.point {background-color:#314a84} 
 .social_link a.twitter_link span.point {background-color:#1299c8}
 .social_link a.blog_link span.point {background-color:#2db400;text-transform:uppercase}
@@ -882,13 +882,13 @@ a.big-button, a.small-button, a.icon-button { cursor: pointer; }
 /* footer */
 footer {float:left;width:100%;padding:0;background:#3f4446;color:#fff;}
 footer .container {margin-top:15px}
-footer address {margin:0px 0 0;padding:0;color:#fff;line-height:180%; border:0px solid red;}
-footer li {float:right;list-style:none;margin:0 6%;}
+footer address {margin:0px 0 0;padding:0;color:#fff;line-height:150%;display:inline-block}
+footer li {float:right;list-style:none}
 footer li a {line-height:37px} 
 footer p,footer a {color:#fff}
 footer ul:nth-child(2) li:nth-child(2):after {content:'|'}
 footer #home_sitemap_link {float:right;color:#999}
-footer #home_sitemap_link li {font-weight:bold}
+footer #home_sitemap_link li {font-weight:bold;margin:0 6%}
 footer #home_sitemap_link a {margin-right:20px}
 footer .social_link {float:right}
 
@@ -927,9 +927,12 @@ footer .social_link {float:right}
 	#sl_main_message h1 q div {font-size:14px}
 	#sl_main_message q div{ margin-bottom:20px}	
 		
-	 
+	#sl_main_sub_message h3 {font-size:13px}
+	#sl_main_sub_message .col-md-12 div {margin-bottom:1%}
+	#sl_main_sub_message .col-md-12 .col-xs-6 h3 a {display:block;background:#f6f6f6;padding:20px;color:#333}
+	#sl_main_sub_message .col-md-12 .col-xs-6 h3 a:hover {background:#999933}	
 	#sl_main_field article {border-bottom:1px solid #ccc}	 
-	#sl_main_field article p {line-height:110%}
+	#sl_main_field article p {line-height:150%}
 	#sl_menu_content article {padding:5%} 
 	#sl_menu_content article h3 {margin:2% 0;font-size:13px}
 	#menu-gnb > li {float:left;width:100%;text-align:left}
@@ -937,16 +940,17 @@ footer .social_link {float:right}
 	#sl_main_field article h2 {position:absolute;top:0px}	
 	
 	#sl_main_message h1 {text-align:center;font-size:1.5em;margin:0;padding:10px 0}
-	#sl_main_message h1 br {display:none}
+	#sl_main_message h1 br {display:none}	
 	#sl_main_field article p {margin:6% 0 2%}		
 	#sl_intro_index #sl_intro_right, #sl_gallery_index #sl_gallery_right {width:100%;margin:0}	
 	#sl_intro_index #sl_intro_left {width:100%}
 	footer {background:#fff;border-radius:5px;width:100%;margin:1% 0}
-	footer address {color:#333;text-align:center}
+	footer address {display:block;color:#333;text-align:center}
+	footer .social_link {margin:3% 0}	
 }
 
 @media all and (min-width: 768px) {
-	header {height:75px}
+	header {height:75px}	
 	header nav {height:300px}
 	header nav ul li ul li a {text-align:center}
   .gnb > li{height:50px}	
@@ -954,13 +958,22 @@ footer .social_link {float:right}
 	#sub_top_nav_menu li.sub_menu	{width:45%}		
 	#sub_top_nav_menu li.depth-home {text-align:center;width:10%}	
 	#sl_main_message h1 {text-align:center;font-size:2em;padding:56px 0}
-	#sl_main_field article p {margin:10%}		
-	footer {height:90px}
+	#sl_main_sub_message h3 {font-size:20px}
+	#sl_main_field article p {margin:10%}	
 	.main_card_view article {height:400px}
 }
  
-@media all and (min-width: 768px) and (max-width: 992px) {	
+@media all and (min-width: 768px) and (max-width: 992px) {		
  	header nav ul > li > a {padding:0 16%}
+ 	footer address {margin-right:5%}
+	footer .social_link {margin:3% 0}
+}
+
+@media all and (min-width: 992px) {
+	header {height:75px}
+	#mom {clear:both;float:left;width:100%;padding:0;margin:-75px 0 -90px;min-height:100%}
+	#main {float:left;width:100%;padding-top:75px;padding-bottom:90px}
+	footer {height:90px}
 }
  
 @media all and (min-width: 992px) and (max-width: 1200px) {
