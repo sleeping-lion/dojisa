@@ -2,6 +2,23 @@
 	<h2><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" ><?php the_title(); ?></a></h2>
 	<p class="date"><?php the_date('Y.m.d'); ?></p>
 	
+		<div class="blog-post-body"><?php the_content( __( 'Read More' , 'weblizar' ) ); ?>
+		<?php $defaults = array(
+		'before'           => '<div class="pagination">' . __( 'Pages:','weblizar' ),
+		'after'            => '</div>',
+		'link_before'      => '',
+		'link_after'       => '',
+		'next_or_number'   => 'number',
+		'separator'        => ' ',
+		'nextpagelink'     => __( 'Next page','weblizar' ),
+		'previouspagelink' => __( 'Previous page','weblizar' ),
+		'pagelink'         => '%',
+		'echo'             => 1
+		);
+		wp_link_pages( $defaults );
+		?>
+		</div>	
+	
 	<?php if(get_the_tag_list() != ''): ?>
 			<div class="tags">
 				<span class="glyphicon glyphicon-tags" aria-hidden="true"></span>
