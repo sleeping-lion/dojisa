@@ -43,6 +43,23 @@
 			<p>시책 또는 행정제도, 운영의 개선을 목적으로 행정기관의 장에게 제출하는 창으적인 의견 또는 고안을 제안 할수 있습니다.</p>
 		</article>
 		</a>
+		
+		
+<div class="iframe-wrap">
+                <!-- 화면 전환 시 이동 위치 시작 -->
+                <span style="display:none;" id="epeopleFrameFocus" name="epeopleFrameFocus"></span>
+                <!-- 화면 전환 시 이동 위치 끝 -->
+
+                <!-- 통합프레임 HTML 코드 시작 -->
+                <script src="https://www.epeople.go.kr/js/frame/jsFrameForOpener.js"></script>
+                <noscript>스크립트 기능이 중지되어 있어, 국민신문고 화면을 정상적으로 표시할 수 없습니다.</noscript>
+                <iframe width="100%" height="925" frameborder="0" onload="AfterSubmitProcess();" marginheight="0" marginwidth="0" name="mergerFrame" id="mergerFrame" title="민원상담(도지사에게바란다)" src="https://www.epeople.go.kr/jsp/user/frame/pc/cvreq/UPcCvreqForm.jsp?anc_code=6410000&amp;channel=6410000&amp;menu_code=PC002&amp;peti_cat_code_c=0010000000" scrolling="no"></iframe>
+                <noframes><a href="http://www.epeople.go.kr/" title="국민신문고 이동" target="_blank">국민신문고 직접접속</a></noframes>
+                <!-- 통합프레임 HTML 코드 끝 -->
+            </div>
+		
+		
+		
 		</section>
 		
 			</div>
