@@ -110,10 +110,11 @@ header #top_menu li a {float:right;display:block;margin-left:20px}
 header #top_menu li:first-child:before {content:'|'}
 
 header .btn-group {float:right}
-header #mobile_menu {position:relative;z-index:9;display:block;margin:5px 0 0;text-align:right;font-size:33px;line-height:33px;height:33px;overflow:hidden}
-header #mobile_menu:hover {text-decoration:none}
-header #mobile_menu span {display:block}
-header #mobile_menu span.text{width:1px;height:1px;text-indent:-9999px;}
+header #small_menu {position:relative;z-index:9;text-align:right;float:right}
+header #small_menu a {position:relative;z-index:9;float:right;display:block;margin:5px 0 0 20px;font-size:33px;line-height:33px;height:33px;overflow:hidden}
+header #small_menu a:hover {text-decoration:none}
+header #small_menu a span {display:block}
+header #small_menu a span.text{width:1px;height:1px;text-indent:-9999px;}
 
 /* aside */ 
 aside {float:right;width:350px;margin:0;padding-top:2%;padding-bottom:2%}
@@ -213,6 +214,19 @@ hgroup h3 {font-size:160%;color:#333}
 #sl_menu_content article p {font-size:120%;#333}
 #sl_menu_content article.active h3 {color:#fff}
 #sl_menu_content article.active p {color:#fff}
+
+
+
+
+#sl_menu_content .carousel-inner .active.left {left: -25%}
+#sl_menu_content .carousel-inner .next        {display:none;left: 25%}
+#sl_menu_content .carousel-inner .prev		 { display:none;left: -25%}
+#sl_menu_content .carousel-control 			 { width: 4%}
+#sl_menu_content .carousel-control.left,#sl_menu_content .carousel-control.right {margin-left:15px;background-image:none;}
+#sl_menu_content .carousel-inner .active.right { left: 25%; }
+
+
+
 
 .triangle {background-position:top center;background-repeat:no-repeat;height:70px;margin:0;padding:0}
 #sl_main_news .triangle {background-image:url('/wp-content/uploads/page_img/bg_point_brown.png')}
@@ -907,7 +921,10 @@ footer .social_link {float:right}
 	header nav ul li a:hover {text-decoration:none;background:#eee}
 	header nav ul li a:active {color:red}
 	header nav ul li a .glyphicon {margin-right:1em}
-	header nav ul li ul {margin:0 0 5% 10%}	
+	header nav ul li ul {margin:0 0 5% 10%}
+	header #top_right {position:absolute;top:50px;left:0px} 
+	header #top_right #top_menu {display:none}	
+	header #top_right .btn-group {display:none}	
 	
 	section hgroup h3 {margin:0;padding:0;width:1px;height:1px;text-indent:-9999px;}
 	#gnb {display:none}	
@@ -921,6 +938,8 @@ footer .social_link {float:right}
 	header nav ul a:active {color:red}
 	.page-header {float:left;margin:0 0 10px}
 	.triangle {display:none}
+	
+	
 	
 	#sub_top_nav_menu li.sub_menu	{width:50%}
 	

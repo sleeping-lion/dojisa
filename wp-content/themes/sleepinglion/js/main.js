@@ -1,6 +1,41 @@
 $(document).ready(function(){
+	
+	
+	$('#myCarousel').carousel({
+		  interval: 4000
+		})
+
+		$('.carousel .item').each(function(){
+		  var next = $(this).next();
+		  if (!next.length) {
+		    next = $(this).siblings(':first');
+		  }
+		  next.children(':first-child').clone().appendTo($(this));
+		  
+		  for (var i=0;i<2;i++) {
+		    next=next.next();
+		    if (!next.length) {
+		    	next = $(this).siblings(':first');
+		  	}
+		    
+		    next.children(':first-child').clone().appendTo($(this));
+		  }
+		});	
+	
+	
+	
 	$("#sub_main .social_link a").click(function(){
 		window.open($(this).attr('href'), 'twitter', 'width=650, height=450');
+		return false;
+	});
+	
+	$("#search_btn").click(function(){
+		if($("#top_right").is(':visible')) {
+			$("#top_right").hide();
+		} else {
+			$("#top_right").show();
+			$("header form input:first").focus();
+		}
 		return false;
 	});
 	

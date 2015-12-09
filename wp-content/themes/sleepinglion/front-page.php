@@ -90,12 +90,16 @@ if(count($slide_info)>0):
 	</div>
 </section>
 
+
+
+
 <section id="sl_menu_content">
 	<div class="container">
 		<div class="row">
-			<div id="carousel-example-generic3" class="carousel slide" data-ride="carousel">
 			
-  <div class="carousel-inner" role="listbox">
+<div class="col-md-12">
+<div class="carousel slide" id="myCarousel">
+  <div class="carousel-inner">
     <div class="item active">
 			<div class="col-xs-6 col-sm-6 col-md-3">
 				<a href="<?php echo get_tag_link(1135) ?>" title="연합정치">
@@ -106,7 +110,8 @@ if(count($slide_info)>0):
 				</article>
 				</a>
 			</div>
-
+    </div>
+    <div class="item">
 			<div class="col-xs-6 col-sm-6 col-md-3">
 				<a href="<?php echo get_tag_link(1030) ?>" title="안전">
 				<article>
@@ -116,7 +121,8 @@ if(count($slide_info)>0):
 				</article>
 				</a>
 			</div>
-			
+    </div>
+    <div class="item">
 			<div class="col-xs-6 col-sm-6 col-md-3">
 				<a href="<?php echo get_tag_link(1036) ?>" title="일자리">
 				<article>
@@ -126,7 +132,8 @@ if(count($slide_info)>0):
 				</article>
 				</a>
 			</div>
-			
+    </div>
+    <div class="item">
 			<div class="col-xs-6 col-sm-6 col-md-3">
 				<a href="<?php echo get_tag_link(1191) ?>" title="북부발전">
 				<article>
@@ -135,9 +142,8 @@ if(count($slide_info)>0):
 					<p class="hidden-xs">경제, 통일의 도시로 거듭나겠습니다.</p>
 				</article>
 				</a>
-			</div>									
-		</div>
-
+			</div>	
+    </div>
     <div class="item">
 			<div class="col-xs-6 col-sm-6 col-md-3">
 				<a href="<?php echo get_tag_link(1631) ?>" title="플러스복지">					
@@ -148,6 +154,8 @@ if(count($slide_info)>0):
 				</article>
 				</a>
 			</div>
+    </div>
+    <div class="item">
 			<div class="col-xs-6 col-sm-6 col-md-3">
 				<a href="<?php echo get_tag_link(879) ?>" title="교통">						
 				<article>
@@ -157,6 +165,8 @@ if(count($slide_info)>0):
 				</article>
 				</a>
 			</div>
+    </div>
+    <div class="item">
 			<div class="col-xs-6 col-sm-6 col-md-3">
 				<a href="<?php echo get_tag_link(1940) ?>" title="경제">						
 				<article>
@@ -166,19 +176,16 @@ if(count($slide_info)>0):
 				</article>
 				</a>
 			</div>
-		</div>
-	
-    		
-			</div>			
-		
-		
-  <ol class="carousel-indicators">
-  	<?php foreach (range(0,1) as $index=>$value): ?>  	
-    <li data-target="#carousel-example-generic3" data-slide-to="<?php echo $index ?>" <?php if(!$index): ?>class="active"<?php endif ?>></li>
-    <?php endforeach ?>
-  </ol>
-		
-		</div>
+    </div>    
+  </div>
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+</div>
+</div>
+			
+			
+			
+</div>
 	</div>
 </section>
 
