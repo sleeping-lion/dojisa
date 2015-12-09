@@ -37,7 +37,7 @@
 				</div>
 				<div class="col-lg-12">
 					<div class="btn-group btn-group-sm" style="float:right">
-        		<a href="https://twitter.com/yesKP" target="_blank" aria-label="Left Align" class="btn btn-default" type="button"title="새창에서 열림(도지사 남경필 Twitter)">T</a>
+        		<a href="https://twitter.com/yesKP" target="_blank" aria-label="Left Align" class="btn btn-default" type="button" title="새창에서 열림(도지사 남경필 Twitter)">T</a>
         		<a href="https://www.facebook.com/NamKyungpil" target="_blank" aria-label="Center Align" class="btn btn-default" type="button" title="새창에서 열림(도지사 남경필 Facebook)">F</a>
         		<a href="http://blog.naver.com/npil2580" target="_blank" aria-label="Justify" class="btn btn-default" type="button" title="새창에서 열림(도지사 남경필 Blog)">B</a>
         	</div>

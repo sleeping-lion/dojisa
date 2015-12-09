@@ -80,7 +80,7 @@ if(count($slide_info)>0):
 			</hgroup>
 			<?php $query = new WP_Query(array( 'category_name' => 'news','posts_per_page' => 3) ); ?>
 			<?php if ( $query->have_posts() ) : $index=0; while ( $query->have_posts() ) : $query->the_post(); ?>
-			<div class="col xs-12 col-sm-6 col-md-4<?php if($index==1): ?> hidden-xs<?php endif ?><?php if($index==2): ?> hidden-sm hidden-xs<?php endif ?>">				
+			<div class="col xs-12 col-sm-6 col-md-4<?php if($index==2): ?> hidden-sm<?php endif ?>">				
 			<?php get_template_part('main_content'); ?>
 			</div>
 			<?php $index++;endwhile; wp_reset_postdata(); else: ?>
@@ -101,7 +101,7 @@ if(count($slide_info)>0):
 <div class="carousel slide" id="myCarousel">
   <div class="carousel-inner">
     <div class="item active">
-			<div class="col-xs-6 col-sm-6 col-md-3">
+			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
 				<a href="<?php echo get_tag_link(1135) ?>" title="연합정치">
 				<article>
 					<img width="150" height="150" src="/wp-content/themes/sleepinglion/images/banner02_01.png" alt="" class="img-circle hidden-xs" />					
@@ -112,7 +112,7 @@ if(count($slide_info)>0):
 			</div>
     </div>
     <div class="item">
-			<div class="col-xs-6 col-sm-6 col-md-3">
+			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
 				<a href="<?php echo get_tag_link(1030) ?>" title="안전">
 				<article>
 					<img width="150" height="150" src="/wp-content/themes/sleepinglion/images/banner02_02.png" alt="" class="img-circle hidden-xs" />					
@@ -123,7 +123,7 @@ if(count($slide_info)>0):
 			</div>
     </div>
     <div class="item">
-			<div class="col-xs-6 col-sm-6 col-md-3">
+			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
 				<a href="<?php echo get_tag_link(1036) ?>" title="일자리">
 				<article>
 					<img width="150" height="150" src="/wp-content/themes/sleepinglion/images/banner02_03.png" alt="" class="img-circle hidden-xs" />					
@@ -134,7 +134,7 @@ if(count($slide_info)>0):
 			</div>
     </div>
     <div class="item">
-			<div class="col-xs-6 col-sm-6 col-md-3">
+			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
 				<a href="<?php echo get_tag_link(1191) ?>" title="북부발전">
 				<article>
 					<img width="150" height="150" src="/wp-content/themes/sleepinglion/images/banner02_04.png" alt="" class="img-circle hidden-xs" />					
@@ -145,7 +145,7 @@ if(count($slide_info)>0):
 			</div>	
     </div>
     <div class="item">
-			<div class="col-xs-6 col-sm-6 col-md-3">
+			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
 				<a href="<?php echo get_tag_link(1631) ?>" title="플러스복지">					
 				<article>
 					<img width="150" height="150" src="/wp-content/themes/sleepinglion/images/banner02_05.png" alt="" class="img-circle hidden-xs" />					
@@ -156,7 +156,7 @@ if(count($slide_info)>0):
 			</div>
     </div>
     <div class="item">
-			<div class="col-xs-6 col-sm-6 col-md-3">
+			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
 				<a href="<?php echo get_tag_link(879) ?>" title="교통">						
 				<article>
 					<img width="150" height="150" src="/wp-content/themes/sleepinglion/images/banner02_06.png" alt="" class="img-circle hidden-xs" />					
@@ -167,7 +167,7 @@ if(count($slide_info)>0):
 			</div>
     </div>
     <div class="item">
-			<div class="col-xs-6 col-sm-6 col-md-3">
+			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
 				<a href="<?php echo get_tag_link(1940) ?>" title="경제">						
 				<article>
 					<img width="150" height="150" src="/wp-content/themes/sleepinglion/images/banner02_07.png" alt="" class="img-circle hidden-xs" />					
@@ -254,7 +254,7 @@ if(count($slide_info)>0):
 			<?php $category_link = get_category_link(2559) ?>
 			<?php if ( $query->have_posts() ) :
 			while ( $query->have_posts() ) : $query->the_post(); ?>
-<div class="col-sm-6 col-md-4 hidden-xs">
+<div class="col-sm-6 col-md-4 col-xs-12">
 <article>
 		<?php if(has_post_thumbnail()): ?>
 		<div class="img">
@@ -274,7 +274,7 @@ if(count($slide_info)>0):
 			<?php $category_link = get_category_link(2558); ?>
 			<?php if ( $query->have_posts() ) :
 			 while ( $query->have_posts() ) : $query->the_post(); ?>
-<div class="col-md-4 hidden-xs hidden-sm">
+<div class="col-md-4 col-xs-12 hidden-sm">
 <article>
 		<?php if(has_post_thumbnail()): ?>
 		<div class="img">

@@ -5,7 +5,7 @@ $(document).ready(function(){
 		  interval: 4000
 		})
 
-		$('.carousel .item').each(function(){
+		$('#sl_menu_content .carousel .item').each(function(){
 		  var next = $(this).next();
 		  if (!next.length) {
 		    next = $(this).siblings(':first');
