@@ -917,7 +917,7 @@ footer .social_link {float:right}
 	header nav ul li a:active {color:red}
 	header nav ul li a .glyphicon {margin-right:1em}
 	header nav ul li ul {margin:0 0 5% 10%}
-	header #top_right {position:absolute;top:50px;left:0px} 
+	header #top_right {position:absolute;top:50px;left:0px;z-index:999} 
 	header #top_right #top_menu {display:none}	
 	header #top_right .btn-group {display:none}	
 	
