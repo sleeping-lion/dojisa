@@ -992,11 +992,10 @@ hgroup h2 {font-size:250%}
 hgroup h3 {font-size:160%}	
 }
  
-@media all and (min-width: 768px) and (max-width: 992px) {		
- 	header nav ul > li > a {padding:0 16%}
+@media all and (min-width: 768px) and (max-width: 992px) {
+ 	header nav ul > li > a {padding:15px 20px}
  	footer address {margin-right:5%}
 	footer .social_link {margin:3% 0}
-
 #sl_menu_content .carousel-inner .item div:first-child {display:none}	
 #sl_menu_content .carousel-inner .item div:last-child {display:none}
 #sl_menu_content .carousel-inner .active.left {left: -50%}
