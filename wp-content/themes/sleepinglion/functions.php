@@ -37,6 +37,15 @@ function my_class_names( $classes ) {
 	return $classes;
 }
 
+
+function limit_posts_per_archive_page() {
+	if (is_category(31))
+			set_query_var('posts_per_archive_page', 5); // or use variable key: posts_per_page
+}
+
+add_filter('pre_get_posts', 'limit_posts_per_archive_page');
+
+
 /**
  * Add manifesto Type - 유지보수 요청
  */

@@ -30,9 +30,9 @@
 		</div>
 		
 		<div class="space-sep20"></div>
-		<div class="blog-post-body"><?php the_content( __( 'Read More' , 'weblizar' ) ); ?>
+		<div class="blog-post-body"><?php the_content( __( 'Read More' , 'sleepinglion' ) ); ?>
 		<?php $defaults = array(
-		'before'           => '<div class="pagination">' . __( 'Pages:','weblizar' ),
+		'before'           => '<div class="pagination">' . __( 'Pages:','sleepinglion' ),
 		'after'            => '</div>',
 		'link_before'      => '',
 		'link_after'       => '',

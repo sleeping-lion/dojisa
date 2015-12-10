@@ -882,9 +882,11 @@ a.big-button, a.small-button, a.icon-button { cursor: pointer; }
 #management_card article .content {background:#efefef;border-radius:5px}
 #management_card article .content li {margin-bottom:10px}
 
+#sl_bottom_link {margin-bottom:20px}
 #sl_bottom_link .next {text-align:right}
 .pagination {float:left;width:100%}
-  
+.list_link {clear:both;text-align:right}
+
   
 #sitemap #primary_nav_menu li {margin:1% 0}
 #sitemap #primary_nav_menu li a {display:block;padding:3px 5px 5px}

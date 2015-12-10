@@ -2,9 +2,9 @@
 	<h2><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" ><?php the_title(); ?></a></h2>
 	<p class="date"><?php the_date('Y.m.d'); ?></p>
 	
-		<div class="blog-post-body"><?php the_content( __( 'Read More' , 'weblizar' ) ); ?>
+		<div class="blog-post-body"><?php the_content( __( 'Read More' , 'sleepinglion' ) ); ?>
 		<?php $defaults = array(
-		'before'           => '<div class="pagination">' . __( 'Pages:','weblizar' ),
+		'before'           => '<div class="pagination">' . __( 'Pages:','sleepinglion' ),
 		'after'            => '</div>',
 		'link_before'      => '',
 		'link_after'       => '',
