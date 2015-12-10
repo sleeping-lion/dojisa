@@ -40,7 +40,7 @@ mark, rp, rt, ruby, summary, time {display:inline;}
 
 /* layout */
 
-#mom {clear:both;float:left;width:100%;padding:0;min-height:100%}
+#mom {clear:both;float:left;width:100%;padding:0}
 #main {float:left;width:100%}
 #sub_main_wrap {position:relative;float:left;width:100%;border-top:1px solid #ccc;z-index:1}
 #sub_main {padding-top:2%;padding-bottom:5%}
@@ -111,7 +111,7 @@ header #top_menu li a {float:right;display:block;margin-left:20px}
 header #top_menu li:first-child:before {content:'|'}
 
 header #small_menu {position:absolute;top:20px;right:10px;z-index:9;text-align:right;float:right}
-header #small_menu a {position:relative;z-index:9;float:right;display:block;margin:0 0 0 20px;font-size:35px;line-height:35px;overflow:hidden}
+header #small_menu a {position:relative;z-index:9;float:right;display:block;margin:0 0 0 20px;overflow:hidden}
 header #small_menu a:hover {text-decoration:none}
 header #small_menu a span {display:block}
 header #small_menu a span.text{width:1px;height:1px;text-indent:-9999px}
@@ -919,10 +919,13 @@ footer .social_link {float:right}
 	header nav ul li a .glyphicon {margin-right:1em}
 	header nav ul li ul {margin:0 0 5% 10%}
 	header #small_menu {top:5px}
+	header #small_menu a {font-size:30px;line-height:30px}
 	header #small_menu a#mobile_menu {display:block}
 		
 	section hgroup h3 {margin:0;padding:0;width:1px;height:1px;text-indent:-9999px;}
 	#gnb {display:none}	
+	
+		.tabs-left .et-tabs-control li, .tabs-left ul.et_shortcodes_mobile_nav li {border-bottom:none}	
 	
 	#mom {float:left;clear:both;width:100%;margin:0}
 	#main {float:left;margin:0;padding:0;width:100%;border-radius:5px;background:#fff;}
@@ -959,7 +962,9 @@ footer .social_link {float:right}
 	#sl_main_field article h2 {position:absolute;top:0px}	
   .et_left_tabs_bg {display:none}
   #profile_tab_menu {width:100%}
-  #profile_tab_menu li {float:left;width:50%}  
+  #profile_tab_menu li {float:left;width:50%}
+  .tabs-left .et-tabs-control li a {background:#eee}
+  .tabs-left .et-tabs-control li.active a {background:#fff}
 	#sl_main_message h1 {text-align:center;font-size:1.5em;margin:0;padding:10px 0}
 	#sl_main_message h1 br {display:none}	
 	#sl_main_field article p {margin:2% 0}		
@@ -981,10 +986,15 @@ footer .social_link {float:right}
 }
 
 @media all and (min-width: 768px) {
+	#mom {min-height:100%}	
+	
 	header {height:75px}	
 	header nav {height:300px}
 	header nav ul li ul li a {text-align:center}
+	header #small_menu a {font-size:35px;line-height:35px}	
   .gnb > li{height:50px}
+  
+  
   
 	#menu-gnb > li {float:left;width:25%;text-align:center}	
 	#sub_top_nav_menu li.sub_menu	{width:45%}		
