@@ -111,7 +111,7 @@
 
 /* Styles for screens that are less than 768px */
 @media only screen and (max-width: 768px) {
-	.su-tabs-nav span { display: block; }
+	.su-tabs-nav span { display: block;width:100% }
 	.su-tabs-vertical .su-tabs-nav {
 		float: none;
 		width: auto;

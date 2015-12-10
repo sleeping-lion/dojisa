@@ -99,22 +99,23 @@ header nav a:active {color:red}
 header nav ul li ul {float:left;width:100%;margin:0}	
 header nav ul li ul li a {display:block}
 	
-header #top_right {float:right;margin-left:0;padding-left:0;display:none;position:absolute;top:0;right:0}
+header #top_right {float:right;margin-left:0;padding-left:0;display:none;position:absolute;top:0;right:0;z-index:999}
 header #top_right div.col-lg-12 {margin-left:0;padding-left:0}
 header #top_right ul {float:right}
 header #top_right form {float:right;margin-right:0;width:180px}
 header #top_right form div {float:left}
+header #top_right #top_menu {display:none}
 header #top_menu ul {width:100%;margin:0 0 10px;padding:0}
 header #top_menu li {float:right;list-style:none;margin:0 0 0 2%;padding:0}
 header #top_menu li a {float:right;display:block;margin-left:20px}
 header #top_menu li:first-child:before {content:'|'}
 
-header .btn-group {float:right}
 header #small_menu {position:relative;z-index:9;text-align:right;float:right}
 header #small_menu a {position:relative;z-index:9;float:right;display:block;margin:5px 0 0 20px;font-size:33px;line-height:33px;height:33px;overflow:hidden}
 header #small_menu a:hover {text-decoration:none}
 header #small_menu a span {display:block}
-header #small_menu a span.text{width:1px;height:1px;text-indent:-9999px;}
+header #small_menu a span.text{width:1px;height:1px;text-indent:-9999px}
+header #small_menu a#mobile_menu {display:none}
 
 /* aside */ 
 aside {float:right;width:350px;margin:0;padding-top:2%;padding-bottom:2%}
@@ -132,7 +133,7 @@ aside #current_post,aside #menu_link,aside #side_banner {float:left;width:100%;m
 #menu_link li {margin:0;padding:0 0 0 20px;list-style:none;background:url('/wp-content/themes/sleepinglion/images/icon_listbar.jpg') no-repeat center left}
 #menu_link li a {display:block;padding:3px}
 
-#top_image {position:relative;z-index:3;float:left;width:100%;border-top:1px solid red;height:297px;background:url('/wp-content/uploads/page_img/sub_back.jpg') center center no-repeat;
+#top_image {position:relative;z-index:3;float:left;width:100%;border-top:1px solid red;background:url('/wp-content/uploads/page_img/sub_back.jpg') center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -917,9 +918,7 @@ footer .social_link {float:right}
 	header nav ul li a:active {color:red}
 	header nav ul li a .glyphicon {margin-right:1em}
 	header nav ul li ul {margin:0 0 5% 10%}
-	header #top_right {position:absolute;top:50px;left:0px;z-index:999} 
-	header #top_right #top_menu {display:none}	
-	header #top_right .btn-group {display:none}	
+
 	
 	section hgroup h3 {margin:0;padding:0;width:1px;height:1px;text-indent:-9999px;}
 	#gnb {display:none}	
@@ -936,6 +935,8 @@ footer .social_link {float:right}
 	hgroup {margin:2% 0}
 	hgroup h2 {font-size:150%}
 	hgroup h3 {font-size:120%}
+	
+	#top_image {height:150px;border:none}
 	
 	#sl_main_news article h2 {margin:2%} 
 	#sub_top_nav_menu li.sub_menu	{width:50%}
@@ -954,13 +955,15 @@ footer .social_link {float:right}
 	#menu-gnb > li {float:left;width:100%;text-align:left}
 	
 	#sl_main_field article h2 {position:absolute;top:0px}	
-	
+  .et_left_tabs_bg {display:none}
+  #profile_tab_menu {width:100%}
+  #profile_tab_menu li {float:left;width:50%}  
 	#sl_main_message h1 {text-align:center;font-size:1.5em;margin:0;padding:10px 0}
 	#sl_main_message h1 br {display:none}	
 	#sl_main_field article p {margin:2% 0}		
 	#sl_intro_index #sl_intro_right, #sl_gallery_index #sl_gallery_right {width:100%;margin:0}	
 	#sl_intro_index #sl_intro_left {width:100%}
-#sl_menu_content .carousel-control.left,#sl_menu_content .carousel-control.right {display:none}	
+	#sl_menu_content .carousel-control.left,#sl_menu_content .carousel-control.right {display:none}	
 	footer {background:#fff;border-radius:5px;width:100%;margin:1% 0}
 	footer address {display:block;color:#333;text-align:center}
 	footer .social_link {margin:3% 0}	
@@ -979,7 +982,8 @@ footer .social_link {float:right}
 	header {height:75px}	
 	header nav {height:300px}
 	header nav ul li ul li a {text-align:center}
-  .gnb > li{height:50px}	
+  .gnb > li{height:50px}
+  
 	#menu-gnb > li {float:left;width:25%;text-align:center}	
 	#sub_top_nav_menu li.sub_menu	{width:45%}		
 	#sub_top_nav_menu li.depth-home {text-align:center;width:10%}	
@@ -994,8 +998,12 @@ hgroup h3 {font-size:160%}
  
 @media all and (min-width: 768px) and (max-width: 992px) {
  	header nav ul > li > a {padding:15px 20px}
+ 	header .container {float:left;width:100%}
+ 	
+  #top_image {height:200px} 	
+ 	
  	footer address {margin-right:5%}
-	footer .social_link {margin:3% 0}
+	footer .social_link {margin:3% 0}	
 #sl_menu_content .carousel-inner .item div:first-child {display:none}	
 #sl_menu_content .carousel-inner .item div:last-child {display:none}
 #sl_menu_content .carousel-inner .active.left {left: -50%}
@@ -1010,6 +1018,7 @@ hgroup h3 {font-size:160%}
 	header {height:75px}
 	#mom {clear:both;float:left;width:100%;padding:0;margin:-75px 0 -90px;min-height:100%}
 	#main {float:left;width:100%;padding-top:75px;padding-bottom:90px}
+  #top_image {height:250px}	
 	footer {height:90px}
 	
 #sl_menu_content .carousel-inner .active.left {left: -33%}
@@ -1022,7 +1031,9 @@ hgroup h3 {font-size:160%}
  
 @media all and (min-width: 992px) and (max-width: 1200px) {
 	header nav {float:left;margin:0;right:5%}
- 	header nav ul > li > a {padding:15px 15px}	
+ 	header nav ul > li > a {padding:15px 15px}
+ 	header .container {float:left;width:100%}
+  #top_image {height:270px}	 	
 	#sl_intro_index #sl_intro_right dd {width:200px}
 	footer {border-top:1px solid #e7e7e7}
 
@@ -1040,6 +1051,7 @@ hgroup h3 {font-size:160%}
 	header nav {float:left;margin-left:3%;	left:150px;}
  	header nav ul > li > a {padding:15px 20px}	
 	header .btn-group {display:none}
+  #top_image {height:297px}	
 	#sub_main { min-height:1500px;border-right:1px solid #ccc}	
 	#sl_intro_index #sl_intro_right dd {width:200px}
 #sl_menu_content .carousel-inner .active.left {left: -25%}
@@ -1051,11 +1063,12 @@ hgroup h3 {font-size:160%}
 }
 
 @media all and (min-width: 1300px) {
-	header .btn-group {float:right;display:block}
  	header nav ul > li > a {padding:15px 25px}
 }
 
-@media all and (min-width: 1700px) { 
+@media all and (min-width: 1700px) {
+  header #small_menu {display:none} 	 	
 	header #top_right {display:block}
+	header #top_right #top_menu {display:block}	
  	header #top_right form {margin-right:10px}	
 }

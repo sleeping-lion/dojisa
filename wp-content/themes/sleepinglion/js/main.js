@@ -101,10 +101,22 @@ $(document).ready(function(){
 		$('#menu-gnb>li>a').off('blur');
 	});
 	
-	if($(".su-tabs-nav span").length) {
-		var slength=$(".su-tabs-nav span").length;
-		$(".su-tabs-nav span").css('width',100/slength+'%');
-	}	
+	
+	$(window).resize(tab_width);
+	
+	tab_width();
+	
+	function tab_width() {
+		if($('html').width()>=768) {
+			if($(".su-tabs-nav span").length) {
+				var slength=$(".su-tabs-nav span").length;
+				$(".su-tabs-nav span").css('width',100/slength+'%');
+			}
+		} else {
+			var slength=$(".su-tabs-nav span").length;
+			$(".su-tabs-nav span").css('width','100%');
+		}
+	}
 	
 	$("#sub_top_nav_menu .sub_menu>span").click(function(){
 		$(this).prev().find('li:visible a').triggerHandler("click");
