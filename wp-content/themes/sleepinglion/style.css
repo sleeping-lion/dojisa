@@ -941,7 +941,8 @@ footer .social_link {float:right}
 	
 	#sl_main_news article h2 {margin:2%} 
 	#sub_top_nav_menu li.sub_menu	{width:50%}
-	
+	#sub_top_nav_menu nav ul {border:none}
+
 	#sl_main_message h1 q div {font-size:14px}
 	#sl_main_message q div{ margin-bottom:20px}	
 		
