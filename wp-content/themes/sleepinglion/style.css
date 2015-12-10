@@ -926,9 +926,10 @@ footer .social_link {float:right}
 	header #small_menu a#mobile_menu {display:block}
 		
 	section hgroup h3 {margin:0;padding:0;width:1px;height:1px;text-indent:-9999px;}
-	#gnb {display:none}	
+	#gnb {display:none}
 	
-		.tabs-left .et-tabs-control li, .tabs-left ul.et_shortcodes_mobile_nav li {border-bottom:none}	
+  .category_speech .date {top:5px}
+  .tabs-left .et-tabs-control li, .tabs-left ul.et_shortcodes_mobile_nav li {border-bottom:none}	
 	
 	#mom {float:left;clear:both;width:100%;margin:0}
 	#main {float:left;margin:0;padding:0;width:100%;border-radius:5px;background:#fff;}
