@@ -3053,7 +3053,7 @@ class VipersVideoQuicktags {
 
 		$objectid = $this->videoid('vimeo');
 
-		return '<span class="vvqbox vvqvimeo" style="' . esc_attr( 'width:' . $atts['width'] . 'px;height:' . $atts['height'] . 'px;' ) . '"><iframe id="' . esc_attr( $objectid ) . '" src="' . esc_url( $iframeurl ) . '" width="' . esc_attr( $atts['width'] ) . '" height="' . esc_attr( $atts['height'] ) . '" frameborder="0"><a href="' . esc_url( 'http://www.vimeo.com/' . $videoid ) . '">' . esc_url( 'http://www.vimeo.com/' . $videoid ) . '</a></iframe></span>';
+		return '<span class="vvqbox vvqvimeo embed-responsive embed-responsive-4by3"><iframe id="' . esc_attr( $objectid ) . '" src="' . esc_url( $iframeurl ) . '" width="' . esc_attr( $atts['width'] ) . '" height="' . esc_attr( $atts['height'] ) . '" frameborder="0" class="embed-responsive-item"><a href="' . esc_url( 'http://www.vimeo.com/' . $videoid ) . '">' . esc_url( 'http://www.vimeo.com/' . $videoid ) . '</a></iframe></span>';
 	}
 
 

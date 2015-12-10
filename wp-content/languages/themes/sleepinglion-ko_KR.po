@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: sl\n"
-"POT-Creation-Date: 2015-12-01 16:39+0900\n"
-"PO-Revision-Date: 2015-12-01 16:47+0900\n"
+"POT-Creation-Date: 2015-12-10 15:10+0900\n"
+"PO-Revision-Date: 2015-12-10 15:11+0900\n"
 "Last-Translator: \n"
 "Language-Team: sl <admin@sleepinglion.pe.kr>\n"
 "Language: korean\n"
@@ -18,19 +18,29 @@ msgstr ""
 "dojisa/wp-content/themes/sleepinglion\n"
 
 #: /home/toughjjh/Documents/Aptana Studio 3
-#: Workspace/dojisa/wp-content/themes/sleepinglion/page_content.php:7
+#: Workspace/dojisa/wp-content/themes/sleepinglion/header-nonav.php:38
+#: Workspace/dojisa/wp-content/themes/sleepinglion/header-main.php:38
+#: Workspace/dojisa/wp-content/themes/sleepinglion/header.php:38
+msgid "GG Home Page"
+msgstr "굿모닝 경기도"
+
+#: /home/toughjjh/Documents/Aptana Studio 3
+#: Workspace/dojisa/wp-content/themes/sleepinglion/header-nonav.php:39
+#: Workspace/dojisa/wp-content/themes/sleepinglion/header-main.php:39
+#: Workspace/dojisa/wp-content/themes/sleepinglion/header.php:39
+msgid "Site Map"
+msgstr "사이트맵"
+
+#: /home/toughjjh/Documents/Aptana Studio 3
+#: Workspace/dojisa/wp-content/themes/sleepinglion/page_content.php:6
+#: Workspace/dojisa/wp-content/themes/sleepinglion/speech_list.php:5
 #: Workspace/dojisa/wp-content/themes/sleepinglion/content.php:33
 #: Workspace/dojisa/wp-content/themes/sleepinglion/single_content.php:8
 msgid "Read More"
 msgstr "더보기"
 
 #: /home/toughjjh/Documents/Aptana Studio 3
-#: Workspace/dojisa/wp-content/themes/sleepinglion/tag.php:6
-#, php-format
-msgid "Tag Archives: %s"
-msgstr "태그 '%s' 연관 결과"
-
-#: /home/toughjjh/Documents/Aptana Studio 3
+#: Workspace/dojisa/wp-content/themes/sleepinglion/category-media.php:14
 #: Workspace/dojisa/wp-content/themes/sleepinglion/tag.php:14
 #: Workspace/dojisa/wp-content/themes/sleepinglion/category-speech.php:14
 #: Workspace/dojisa/wp-content/themes/sleepinglion/category.php:14
@@ -39,12 +49,58 @@ msgid "Older posts"
 msgstr "예전 게시물"
 
 #: /home/toughjjh/Documents/Aptana Studio 3
+#: Workspace/dojisa/wp-content/themes/sleepinglion/category-media.php:18
 #: Workspace/dojisa/wp-content/themes/sleepinglion/tag.php:18
 #: Workspace/dojisa/wp-content/themes/sleepinglion/category-speech.php:18
 #: Workspace/dojisa/wp-content/themes/sleepinglion/category.php:18
 #: Workspace/dojisa/wp-content/themes/sleepinglion/author.php:27
 msgid "Newer posts"
 msgstr "최신 게시물"
+
+#: /home/toughjjh/Documents/Aptana Studio 3
+#: Workspace/dojisa/wp-content/themes/sleepinglion/speech_list.php:7
+#: Workspace/dojisa/wp-content/themes/sleepinglion/content.php:35
+msgid "Pages:"
+msgstr "페이지 : "
+
+#: /home/toughjjh/Documents/Aptana Studio 3
+#: Workspace/dojisa/wp-content/themes/sleepinglion/speech_list.php:13
+#: Workspace/dojisa/wp-content/themes/sleepinglion/content.php:41
+msgid "Next page"
+msgstr "다음 페이지"
+
+#: /home/toughjjh/Documents/Aptana Studio 3
+#: Workspace/dojisa/wp-content/themes/sleepinglion/speech_list.php:14
+#: Workspace/dojisa/wp-content/themes/sleepinglion/content.php:42
+msgid "Previous page"
+msgstr "이전 페이지"
+
+#: /home/toughjjh/Documents/Aptana Studio 3
+#: Workspace/dojisa/wp-content/themes/sleepinglion/functions.php:45
+#: Workspace/dojisa/wp-content/themes/sleepinglion/functions.php:46
+msgid "Manifesto"
+msgstr ""
+
+#: /home/toughjjh/Documents/Aptana Studio 3
+#: Workspace/dojisa/wp-content/themes/sleepinglion/functions.php:47
+msgid "New Manifesto"
+msgstr ""
+
+#: /home/toughjjh/Documents/Aptana Studio 3
+#: Workspace/dojisa/wp-content/themes/sleepinglion/functions.php:48
+msgid "Search Manifesto"
+msgstr ""
+
+#: /home/toughjjh/Documents/Aptana Studio 3
+#: Workspace/dojisa/wp-content/themes/sleepinglion/functions.php:75
+msgid "Manifesto Category"
+msgstr ""
+
+#: /home/toughjjh/Documents/Aptana Studio 3
+#: Workspace/dojisa/wp-content/themes/sleepinglion/tag.php:6
+#, php-format
+msgid "Tag Archives: %s"
+msgstr "태그 '%s' 연관 결과"
 
 #: /home/toughjjh/Documents/Aptana Studio 3
 #: Workspace/dojisa/wp-content/themes/sleepinglion/footer.php:11
@@ -62,41 +118,18 @@ msgid "Home"
 msgstr "홈"
 
 #: /home/toughjjh/Documents/Aptana Studio 3
-#: Workspace/dojisa/wp-content/themes/sleepinglion/content.php:35
-#: Workspace/dojisa/wp-content/themes/sleepinglion/single_content.php:10
-msgid "Pages:"
-msgstr "페이지 : "
-
-#: /home/toughjjh/Documents/Aptana Studio 3
-#: Workspace/dojisa/wp-content/themes/sleepinglion/content.php:41
-#: Workspace/dojisa/wp-content/themes/sleepinglion/single_content.php:16
-msgid "Next page"
-msgstr "다음 페이지"
-
-#: /home/toughjjh/Documents/Aptana Studio 3
-#: Workspace/dojisa/wp-content/themes/sleepinglion/content.php:42
-#: Workspace/dojisa/wp-content/themes/sleepinglion/single_content.php:17
-msgid "Previous page"
-msgstr "이전 페이지"
+#: Workspace/dojisa/wp-content/themes/sleepinglion/footer.php:34
+msgid "Search"
+msgstr "검색"
 
 #: /home/toughjjh/Documents/Aptana Studio 3
 #: Workspace/dojisa/wp-content/themes/sleepinglion/sidebar.php:12
-#: Workspace/dojisa/wp-content/themes/sleepinglion/front-page.php:85
-#: Workspace/dojisa/wp-content/themes/sleepinglion/front-page.php:249
+#: Workspace/dojisa/wp-content/themes/sleepinglion/front-page.php:87
+#: Workspace/dojisa/wp-content/themes/sleepinglion/front-page.php:250
+#: Workspace/dojisa/wp-content/themes/sleepinglion/front-page.php:270
+#: Workspace/dojisa/wp-content/themes/sleepinglion/front-page.php:290
 msgid "No Article"
 msgstr "해당 게시물이 없습니다."
-
-#: /home/toughjjh/Documents/Aptana Studio 3
-#: Workspace/dojisa/wp-content/themes/sleepinglion/header-main.php:33
-#: Workspace/dojisa/wp-content/themes/sleepinglion/header.php:33
-msgid "GG Home Page"
-msgstr "굿모닝 경기도"
-
-#: /home/toughjjh/Documents/Aptana Studio 3
-#: Workspace/dojisa/wp-content/themes/sleepinglion/header-main.php:34
-#: Workspace/dojisa/wp-content/themes/sleepinglion/header.php:34
-msgid "Site Map"
-msgstr "사이트맵"
 
 #: /home/toughjjh/Documents/Aptana Studio 3
 #: Workspace/dojisa/wp-content/themes/sleepinglion/author.php:6
@@ -105,7 +138,7 @@ msgid "Author Archives: %s"
 msgstr "작성자 \"%s\"의 글"
 
 #: /home/toughjjh/Documents/Aptana Studio 3
-#: Workspace/dojisa/wp-content/themes/sleepinglion/search.php:5
+#: Workspace/dojisa/wp-content/themes/sleepinglion/search.php:6
 #, php-format
 msgid "Search Results for: %s"
 msgstr "검색어 \"%s\" 검색결과"
