@@ -223,7 +223,6 @@ hgroup h3 {color:#333}
 
 
 
-
 .triangle {background-position:top center;background-repeat:no-repeat;height:70px;margin:0;padding:0}
 #sl_main_news .triangle {background-image:url('/wp-content/uploads/page_img/bg_point_brown.png')}
 #sl_main_field .triangle {background-image:url('/wp-content/uploads/page_img/bg_point_red.png')}
@@ -292,6 +291,10 @@ hgroup h3 {color:#333}
 .sl_post img.img-responsive {width:100%;height:auto}
 .sl_post_footer .dd {font-size:30px;text-align:center}
 .sl_post_footer .social_link {margin-top:30px}
+
+.category_speech {position:relative;padding:20px;border:1px dotted #ccc}
+.category_speech h2 {border-bottom:1px solid #ccc;padding: 0 0 7px}
+.category_speech .date {position:absolute;top:30px;right:20px;font-size:13px}
 
 .mainfesto_category .content {display:none}
 .boxRed {

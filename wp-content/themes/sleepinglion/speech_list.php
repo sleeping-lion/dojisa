@@ -1,4 +1,4 @@
-<article class="sl_post" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>	
+<article class="sl_post category_speech" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>	
 	<h2><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" ><?php the_title(); ?></a></h2>
 	<p class="date"><?php the_date('Y.m.d'); ?></p>
 	
