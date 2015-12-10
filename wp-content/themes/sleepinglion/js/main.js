@@ -29,6 +29,11 @@ $(document).ready(function(){
 		return false;
 	});
 	
+	$('#myModal').on('shown.bs.modal', function () {
+		  $('#myModal input:first').focus()
+	});
+	
+	/*
 	$("#search_btn").click(function(){
 		if($("#top_right").is(':visible')) {
 			$("#top_right").hide();
@@ -37,7 +42,7 @@ $(document).ready(function(){
 			$("header form input:first").focus();
 		}
 		return false;
-	});
+	});*/
 	
 	$("#menu-gnb>li>a").mouseover(function(){
 		if($("#mobile_menu").is(':visible'))

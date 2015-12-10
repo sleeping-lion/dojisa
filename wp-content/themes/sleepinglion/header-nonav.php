@@ -22,8 +22,12 @@
 </head>
 <body <?php body_class() ?>>
 <header id="header">
-	<div class="container-fluid">	
+	<div class="container">
 		<div class="row">
+<div id="small_menu">
+	<a id="mobile_menu" href=""><span class="glyphicon glyphicon-menu-hamburger"></span><span class="text">메뉴</span></a>
+	<a id="search_btn" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-search"></span><span class="text">검색</span></a>
+</div>		
 			<div class="col-md-12 col-lg-9">
 				<h1><a href="<?php echo home_url('/') ?>" title="<?php echo get_bloginfo() ?>"><?php echo get_bloginfo() ?></a></h1>
 				<?php require ABSPATH.'wp-content'.DIRECTORY_SEPARATOR.'cache'.DIRECTORY_SEPARATOR.'main_menu.html' ?>
@@ -42,10 +46,10 @@
         		<a href="http://blog.naver.com/npil2580" target="_blank" aria-label="Justify" class="btn btn-default" type="button" title="새창에서 열림(Blog)">B</a>
         	</div>
         	<form action="" style="float:right">
-      		<div class="input-group form-group-sm">
+      		<div class="input-group form-group-md">
       			<input type="search" class="form-control" <?php if(isset($_GET['s'])): ?>value="<?php echo $_GET['s'] ?>"<?php endif ?>" placeholder="검색어를 넣어주세요" style="width:140px">
       			<span class="input-group-btn">
-      				<button class="btn btn-default btn-sm" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+      				<button class="btn btn-default btn-md" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
       			</span>
       			</div>
       		</form>

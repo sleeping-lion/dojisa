@@ -22,8 +22,12 @@
 </head>
 <body <?php body_class() ?>>
 <header id="header">
-	<div class="container">	
+	<div class="container">			
 		<div class="row">
+<div id="small_menu">
+	<a id="mobile_menu" href=""><span class="glyphicon glyphicon-menu-hamburger"></span><span class="text">메뉴</span></a>
+	<a id="search_btn" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-search"></span><span class="text">검색</span></a>
+</div>	
 			<div class="col-xs-12">
 				<h1><a href="<?php echo home_url('/') ?>" title="<?php echo get_bloginfo() ?>"><?php echo get_bloginfo() ?></a></h1>									
 				<?php require ABSPATH.'wp-content'.DIRECTORY_SEPARATOR.'cache'.DIRECTORY_SEPARATOR.'main_menu.html' ?>
@@ -37,10 +41,10 @@
 				</div>
 				<div class="col-lg-12">
         	<form action="/">
-      		<div class="input-group form-group-sm">
+      		<div class="input-group form-group-md">
       <input type="search" name="s" class="form-control" placeholder="검색어를 넣어주세요">
       <span class="input-group-btn">
-      				<button class="btn btn-default btn-sm" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+      				<button class="btn btn-default btn-md" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
       			</span>
       			</div>
       		</form>

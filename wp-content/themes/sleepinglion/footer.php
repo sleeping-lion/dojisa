@@ -26,5 +26,29 @@
 	</div>
 </footer>
 <?php wp_footer() ?>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" style="margin:20px 0 0">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title"><?php echo __('Search','sleepinglion') ?></h4>
+      </div>
+      <div class="modal-body">
+        	<form action="/">
+      		<div class="input-group form-group-lg">
+      <input type="search" name="s" class="form-control" placeholder="검색어를 넣어주세요">
+      <span class="input-group-btn">
+      				<button class="btn btn-default btn-lg" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+      			</span>
+      			</div>
+      		</form> 	
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 </body>
 </html>
