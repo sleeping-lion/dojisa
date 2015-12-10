@@ -883,7 +883,9 @@ a.big-button, a.small-button, a.icon-button { cursor: pointer; }
 #management_card article .content li {margin-bottom:10px}
 
 #sl_bottom_link .next {text-align:right}
-
+.pagination {float:left;width:100%}
+  
+  
 #sitemap #primary_nav_menu li {margin:1% 0}
 #sitemap #primary_nav_menu li a {display:block;padding:3px 5px 5px}
 #sitemap #primary_nav_menu {padding:2% 5%;background:#eee;}
@@ -969,6 +971,7 @@ footer .social_link {float:right}
   #profile_tab_menu li {float:left;width:50%}
   .tabs-left .et-tabs-control li a {background:#eee}
   .tabs-left .et-tabs-control li.active a {background:#fff}
+
 	#sl_main_message h1 {text-align:center;font-size:1.5em;margin:0;padding:10px 0}
 	#sl_main_message h1 br {display:none}	
 	#sl_main_field article p {margin:2% 0}		
