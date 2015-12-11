@@ -154,6 +154,15 @@ aside #current_post,aside #menu_link,aside #side_banner {float:left;width:100%;m
 #single_content .blog_header .date {margin-top:10px}
 #respond {clear:both}
 
+#add_menu {margin:20px 0 0}
+#add_menu li {list-style:none}
+.category_list {margin:0;padding:0}
+
+#select_menu {position:absolute;top:50%;left:35%;margin:0;padding:0;display:none}
+#select_menu li {list-style:none;text-align:center;margin:0 0 5px;padding:0}
+#select_menu li a {text-align:left;display:block;padding:5px 10px;background:#333;border-radius:5px;color:#fff}
+#select_menu li a:hover {background:#333;color:#fff;font-weight:bold}
+
 /* content */
 hgroup {text-align:center;color:#000}
 hgroup h2 {font-weight:bold}

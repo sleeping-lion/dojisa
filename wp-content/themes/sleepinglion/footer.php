@@ -36,7 +36,7 @@
       <div class="modal-body">
         	<form action="/">
       		<div class="input-group form-group-lg">
-      <input type="search" name="s" class="form-control" placeholder="검색어를 넣어주세요">
+      <input type="search" name="s" <?php if(isset($_GET['s'])): ?>value="<?php echo $_GET['s'] ?>"<?php endif ?> class="form-control" placeholder="검색어를 넣어주세요">
       <span class="input-group-btn">
       				<button class="btn btn-default btn-lg" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
       			</span>

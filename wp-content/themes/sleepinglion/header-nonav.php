@@ -18,21 +18,21 @@
 	<!--[if lt IE 9]>
 		<link rel="stylesheet" type="text/css" href="/wp-content/themes/sleepinglion/css/ie.css" />  			
 		<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->  
+	<![endif]-->
 </head>
 <body <?php body_class() ?>>
 <header id="header">
-	<div class="container">
+	<div class="container">	
 		<div class="row">
 <div id="small_menu">
 	<a id="mobile_menu" href=""><span class="glyphicon glyphicon-menu-hamburger"></span><span class="text">메뉴</span></a>
 	<a id="search_btn" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-search"></span><span class="text">검색</span></a>
-</div>		
-			<div class="col-md-12 col-lg-9">
+</div>
+			<div class="col-xs-12">
 				<h1><a href="<?php echo home_url('/') ?>" title="<?php echo get_bloginfo() ?>"><?php echo get_bloginfo() ?></a></h1>
 				<?php require ABSPATH.'wp-content'.DIRECTORY_SEPARATOR.'cache'.DIRECTORY_SEPARATOR.'main_menu.html' ?>
 			</div>
-			<div id="top_right" class="visible-lg col-lg-3">
+			<div id="top_right">
 				<div id="top_menu" class="col-lg-12">
 					<ul>
 						<li><a href="http://www.gg.go.kr" title="새창으로 열림(경기도 홈페이지)" target="_blank"><?php echo __('GG Home Page','sleepinglion') ?></a></li>
@@ -40,15 +40,10 @@
 					</ul>
 				</div>
 				<div class="col-lg-12">
-					<div class="btn-group btn-group-sm" style="float:right">
-        		<a href="https://twitter.com/yesKP" target="_blank" aria-label="Left Align" class="btn btn-default" type="button" title="새창에서 열림(Twitter)">T</a>
-        		<a href="https://www.facebook.com/NamKyungpil" target="_blank" aria-label="Center Align" class="btn btn-default" type="button" title="새창에서 열림(Facebook)">F</a>
-        		<a href="http://blog.naver.com/npil2580" target="_blank" aria-label="Justify" class="btn btn-default" type="button" title="새창에서 열림(Blog)">B</a>
-        	</div>
-        	<form action="" style="float:right">
+        	<form action="/">
       		<div class="input-group form-group-md">
-      			<input type="search" class="form-control" <?php if(isset($_GET['s'])): ?>value="<?php echo $_GET['s'] ?>"<?php endif ?>" placeholder="검색어를 넣어주세요" style="width:140px">
-      			<span class="input-group-btn">
+      <input type="search" name="s" <?php if(isset($_GET['s'])): ?>value="<?php echo $_GET['s'] ?>"<?php endif ?> class="form-control" placeholder="검색어를 넣어주세요" />
+      <span class="input-group-btn">
       				<button class="btn btn-default btn-md" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
       			</span>
       			</div>
@@ -63,4 +58,4 @@
 	<!--  open main -->
 	<div id="main">
 		<div id="top_image">&nbsp;</div>
-		
+	

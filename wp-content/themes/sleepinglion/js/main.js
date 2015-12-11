@@ -22,7 +22,15 @@ $(document).ready(function(){
 		  }
 		});	
 	
-	
+	$("#no_link").click(function(){
+		if($("#select_menu").is(':visible')) {
+			$("#select_menu").fadeOut();
+		} else {
+			$("#select_menu").fadeIn();
+		}
+		
+		return false;
+	});
 	
 
 

@@ -199,19 +199,23 @@ if(count($slide_info)>0):
 <div class="col-md-12">
     	<div class="col-xs-6 col-sm-4 col-md-3">    	
       	<a href="/propose" title=""><img width="175" height="175" src="/wp-content/themes/sleepinglion/images/banner01_01.png" alt="" class="img-circle hidden-xs" /></a>
-      	<h3><a href="/propose" title="도지사에게 바란다">도지사에게 바란다</a></h3>
+      	<h3><a href="/propose" title="도지사에게 바란다">도지사에게 바란다</a></h3>      	
     	</div>
     	<div class="col-xs-6 col-sm-4 col-md-3">
-      	<a href="/archives/85742" title=""><img width="175" height="175" src="/wp-content/themes/sleepinglion/images/banner01_02.png" alt="" class="img-circle hidden-xs" /></a>
-      	<h3><a href="/archives/85742" title="Next 경기를 소개합니다.">Next 경기를 소개합니다</a></h3>
+      	<a href="http://ebook.gg.go.kr/20150430_101548" title="새창으로 열림(Next 경기를 소개합니다)" target="_blank"><img width="175" height="175" src="/wp-content/themes/sleepinglion/images/banner01_02.png" alt="" class="img-circle hidden-xs" /></a>
+      	<h3><a href="http://ebook.gg.go.kr/20150430_101548" title="새창으로 열림(Next 경기를 소개합니다)" target="_blank">Next 경기를 소개합니다</a></h3>
     	</div>
     	<div class="col-xs-6 col-sm-4 col-md-3">
       	<a href="/management_card" title=""><img width="175" height="175" src="/wp-content/themes/sleepinglion/images/banner01_03.png" alt="" class="img-circle hidden-xs" /></a>
       	<h3><a href="/management_card" title="민선 6기 공약 실천 계획">민선 6기 공약 실천 계획</a></h3>
     	</div>
-    	<div class="col-xs-6  hidden-sm col-md-3">
-      	<a href="/vision" title=""><img width="175" height="175" src="/wp-content/themes/sleepinglion/images/banner01_04.png" alt="" class="img-circle hidden-xs" /></a>
-      	<h3><a href="/vision" title="민선 6기 1주년 성과와 비전">민선 6기 1주년 성과와 비전</a></h3>
+    	<div class="col-xs-6 hidden-sm col-md-3" id="no_link">
+      	<a href="http://ebook.gg.go.kr/20150630_124817" title="새창으로 열림(민선 6기 1주년 성과와 비전)" target="_blank"><img width="175" height="175" src="/wp-content/themes/sleepinglion/images/banner01_04.png" alt="" class="img-circle hidden-xs" /></a>
+      	<h3><a href="http://ebook.gg.go.kr/20150630_124817" title="새창으로 열림(민선 6기 1주년 성과와 비전" target="_blank">민선 6기 1주년 성과와 비전</a></h3>
+      	<ul id="select_menu">
+      		<li><a href="http://ebook.gg.go.kr/20150630_124817" target="_blank" title="새창으로 열림(E-Book 보기)">E-Book 보기</a></li>
+      		<li><a href="http://www.gg.go.kr/wp-content/uploads/2015/07/gg_2015.pdf" target="_blank" title="새창으로 열림(PDF 보기)">PDF 보기</a></li>
+      	</ul>      	
     	</div>
   </div>
 

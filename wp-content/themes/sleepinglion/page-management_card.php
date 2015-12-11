@@ -3,7 +3,7 @@
 	<div class="container">
 		<div class="row">
 			<div id="sub_main" class="col-sm-12 col-lg-9">
-				<h1><?php the_title(); ?></h1>					
+				<h1><?php the_title(); ?></h1>			
 				<section id="management_card">				
 <?php
 $show=false;

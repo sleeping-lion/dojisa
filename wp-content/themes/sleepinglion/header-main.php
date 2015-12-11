@@ -42,7 +42,7 @@
 				<div class="col-lg-12">
         	<form action="/">
       		<div class="input-group form-group-md">
-      <input type="search" name="s" class="form-control" placeholder="검색어를 넣어주세요">
+      <input type="search" name="s" class="form-control" placeholder="검색어를 넣어주세요" />
       <span class="input-group-btn">
       				<button class="btn btn-default btn-md" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
       			</span>
