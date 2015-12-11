@@ -1,11 +1,8 @@
 <article class="sl_post" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php if(has_post_thumbnail()): ?>
-		<?php $defalt_arg =array('class' => "img-responsive",'width'=>false,'height'=>false); ?>
 		<a  href="<?php the_permalink(); ?>">
-			
-<? if( has_post_thumbnail( $post_id ) ): ?>
-        <img title="image title" alt="thumb image" class="img-responsive"  src="<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>" />
-<? endif; ?></a>
+		<?php the_post_thumbnail('medium',array('class' => "img-responsive",'width'=>false,'height'=>false)); ?>
+		</a>
 	<?php endif ?>
 	
 	<h2><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" ><?php the_title(); ?></a></h2>

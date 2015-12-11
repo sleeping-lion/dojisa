@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: sl\n"
-"POT-Creation-Date: 2015-12-10 15:10+0900\n"
-"PO-Revision-Date: 2015-12-10 15:11+0900\n"
+"POT-Creation-Date: 2015-12-11 09:44+0900\n"
+"PO-Revision-Date: 2015-12-11 09:44+0900\n"
 "Last-Translator: \n"
 "Language-Team: sl <admin@sleepinglion.pe.kr>\n"
 "Language: korean\n"
@@ -35,7 +35,7 @@ msgstr "사이트맵"
 #: Workspace/dojisa/wp-content/themes/sleepinglion/page_content.php:6
 #: Workspace/dojisa/wp-content/themes/sleepinglion/speech_list.php:5
 #: Workspace/dojisa/wp-content/themes/sleepinglion/content.php:33
-#: Workspace/dojisa/wp-content/themes/sleepinglion/single_content.php:8
+#: Workspace/dojisa/wp-content/themes/sleepinglion/single_content.php:15
 msgid "Read More"
 msgstr "더보기"
 
@@ -76,23 +76,23 @@ msgid "Previous page"
 msgstr "이전 페이지"
 
 #: /home/toughjjh/Documents/Aptana Studio 3
-#: Workspace/dojisa/wp-content/themes/sleepinglion/functions.php:45
-#: Workspace/dojisa/wp-content/themes/sleepinglion/functions.php:46
+#: Workspace/dojisa/wp-content/themes/sleepinglion/functions.php:59
+#: Workspace/dojisa/wp-content/themes/sleepinglion/functions.php:60
 msgid "Manifesto"
 msgstr ""
 
 #: /home/toughjjh/Documents/Aptana Studio 3
-#: Workspace/dojisa/wp-content/themes/sleepinglion/functions.php:47
+#: Workspace/dojisa/wp-content/themes/sleepinglion/functions.php:61
 msgid "New Manifesto"
 msgstr ""
 
 #: /home/toughjjh/Documents/Aptana Studio 3
-#: Workspace/dojisa/wp-content/themes/sleepinglion/functions.php:48
+#: Workspace/dojisa/wp-content/themes/sleepinglion/functions.php:62
 msgid "Search Manifesto"
 msgstr ""
 
 #: /home/toughjjh/Documents/Aptana Studio 3
-#: Workspace/dojisa/wp-content/themes/sleepinglion/functions.php:75
+#: Workspace/dojisa/wp-content/themes/sleepinglion/functions.php:89
 msgid "Manifesto Category"
 msgstr ""
 
@@ -136,6 +136,12 @@ msgstr "해당 게시물이 없습니다."
 #, php-format
 msgid "Author Archives: %s"
 msgstr "작성자 \"%s\"의 글"
+
+#: /home/toughjjh/Documents/Aptana Studio 3
+#: Workspace/dojisa/wp-content/themes/sleepinglion/single_content.php:8
+#: Workspace/dojisa/wp-content/themes/sleepinglion/single_content.php:25
+msgid "list"
+msgstr "목록으로"
 
 #: /home/toughjjh/Documents/Aptana Studio 3
 #: Workspace/dojisa/wp-content/themes/sleepinglion/search.php:6

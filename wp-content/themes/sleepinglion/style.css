@@ -90,10 +90,14 @@ header h1 a:active {color:red}
 header nav {position:absolute;top:0;float:left;margin:0;padding:0;z-index:999;overflow:hidden}
 header nav div.menu-primary-container {float:left;width:100%;margin:20px 0 0}
 header nav ul { float: left; margin: 0; padding: 0}
+header nav ul.sub-menu {visibility:hidden }
 header nav li { float: left; list-style: none; margin: 0}
 header nav ul > li > a { float: left; display:block;width:100%;padding:10px 0;color:#f2f2f2;font-weight:600;}
+header nav ul > li:hover > ul.sub-menu {visibility:visible}
+
 header nav a {color: #191919;font-weight:bold;text-decoration: none;font-size:22px;text-align:center}
 header nav a:hover {color:#000;text-decoration:none;font-weight:bolder}
+
 header nav a:visited {color:#666}
 header nav a:active {color:red}
 header nav ul li ul {float:left;width:100%;margin:0}	
@@ -1001,7 +1005,6 @@ footer .social_link {float:right}
 	header nav {height:300px}
 	header nav ul li ul li a {text-align:center}
 	header #small_menu a {font-size:35px;line-height:35px}	
-  .gnb > li{height:50px}
   
   
   
