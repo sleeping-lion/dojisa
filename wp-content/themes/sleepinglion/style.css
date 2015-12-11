@@ -912,7 +912,8 @@ footer {float:left;width:100%;padding:0;background:#3f4446;color:#fff;}
 footer .container {margin-top:15px}
 footer address {margin:0px 0 0;padding:0;color:#fff;line-height:150%;display:inline-block}
 footer li {float:right;list-style:none}
-footer li a {line-height:37px} 
+footer li a {line-height:37px}
+footer li a:hover {color:#fff} 
 footer p,footer a {color:#fff}
 footer ul:nth-child(2) li:nth-child(2):after {content:'|'}
 footer #home_sitemap_link {float:right;color:#999}
