@@ -5,7 +5,7 @@ add_theme_support('post-thumbnails');
 add_theme_support('post-formats',array('description'));
 
 // Menus
-register_nav_menus(array('main_menu' => 'Main Menu', ));
+register_nav_menus(array('main_menu' => 'Main Menu'));
 
 //  thumbnails
 set_post_thumbnail_size( 200, 200 );

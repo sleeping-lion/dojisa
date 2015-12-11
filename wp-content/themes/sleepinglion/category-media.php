@@ -6,7 +6,6 @@
 				<h1 class="h1-page-title"><?php single_cat_title(); ?></h1>
 					<?php
 				while(have_posts()):the_post();
-				global $more; $more = 0;
 				get_template_part('speech_list');
 				endwhile; ?>		
 					<div class="pagination"><?php 

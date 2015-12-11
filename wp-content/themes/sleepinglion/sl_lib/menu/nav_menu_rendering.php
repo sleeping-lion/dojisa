@@ -7,7 +7,6 @@ function my_wp_nav_menu_objects_sub_menu($sorted_menu_items, $args) {
 		if (isset($args->term_id)) {
 			$term_id=$args->term_id;
 			
-			echo $term_id;
 			foreach ($sorted_menu_items as $menu_item) {
 				if ($menu_item -> object_id == $term_id) {
 					$current_id = $menu_item -> menu_item_parent;
