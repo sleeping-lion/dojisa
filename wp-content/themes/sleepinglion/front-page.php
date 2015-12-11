@@ -206,8 +206,8 @@ if(count($slide_info)>0):
       	<h3><a href="http://ebook.gg.go.kr/20150430_101548" title="새창으로 열림(Next 경기를 소개합니다)" target="_blank">Next 경기를 소개합니다</a></h3>
     	</div>
     	<div class="col-xs-6 col-sm-4 col-md-3">
-      	<a href="/management_card" title=""><img width="175" height="175" src="/wp-content/themes/sleepinglion/images/banner01_03.png" alt="" class="img-circle hidden-xs" /></a>
-      	<h3><a href="/management_card" title="민선 6기 공약 실천 계획">민선 6기 공약 실천 계획</a></h3>
+      	<a href="/archives/category/action" title="민선 6기 공약 실천 계획"><img width="175" height="175" src="/wp-content/themes/sleepinglion/images/banner01_03.png" alt="" class="img-circle hidden-xs" /></a>
+      	<h3><a href="/archives/category/action" title="민선 6기 공약 실천 계획">민선 6기 공약 실천 계획</a></h3>
     	</div>
     	<div class="col-xs-6 hidden-sm col-md-3">
       	<a href="http://ebook.gg.go.kr/20150630_124817" title="새창으로 열림(민선 6기 1주년 성과와 비전)" class="no_link" target="_blank"><img width="175" height="175" src="/wp-content/themes/sleepinglion/images/banner01_04.png" alt="" class="img-circle hidden-xs" /></a>
