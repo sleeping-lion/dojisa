@@ -87,6 +87,9 @@ Soliloquy has many Addons that extend its default functionality to make it do in
 
 == Changelog ==
 
+= 2.4.0.5 =
+* Fix: Close icon display on modals for WordPress 4.4
+
 = 2.4.0.4 =
 * Fix: Prevent keyboard events stealing focus from input and text areas
 
