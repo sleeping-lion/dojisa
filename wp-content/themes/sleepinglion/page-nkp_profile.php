@@ -2,7 +2,7 @@
 <div id="sub_main_wrap">
 <div class="container">	
 	<div class="row">
-		<div id="sub_main" class="col-sm-12 col-md-8 col-lg-9">
+		<div id="sub_main" class="col-md-12 col-lg-9">
 			
 <article  id="profile" class="tabs-left profile-tab et_sliderfx_fade et_sliderauto_false et_sliderauto_speed_5000 et_slidertype_left_tabs clearfix">
 
