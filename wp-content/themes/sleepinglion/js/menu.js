@@ -8,16 +8,17 @@ $(document).ready(function(){
 		  $('#myModal input:first').focus()
 	});
 	
-	/*
-	$("#search_btn").click(function(){
-		if($("#top_right").is(':visible')) {
-			$("#top_right").hide();
+	$("#mobile_menu").click(function(){
+		if($("#gnb").is(':visible')) {
+			$("#gnb").animate({'width':'0'},'fast',function(){$(this).hide()});
 		} else {
-			$("#top_right").show();
-			$("header form input:first").focus();
+			
+			$("#gnb").show().animate({'width':'50%'},'fast');
 		}
-		return false;
-	});*/
+		return false;		
+	});	
+	
+	/*
 	
 	$("#menu-gnb>li>a").mouseover(function(){
 		if($("#mobile_menu").is(':visible'))
@@ -29,15 +30,7 @@ $(document).ready(function(){
 		
 	});
 	
-	$("#mobile_menu").click(function(){
-		if($("#gnb").is(':visible')) {
-			$("#gnb").animate({'width':'0'},'fast',function(){$(this).hide()});
-		} else {
-			
-			$("#gnb").show().animate({'width':'50%'},'fast');
-		}
-		return false;		
-	});
+
 	
 	$("#menu-gnb>li").mouseout(function(){
 		if($("#mobile_menu").is(':visible'))
@@ -80,6 +73,6 @@ $(document).ready(function(){
 		$("#main").off('mouseover');
 		$('#menu-gnb>li>a').off('blur');
 	});
-	
+	*/
 	
 });

@@ -111,7 +111,10 @@
 
 /* Styles for screens that are less than 768px */
 @media only screen and (max-width: 768px) {
-	.su-tabs-nav span { display: block;width:100% }
+	
+	.su-tabs-nav span { display: block;width:100%;border-right:1px solid #ccc}
+	.su-tabs-nav span {margin-top:-1px}
+	.su-tabs-nav span:first-child {margin-top:0}
 	.su-tabs-vertical .su-tabs-nav {
 		float: none;
 		width: auto;
