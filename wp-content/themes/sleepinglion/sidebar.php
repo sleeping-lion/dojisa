@@ -13,11 +13,14 @@
 		<?php endif ?>
 	</div>
 	<div id="menu_link">
-		<h3>소통현장속으로</h3>
+		<h3>홍보배너</h3>
 		<?php require ABSPATH.'wp-content'.DIRECTORY_SEPARATOR.'cache'.DIRECTORY_SEPARATOR.'aside_menu.html' ?>   
 	</div>
 	<div id="side_banner">
-		<a href="" title="">
+		<a href="http://27.101.100.158/propose" title="도지사에게 바란다">
+			<img src="/wp-content/themes/sleepinglion/images/banner_propose.jpg" width="262" height="260" alt="" class="img-responsive" />
+		</a>
+    <a href="http://invest.gg.go.kr" title="새창으로 열림(투자유치)"  target="_blank">
 			<img src="/wp-content/themes/sleepinglion/images/banner_invest.jpg" width="262" height="260" alt="" class="img-responsive" />
 		</a>
 		<br />
