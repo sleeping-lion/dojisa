@@ -847,22 +847,19 @@ a.big-button, a.small-button, a.icon-button { cursor: pointer; }
 }
 
 /* 도자사에게 바란다 시작 */
-#back_g {padding-bottom:35px;margin:3% 0;background:url('/wp-content/themes/sleepinglion/images/bg_point_sbrown.png') no-repeat bottom center }
-#back_g article {padding:3%;text-align:center;background:url('/wp-content/themes/sleepinglion/images/sbg_brown.jpg') repeat }
-#back_g article h2 {color:#fff;font-weight:bold;margin-bottom:20px;font-size:26px}
-#back_g article h2 span {color:#fc0}
-#back_g article h3 {position:absolute;top:50px;right:15px;width:50%;color:#fff;font-weight:bold;background:#bc4646;padding:2% 0;font-size:20px}
-
-#propose_menus a {display:block;margin:0;padding:0;border:1px solid #ccc;height:380px}
-#propose_menus a:hover {text-decoration:none;background:#993}
-#propose_menus article {text-align:center;padding:40px 20px 10px}
-#propose_menus article .specail {background:#993;padding:10px;font-weight:bold;color:#fff}
-#propose_menus a:hover article .specail {background:#fff;color:#993}
-#propose_menus article .icon {display:block;width:135px;height:135px;margin:0 auto;background-image:url('/wp-content/themes/sleepinglion/images/icon_wish.png');background-repeat:no-repeat}
-#propose_menus .article1 .icon {background-position:top center;}
-#propose_menus .article2 .icon {background-position:center center;}
-#propose_menus .article3 .icon {background-position:bottom center;}
-#propose_menus article h3 {font-weight:bold;margin:30px 0 20px}
+#wish_menus a {display:block;margin:0;padding:0;border:1px solid #ccc;height:110px;overflow:hidden}
+#wish_menus a:hover {text-decoration:none;background:#993}
+#wish_menus article {text-align:center;margin:0;padding:10px}
+#wish_menus article div {padding:0 0 0 90px;text-align:left}
+#wish_menus article div p {font-size:12px}
+#wish_menus article div p b {color:#bc4646}
+#wish_menus article h3 {width:80%;margin:0 10%;color:#fff;font-weight:bold;background:#bc4646;padding:2% 0;font-size:20px}
+#wish_menus article .icon {position:absolute;top:20px;left:10px;display:block;width:70px;height:70px;margin:0 auto;background-image:url('/wp-content/themes/sleepinglion/images/icon_wish.png');background-repeat:no-repeat}
+#wish_menus .article1 .icon {background-position:top center;}
+#wish_menus .article2 .icon {background-position:center center;}
+#wish_menus .article3 .icon {background-position:bottom center;}
+#wish_menus article h2 {font-weight:bold;margin:10px 0}
+#wish_menus article h2 b {color:#bc4646}
 /* 도지사에게 바란다 끝 */
 
 
