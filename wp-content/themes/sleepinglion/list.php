@@ -10,7 +10,7 @@
 	
 	<?php if(get_the_tag_list() != ''): ?>
 			<div class="tags">
-				<span class="glyphicon glyphicon-tags" aria-hidden="true"></span>
+				<span class="icon"></span>
 			<?php the_tags('<span style="color:red">#</span>', '&nbsp; <span style="color:red">#</span>', '<br />'); ?>			
 			</div>
 	<?php endif ?>
