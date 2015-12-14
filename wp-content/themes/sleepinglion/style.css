@@ -90,10 +90,10 @@ header h1 a:active {color:red}
 header nav {position:absolute;top:0;float:left;margin:0;padding:0;z-index:999;overflow:hidden}
 header nav div.menu-primary-container {float:left;width:100%;margin:20px 0 0}
 header nav ul { float: left; margin: 0; padding: 0}
-header nav ul.sub-menu {visibility:hidden }
+header nav ul.sub-menu {height:0px; transition:150ms ease;border-bottom-right-radius:5px;;border-bottom-left-radius:5px;}
 header nav li { float: left; list-style: none; margin: 0}
 header nav ul > li > a { float: left; display:block;width:100%;padding:10px 0;color:#f2f2f2;font-weight:600;}
-header nav ul > li:hover > ul.sub-menu {visibility:visible}
+header nav ul > li:hover > ul.sub-menu {height:100%;}
 header nav a {color: #191919;font-weight:bold;text-decoration: none;font-size:22px;text-align:center}
 header nav a:hover {color:#000;text-decoration:none;font-weight:bolder}
 header nav a:visited {color:#666}
@@ -245,6 +245,7 @@ hgroup h3 {color:#333}
  .gnb > li > a{color:#fff;vertical-align:top;line-height:1;color:#fff}
  .gnb > li > ul{padding:10px 35px;text-align:left} /* 2dep*/
  .gnb > li > ul > li{float:left;width:100%;border-bottom:1px solid #e1e1e1}
+ .gnb > li > ul > li:last-child {border:none}
  .gnb > li > ul > li > a:hover{color:#353535;font-weight:600}
  .gnb > li > ul > li > ul{border-top:1px solid #e1e1e1;padding:5px 0 5px 10px}/* 3dep-style */
  .gnb > li > ul > li > ul > li a:hover{color:#0084cc;}
@@ -970,9 +971,7 @@ footer .social_link {float:right}
 	#sl_main_message q div{ margin-bottom:20px}	
 		
 	#sl_main_sub_message h3 {font-size:13px}
-	#sl_main_sub_message .col-md-12 div {margin-bottom:1%}
-	#sl_main_sub_message .col-md-12 .col-xs-6 h3 a {display:block;background:#f6f6f6;padding:20px;color:#333}
-	#sl_main_sub_message .col-md-12 .col-xs-6 h3 a:hover {background:#999933}	
+
 	#sl_main_field article {border-bottom:1px solid #ccc}	 
 	#sl_main_field article p {line-height:150%}
 	#sl_menu_content article {padding:5%} 
