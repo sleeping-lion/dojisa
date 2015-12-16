@@ -269,13 +269,13 @@ hgroup h3 {color:#333}
 
 #sub_top_nav_menu {float:left;width:100%;height:60px}
 #sub_top_nav_menu ul.col-sm-12 {position:relative;float:left;margin:0;padding:0;border-left:1px solid #ccc;border-right:1px solid #ccc;height:60px}
-#sub_top_nav_menu li.sub_menu {position:relative;float:left;list-style:none;margin:0;padding:0;overflow:hidden;height:60px}
+#sub_top_nav_menu li.sub_menu {position:relative;float:left;list-style:none;margin:0;padding:0;overflow:hidden}
 #sub_top_nav_menu li.over {overflow: visible}
 #sub_top_nav_menu li.depth-home a {display:block;padding:18px}
-#sub_top_nav_menu li.sub_menu a {display:block;padding:18px}
-#sub_top_nav_menu li.sub_menu >span {display:block;position:absolute;top:20px;right:20px;cursor:pointer;z-index:80}
+#sub_top_nav_menu li.sub_menu a {display:block}
+#sub_top_nav_menu li.sub_menu >span {display:block;position:absolute;right:20px;cursor:pointer;z-index:80}
 #sub_top_nav_menu li.sub_menu a span.text{float:left;width:1px;height:1px;display:block;text-indent:-9999px}
-#sub_top_nav_menu li.sub_menu .menu {position:absolute;top:0;left:0;z-index:0;margin:0;padding:0;width:100%;background:#fff;border:1px solid #ccc;border-top:none;height:61px}
+#sub_top_nav_menu li.sub_menu .menu {position:absolute;top:0;left:0;z-index:0;margin:0;padding:0;width:100%;background:#fff;border:1px solid #ccc;border-top:none}
 #sub_top_nav_menu li.over .menu {z-index:5}
 #sub_top_nav_menu li.sub_menu  #sub_nav_menu {left:-1px;border-right:none}
 #sub_top_nav_menu li.sub_menu .menu li {list-style:none;display:none}
@@ -958,8 +958,11 @@ footer .social_link {float:right}
 	hgroup h3 {font-size:120%}
 	
 	#top_image {height:150px;border:none}
-	#sub_top_nav_menu {height:30px}
-		
+	#sub_top_nav_menu {height:35px}
+  #sub_top_nav_menu li.sub_menu {height:35px}
+	#sub_top_nav_menu li.sub_menu a {display:block;padding:10px}
+	#sub_top_nav_menu li.sub_menu >span {top:12px}	
+	
 	#sl_main_news article h2 {margin:2%} 
 	#sub_top_nav_menu li.sub_menu	{width:50%}
 	#sub_top_nav_menu nav ul {border:none}
@@ -1010,10 +1013,13 @@ footer .social_link {float:right}
 	header nav ul li ul li a {text-align:center}
 	header #small_menu a {font-size:35px;line-height:35px}	
   
-  
-  
-	#menu-gnb > li {float:left;width:25%;text-align:center}	
-	#sub_top_nav_menu li.sub_menu	{width:45%}		
+  #sub_top_nav_menu li.sub_menu {height:60px}
+	#menu-gnb > li {float:left;width:25%;text-align:center}
+	#sub_top_nav_menu li.sub_menu .menu {height:61px}
+	#sub_top_nav_menu li.sub_menu	{width:45%}
+	#sub_top_nav_menu li.sub_menu a {display:block;padding:18px}
+	#sub_top_nav_menu li.sub_menu >span {top:20px}	
+	
 	#sub_top_nav_menu li.depth-home {text-align:center;width:10%}	
 	#sl_main_message h1 {text-align:center;font-size:2em;padding:56px 0}
 	#sl_main_sub_message h3 {font-size:20px}
