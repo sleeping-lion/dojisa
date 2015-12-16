@@ -74,7 +74,11 @@ mark, rp, rt, ruby, summary, time {display:inline;}
     width: 100%; /*img width*/
 }
 
+img.alignleft {text-align:left}
+img.aligncenter {text-align:center}
+img.alignright {text-align:right}
 
+img.aligncenter.img-responsive {margin-left:auto;margin-right:auto}
 
 /* header */
 header {position:relative}
@@ -149,7 +153,8 @@ aside #current_post,aside #menu_link,aside #side_banner {float:left;width:100%;m
 #respond {clear:both}
 
 #add_menu {margin:20px 0 0}
-#add_menu li {list-style:none}
+#add_menu li {list-style:none;text-align:right}
+#add_menu li:last-child {text-align:left}
 .category_list {margin:0;padding:0}
 
 #select_menu {position:absolute;top:50%;left:35%;margin:0;padding:0;display:none}
@@ -921,7 +926,7 @@ footer .social_link {float:right}
 	header h1 a:active {color:red}
 	header nav  {position:absolute;top:20px;right:0;width:0;margin:0;padding:0}
 	header nav ul {width:100%;margin:2% 0 0;padding:0;background:#fff;border-radius:5px}
-	header nav ul.sub-menu {visibility:visible}
+	header nav ul.sub-menu {height:100%}
 	header nav ul li,header ul li a {clear:both;float:left;width:100%;text-align:left}
 	header nav ul li {margin:0;padding:0}
 	header nav ul li a {display:block;border-bottom:1px solid #f3f3f3;text-align:left;text-indent:1em;padding:10px;border-radius:5px}
@@ -932,7 +937,7 @@ footer .social_link {float:right}
 	header #small_menu {top:5px}
 	header #small_menu a {font-size:30px;line-height:30px}
 	header #small_menu a#mobile_menu {display:block}
-		
+
 	section hgroup h3 {margin:0;padding:0;width:1px;height:1px;text-indent:-9999px;}
 	#gnb {display:none}
 	
@@ -953,7 +958,8 @@ footer .social_link {float:right}
 	hgroup h3 {font-size:120%}
 	
 	#top_image {height:150px;border:none}
-	
+	#sub_top_nav_menu {height:30px}
+		
 	#sl_main_news article h2 {margin:2%} 
 	#sub_top_nav_menu li.sub_menu	{width:50%}
 	#sub_top_nav_menu nav ul {border:none}

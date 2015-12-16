@@ -5,8 +5,8 @@
 			<div id="sub_main" class="col-sm-12 col-lg-9">		
 				<h1 class="col-sm-12 col-md-6">공약실천계획</h1>
 				<ul id="add_menu" class="visible-md visible-lg col-md-6">
-				  <li class="col-md-6"><a href="http://ebook.gg.go.kr/20151103_165139" target="_blank" title="새창으로 열림(E-book으로 보기)">E-book으로 보기</a></li>
-      		<li class="col-md-6"><a href="http://www.gg.go.kr/wp-content/uploads/2015/11/manifesto.pdf" target="_blank" title="새창으로열림(PDF 보기)">PDF 보기</a></li>
+				  <li class="col-md-6"><a href="http://ebook.gg.go.kr/20151103_165139" target="_blank" title="새창으로 열림(E-book으로 보기)" class="btn btn-default">E-book으로 보기</a></li>
+      		<li class="col-md-6"><a href="http://www.gg.go.kr/wp-content/uploads/2015/11/manifesto.pdf" target="_blank" title="새창으로열림(PDF 보기)" class="btn btn-default">PDF 보기</a></li>
       	</ul>				
 				<section id="management_card"  class="col-sm-12">				
 <?php
