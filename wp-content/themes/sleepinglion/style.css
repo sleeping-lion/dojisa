@@ -152,9 +152,9 @@ aside #current_post,aside #menu_link,aside #side_banner {float:left;width:100%;m
 #single_content .blog_header .date {margin-top:10px}
 #respond {clear:both}
 
-#add_menu {margin:20px 0 0}
-#add_menu li {list-style:none;text-align:right}
-#add_menu li:last-child {text-align:left}
+#add_menu {border:1px solid #ccc;padding:15px 20px;background:url('/wp-content/themes/sleepinglion/images/action_btnbg.jpg') center right no-repeat}
+#add_menu ul {margin:0;padding:0}
+#add_menu li {list-style:none;display:inline-block}
 .category_list {margin:0;padding:0}
 
 #select_menu {position:absolute;top:50%;left:35%;margin:0;padding:0;display:none}
@@ -862,16 +862,16 @@ a.big-button, a.small-button, a.icon-button { cursor: pointer; }
 /* 도지사에게 바란다 끝 */
 
 
-#management_card {margin:40px 0}
+#management_card {margin:20px 0}
 #management_card h2 {
     border-bottom: 1px dotted #dddddd;
-    color: #4b90c9;
+    color: #fff;
     font-size: 24px;
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 15px;
-    padding-bottom: 10px;
-    padding-left: 10px;
+    padding:10px;
+    background-color:#524744;
 }
 #management_card .category_list li.category_name {margin-bottom:50px;list-style:none}
 #management_card article {margin:0 0 5px;padding:0 0 0 20px}
@@ -879,11 +879,12 @@ a.big-button, a.small-button, a.icon-button { cursor: pointer; }
 #management_card article a:hover {background-color:#eee;border-radius:5px;text-decoration:none}
 #management_card h3 {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    border: medium none;
+    border-bottom: 1px solid #e1e1e1;
     color: #666666;
     font-size: 15px;
     font-weight: 600;
     text-shadow: none;
+    
 }
 
 #management_card h3 span {float:right}

@@ -24,9 +24,13 @@ $(document).ready(function(){
 		}
 	}
 	
-	$("#sub_top_nav_menu .sub_menu>span").click(function(){
-		$(this).prev().find('li:visible a').triggerHandler("click");
+	$("#sub_top_nav_menu .sub_menu:eq(1)>span").click(function(){
+		$(this).prev().find('li.current-menu-parent a').triggerHandler("click");		
 	});
+	
+	$("#sub_top_nav_menu .sub_menu:eq(2)>span").click(function(){
+		$(this).prev().find('li.current-menu-item a').triggerHandler("click");		
+	});	
 	
 	$("#sub_top_nav_menu .menu a").click(function(){
 
