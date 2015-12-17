@@ -49,13 +49,7 @@ mark, rp, rt, ruby, summary, time {display:inline;}
 .page-header h1 {float:left;margin:0.7em 0 0;padding:0;font-weight:bold;color:#;}
 .page-header .breadcrumb  {float:right;margin:0}
 .alert-success {clear:both}
-#sl_ad {clear:both;margin-bottom:10px}
-#sl_tag_cloud {position:relative;float:left;width:100%;margin-bottom:100px;border:1px solid #ccc}
-#tags {float:left;width:100%}
-.css1 { font-size: 15px; color:orange}
-.css2 { font-size: 20px; color:#333}
-.css3 { font-size: 30px; color:blue; }
-.css4 { font-size: 45px; color:red;}
+
 
 /* Common Class */
 .arial {font-family:Arial}
@@ -80,7 +74,11 @@ mark, rp, rt, ruby, summary, time {display:inline;}
     width: 100%; /*img width*/
 }
 
+img.alignleft {text-align:left}
+img.aligncenter {text-align:center}
+img.alignright {text-align:right}
 
+img.aligncenter.img-responsive {margin-left:auto;margin-right:auto}
 
 /* header */
 header {position:relative}
@@ -90,10 +88,10 @@ header h1 a:active {color:red}
 header nav {position:absolute;top:0;float:left;margin:0;padding:0;z-index:999;overflow:hidden}
 header nav div.menu-primary-container {float:left;width:100%;margin:20px 0 0}
 header nav ul { float: left; margin: 0; padding: 0}
-header nav ul.sub-menu {visibility:hidden }
+header nav ul.sub-menu {height:0px; transition:150ms ease;border-bottom-right-radius:5px;;border-bottom-left-radius:5px;}
 header nav li { float: left; list-style: none; margin: 0}
 header nav ul > li > a { float: left; display:block;width:100%;padding:10px 0;color:#f2f2f2;font-weight:600;}
-header nav ul > li:hover > ul.sub-menu {visibility:visible}
+header nav ul > li:hover > ul.sub-menu {height:100%}
 header nav a {color: #191919;font-weight:bold;text-decoration: none;font-size:22px;text-align:center}
 header nav a:hover {color:#000;text-decoration:none;font-weight:bolder}
 header nav a:visited {color:#666}
@@ -135,7 +133,7 @@ aside #current_post,aside #menu_link,aside #side_banner {float:left;width:100%;m
 #menu_link li {margin:0;padding:0 0 0 20px;list-style:none;background:url('/wp-content/themes/sleepinglion/images/icon_listbar.jpg') no-repeat center left}
 #menu_link li a {display:block;padding:3px}
 
-#top_image {position:relative;z-index:3;float:left;width:100%;border-top:1px solid red;background:url('/wp-content/uploads/page_img/sub_back.jpg') center center no-repeat;
+#top_image {position:relative;z-index:3;float:left;width:100%;border-top:1px solid red;background:url('/wp-content/themes/sleepinglion/images/sub_back.jpg') center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -155,7 +153,8 @@ aside #current_post,aside #menu_link,aside #side_banner {float:left;width:100%;m
 #respond {clear:both}
 
 #add_menu {margin:20px 0 0}
-#add_menu li {list-style:none}
+#add_menu li {list-style:none;text-align:right}
+#add_menu li:last-child {text-align:left}
 .category_list {margin:0;padding:0}
 
 #select_menu {position:absolute;top:50%;left:35%;margin:0;padding:0;display:none}
@@ -245,6 +244,7 @@ hgroup h3 {color:#333}
  .gnb > li > a{color:#fff;vertical-align:top;line-height:1;color:#fff}
  .gnb > li > ul{padding:10px 35px;text-align:left} /* 2dep*/
  .gnb > li > ul > li{float:left;width:100%;border-bottom:1px solid #e1e1e1}
+ .gnb > li > ul > li:last-child {border:none}
  .gnb > li > ul > li > a:hover{color:#353535;font-weight:600}
  .gnb > li > ul > li > ul{border-top:1px solid #e1e1e1;padding:5px 0 5px 10px}/* 3dep-style */
  .gnb > li > ul > li > ul > li a:hover{color:#0084cc;}
@@ -269,13 +269,13 @@ hgroup h3 {color:#333}
 
 #sub_top_nav_menu {float:left;width:100%;height:60px}
 #sub_top_nav_menu ul.col-sm-12 {position:relative;float:left;margin:0;padding:0;border-left:1px solid #ccc;border-right:1px solid #ccc;height:60px}
-#sub_top_nav_menu li.sub_menu {position:relative;float:left;list-style:none;margin:0;padding:0;overflow:hidden;height:60px}
+#sub_top_nav_menu li.sub_menu {position:relative;float:left;list-style:none;margin:0;padding:0;overflow:hidden}
 #sub_top_nav_menu li.over {overflow: visible}
 #sub_top_nav_menu li.depth-home a {display:block;padding:18px}
-#sub_top_nav_menu li.sub_menu a {display:block;padding:18px}
-#sub_top_nav_menu li.sub_menu >span {display:block;position:absolute;top:20px;right:20px;cursor:pointer;z-index:80}
+#sub_top_nav_menu li.sub_menu a {display:block}
+#sub_top_nav_menu li.sub_menu >span {display:block;position:absolute;right:20px;cursor:pointer;z-index:80}
 #sub_top_nav_menu li.sub_menu a span.text{float:left;width:1px;height:1px;display:block;text-indent:-9999px}
-#sub_top_nav_menu li.sub_menu .menu {position:absolute;top:0;left:0;z-index:0;margin:0;padding:0;width:100%;background:#fff;border:1px solid #ccc;border-top:none;height:61px}
+#sub_top_nav_menu li.sub_menu .menu {position:absolute;top:0;left:0;z-index:0;margin:0;padding:0;width:100%;background:#fff;border:1px solid #ccc;border-top:none}
 #sub_top_nav_menu li.over .menu {z-index:5}
 #sub_top_nav_menu li.sub_menu  #sub_nav_menu {left:-1px;border-right:none}
 #sub_top_nav_menu li.sub_menu .menu li {list-style:none;display:none}
@@ -297,8 +297,8 @@ hgroup h3 {color:#333}
 .sl_post {float:left;width:100%;margin-bottom:10%}
 .sl_post h2 {font-size:20px;color:#333;margin-bottom:2%}
 .sl_post .date {text-align:left;font-size:17px;color:#999}
-.sl_post .tags span.glyphicon-tags {margin-right:10px}
-.sl_post .tags a {color:red;font-size:16px}
+.sl_post .tags span.icon {margin-right:10px;display:inline-block;vertical-align:middle;height:19px;width:39px;background:url('/wp-content/themes/sleepinglion/images/icon_tag.jpg') center left no-repeat}
+.sl_post .tags a {color:red;font-size:16px;line-height:30px}
 .sl_post img.img-responsive {width:100%;height:auto}
 .sl_post_footer .dd {font-size:30px;text-align:center}
 .sl_post_footer .social_link {margin-top:30px}
@@ -846,22 +846,19 @@ a.big-button, a.small-button, a.icon-button { cursor: pointer; }
 }
 
 /* 도자사에게 바란다 시작 */
-#back_g {padding-bottom:35px;margin:3% 0;background:url('/wp-content/themes/sleepinglion/images/bg_point_sbrown.png') no-repeat bottom center }
-#back_g article {padding:3%;text-align:center;background:url('/wp-content/themes/sleepinglion/images/sbg_brown.jpg') repeat }
-#back_g article h2 {color:#fff;font-weight:bold;margin-bottom:20px;font-size:26px}
-#back_g article h2 span {color:#fc0}
-#back_g article h3 {position:absolute;top:50px;right:15px;width:50%;color:#fff;font-weight:bold;background:#bc4646;padding:2% 0;font-size:20px}
-
-#propose_menus a {display:block;margin:0;padding:0;border:1px solid #ccc;height:380px}
-#propose_menus a:hover {text-decoration:none;background:#993}
-#propose_menus article {text-align:center;padding:40px 20px 10px}
-#propose_menus article .specail {background:#993;padding:10px;font-weight:bold;color:#fff}
-#propose_menus a:hover article .specail {background:#fff;color:#993}
-#propose_menus article .icon {display:block;width:135px;height:135px;margin:0 auto;background-image:url('/wp-content/themes/sleepinglion/images/icon_wish.png');background-repeat:no-repeat}
-#propose_menus .article1 .icon {background-position:top center;}
-#propose_menus .article2 .icon {background-position:center center;}
-#propose_menus .article3 .icon {background-position:bottom center;}
-#propose_menus article h3 {font-weight:bold;margin:30px 0 20px}
+#wish_menus a {display:block;margin:0;padding:0;border:1px solid #ccc;height:110px;overflow:hidden}
+#wish_menus a:hover {text-decoration:none;background:#993}
+#wish_menus article {text-align:center;margin:0;padding:10px}
+#wish_menus article div {padding:0 0 0 90px;text-align:left}
+#wish_menus article div p {font-size:12px}
+#wish_menus article div p b {color:#bc4646}
+#wish_menus article h3 {width:80%;margin:0 10%;color:#fff;font-weight:bold;background:#bc4646;padding:2% 0;font-size:20px}
+#wish_menus article .icon {position:absolute;top:20px;left:10px;display:block;width:70px;height:70px;margin:0 auto;background-image:url('/wp-content/themes/sleepinglion/images/icon_wish.png');background-repeat:no-repeat}
+#wish_menus .article1 .icon {background-position:top center;}
+#wish_menus .article2 .icon {background-position:center center;}
+#wish_menus .article3 .icon {background-position:bottom center;}
+#wish_menus article h2 {font-weight:bold;margin:10px 0}
+#wish_menus article h2 b {color:#bc4646}
 /* 도지사에게 바란다 끝 */
 
 
@@ -929,7 +926,7 @@ footer .social_link {float:right}
 	header h1 a:active {color:red}
 	header nav  {position:absolute;top:20px;right:0;width:0;margin:0;padding:0}
 	header nav ul {width:100%;margin:2% 0 0;padding:0;background:#fff;border-radius:5px}
-	header nav ul.sub-menu {visibility:visible}
+	header nav ul.sub-menu {height:100%}
 	header nav ul li,header ul li a {clear:both;float:left;width:100%;text-align:left}
 	header nav ul li {margin:0;padding:0}
 	header nav ul li a {display:block;border-bottom:1px solid #f3f3f3;text-align:left;text-indent:1em;padding:10px;border-radius:5px}
@@ -940,7 +937,7 @@ footer .social_link {float:right}
 	header #small_menu {top:5px}
 	header #small_menu a {font-size:30px;line-height:30px}
 	header #small_menu a#mobile_menu {display:block}
-		
+
 	section hgroup h3 {margin:0;padding:0;width:1px;height:1px;text-indent:-9999px;}
 	#gnb {display:none}
 	
@@ -961,6 +958,10 @@ footer .social_link {float:right}
 	hgroup h3 {font-size:120%}
 	
 	#top_image {height:150px;border:none}
+	#sub_top_nav_menu {height:35px}
+  #sub_top_nav_menu li.sub_menu {height:35px}
+	#sub_top_nav_menu li.sub_menu a {display:block;padding:10px}
+	#sub_top_nav_menu li.sub_menu >span {top:12px}	
 	
 	#sl_main_news article h2 {margin:2%} 
 	#sub_top_nav_menu li.sub_menu	{width:50%}
@@ -970,9 +971,7 @@ footer .social_link {float:right}
 	#sl_main_message q div{ margin-bottom:20px}	
 		
 	#sl_main_sub_message h3 {font-size:13px}
-	#sl_main_sub_message .col-md-12 div {margin-bottom:1%}
-	#sl_main_sub_message .col-md-12 .col-xs-6 h3 a {display:block;background:#f6f6f6;padding:20px;color:#333}
-	#sl_main_sub_message .col-md-12 .col-xs-6 h3 a:hover {background:#999933}	
+
 	#sl_main_field article {border-bottom:1px solid #ccc}	 
 	#sl_main_field article p {line-height:150%}
 	#sl_menu_content article {padding:5%} 
@@ -1014,10 +1013,13 @@ footer .social_link {float:right}
 	header nav ul li ul li a {text-align:center}
 	header #small_menu a {font-size:35px;line-height:35px}	
   
-  
-  
-	#menu-gnb > li {float:left;width:25%;text-align:center}	
-	#sub_top_nav_menu li.sub_menu	{width:45%}		
+  #sub_top_nav_menu li.sub_menu {height:60px}
+	#menu-gnb > li {float:left;width:25%;text-align:center}
+	#sub_top_nav_menu li.sub_menu .menu {height:61px}
+	#sub_top_nav_menu li.sub_menu	{width:45%}
+	#sub_top_nav_menu li.sub_menu a {display:block;padding:18px}
+	#sub_top_nav_menu li.sub_menu >span {top:20px}	
+	
 	#sub_top_nav_menu li.depth-home {text-align:center;width:10%}	
 	#sl_main_message h1 {text-align:center;font-size:2em;padding:56px 0}
 	#sl_main_sub_message h3 {font-size:20px}

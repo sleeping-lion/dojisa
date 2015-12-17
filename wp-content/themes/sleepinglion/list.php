@@ -1,7 +1,7 @@
 <article class="sl_post" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php if(has_post_thumbnail()): ?>
 		<a  href="<?php the_permalink(); ?>">
-		<?php the_post_thumbnail('medium',array('class' => "img-responsive",'width'=>false,'height'=>false)); ?>
+		<?php the_post_thumbnail('large',array('class' => "img-responsive",'width'=>false,'height'=>false)); ?>
 		</a>
 	<?php endif ?>
 	
@@ -10,7 +10,7 @@
 	
 	<?php if(get_the_tag_list() != ''): ?>
 			<div class="tags">
-				<span class="glyphicon glyphicon-tags" aria-hidden="true"></span>
+				<span class="icon"></span>
 			<?php the_tags('<span style="color:red">#</span>', '&nbsp; <span style="color:red">#</span>', '<br />'); ?>			
 			</div>
 	<?php endif ?>

@@ -3,13 +3,16 @@
 		<div class="list_link">
 			<?php
 			$category = get_the_category();
-			$category_link = get_category_link($category[0]->cat_ID);	
+			$category_id=$category[0]->cat_ID;
+			$category_link = get_category_link($category_id);	
 			 ?>
 			<a href="<?php echo esc_url($category_link); ?>" title="Category Name"><?php echo __('list','sleepinglion') ?>&nbsp;&gt;&gt;</a>
 		</div>		
 		<h1 class="col-sm-10 col-xs-12"><?php the_title(); ?></h1>
 		<div class="date col-sm-2 hidden-xs">
+			<?php if($category_id!=2038): ?>
 			<?php the_date('Y.m.d'); ?>
+			<?php endif ?>
 		</div>
 	</div>
 	<div class="blog-post-body col-xs-12"><?php the_content( __( 'Read More' , 'sleepinglion' ) ); ?></div>

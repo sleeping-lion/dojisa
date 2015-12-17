@@ -19,7 +19,7 @@
     <?php require ABSPATH.'wp-content'.DIRECTORY_SEPARATOR.'cache'.DIRECTORY_SEPARATOR.'aside_menu.html' ?>
   </div>
   <div id="side_banner">
-    <p> <a href="http://27.101.100.158/propose" title="도지사에게 바란다"> <img src="/wp-content/themes/sleepinglion/images/banner_propose.jpg" width="262" height="260" alt="" class="img-responsive" /> </a></p>
+    <p> <a href="wish" title="도지사에게 바란다"><img src="/wp-content/themes/sleepinglion/images/banner_propose.jpg" width="262" height="260" alt="" class="img-responsive" /></a></p>
     <p><a href="http://www.gg.go.kr/vilage_making" title="새창으로 열림(따복 공동체)" target="_blank"> <img src="/wp-content/themes/sleepinglion/images/banner_vilage.jpg" width="262" height="260" alt="" class="img-responsive" /> </a></p>
     <p><a href="http://invest.gg.go.kr" title="새창으로 열림(투자유치)"  target="_blank"> <img src="/wp-content/themes/sleepinglion/images/banner_invest.jpg" width="262" height="260" alt="" class="img-responsive" /></a> </p>
   </div>
