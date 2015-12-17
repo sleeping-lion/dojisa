@@ -244,9 +244,9 @@ if(count($slide_info)>0):
 		<div class="img">
 			<?php $defalt_arg =array('class' => "img-responsive" ); ?>						
 			<a  href="<?php the_permalink(); ?>"><?php the_post_thumbnail('et-featured-small-thumb', $defalt_arg); ?></a>
+			<h2><a href="<?php echo esc_url( $category_link ); ?>" title="<?php the_title_attribute(); ?>" ><?php echo '도지사 좀 만납시다' ?></a></h2>			
 		</div>
-		<?php endif; ?>	
-	<h2><a href="<?php echo esc_url( $category_link ); ?>" title="<?php the_title_attribute(); ?>" ><?php echo '도지사 좀 만납시다' ?></a></h2>
+		<?php endif ?>	
 	<p><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" ><?php the_title(); ?></a></p>
 </article>
 </div>
@@ -264,9 +264,9 @@ if(count($slide_info)>0):
 		<div class="img">
 			<?php $defalt_arg =array('class' => "img-responsive" ); ?>						
 			<a  href="<?php the_permalink(); ?>"><?php the_post_thumbnail('et-featured-small-thumb', $defalt_arg); ?></a>
+			<h2><a href="<?php echo esc_url( $category_link ); ?>" title="<?php the_title_attribute(); ?>" ><?php echo '도지사와 부지사가 갑니다' ?></a></h2>			
 		</div>
-		<?php endif; ?>	
-	<h2><a href="<?php echo esc_url( $category_link ); ?>" title="<?php the_title_attribute(); ?>" ><?php echo '도지사와 부지사가 갑니다' ?></a></h2>
+		<?php endif ?>	
 	<p><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" ><?php the_title(); ?></a></p>
 </article>
 </div>
@@ -284,9 +284,9 @@ if(count($slide_info)>0):
 		<div class="img">
 			<?php $defalt_arg =array('class' => "img-responsive" ); ?>						
 			<a  href="<?php the_permalink(); ?>"><?php the_post_thumbnail('et-featured-small-thumb', $defalt_arg); ?></a>
+			<h2><a href="<?php echo esc_url( $category_link ); ?>" title="<?php the_title_attribute(); ?>" ><?php echo '기업애로현장방문' ?></a></h2>			
 		</div>
-		<?php endif; ?>	
-	<h2><a href="<?php echo esc_url( $category_link ); ?>" title="<?php the_title_attribute(); ?>" ><?php echo '기업애로현장방문' ?></a></h2>
+		<?php endif ?>	
 	<p><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" ><?php the_title(); ?></a></p>
 </article>
 </div>

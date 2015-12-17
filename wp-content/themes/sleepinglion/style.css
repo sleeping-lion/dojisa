@@ -188,7 +188,8 @@ hgroup h3 {color:#333}
 
 #sl_main_field {padding-bottom:6%}
 #sl_main_field article {position:relative;margin-bottom:30px}
-#sl_main_field article h2 {position:absolute;top:195px;width:80%;margin:0 10%;padding:10px;background:#c74a4a;color:#fff;text-align:center;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
+#sl_main_field article .img {position:relative;}
+#sl_main_field article h2 {position:absolute;width:80%;margin:0 10%;padding:10px;background:#c74a4a;color:#fff;text-align:center;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
 #sl_main_field article h2 a {color:#fff}
 #sl_main_field article p a {font-size:16px}
 
@@ -1026,6 +1027,7 @@ footer .social_link {float:right}
 	#sub_top_nav_menu li.depth-home {text-align:center;width:10%}	
 	#sl_main_message h1 {text-align:center;font-size:2em;padding:56px 0}
 	#sl_main_sub_message h3 {font-size:20px}
+	#sl_main_field article h2 {bottom:-20px}
 	#sl_main_field article p {margin:10%}	
 	.main_card_view article {height:360px}
 	hgroup {margin:5% 0}
