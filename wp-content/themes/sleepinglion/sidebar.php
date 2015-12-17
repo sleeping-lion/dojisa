@@ -1,7 +1,7 @@
 <aside class="col-lg-3 visible-lg">
   <div id="current_post">
     <h3>최신글</h3>
-    <?php $query = new WP_Query(array('posts_per_page' => 5) ); ?>
+    <?php $query = new WP_Query(array('posts_per_page' => 3) ); ?>
     <?php if ( $query->have_posts()): ?>
     <ul>
       <?php while ( $query->have_posts() ) : $query->the_post(); ?>

@@ -7,8 +7,6 @@ add_theme_support('post-formats',array('description'));
 // Menus
 register_nav_menus(array('main_menu' => 'Main Menu'));
 
-//  thumbnails
-add_image_size( 'front_thumbnail', 350, 0, false);
 
 function sl_scripts_styles() {
 	wp_enqueue_style('boostrap-css', get_template_directory_uri() . '/css/bootstrap.min.css', false, '1.0.0');

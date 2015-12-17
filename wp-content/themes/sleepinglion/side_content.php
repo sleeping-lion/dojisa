@@ -1,7 +1,7 @@
 <li>
 	<?php if(has_post_thumbnail()): ?>
 	<div class="aside_img">
-		<a href="<?php the_permalink() ?>"><?php the_post_thumbnail(array('100x100'), array('class' => "img-responsive" )) ?></a>
+		<a href="<?php the_permalink() ?>"><?php the_post_thumbnail(array(100,100), array('class' => "img-responsive" )) ?></a>
 	</div>
 		<?php endif ?>
 	<div class="aside_text">	
