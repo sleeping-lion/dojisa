@@ -246,7 +246,7 @@ if(count($slide_info)>0):
 			<a  href="<?php the_permalink(); ?>"><?php the_post_thumbnail('et-featured-small-thumb', $defalt_arg); ?></a>
 		</div>
 		<?php endif; ?>	
-	<h2><a href="<?php echo esc_url( $category_link ); ?>" title="<?php the_title_attribute(); ?>" ><?php echo '도지사가 갑니다' ?></a></h2>
+	<h2><a href="<?php echo esc_url( $category_link ); ?>" title="<?php the_title_attribute(); ?>" ><?php echo '도지사 좀 만납시다' ?></a></h2>
 	<p><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" ><?php the_title(); ?></a></p>
 </article>
 </div>
