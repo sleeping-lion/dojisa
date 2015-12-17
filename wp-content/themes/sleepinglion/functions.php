@@ -8,7 +8,7 @@ add_theme_support('post-formats',array('description'));
 register_nav_menus(array('main_menu' => 'Main Menu'));
 
 //  thumbnails
-set_post_thumbnail_size( 200, 200 );
+add_image_size( 'front_thumbnail', 350, 0, false);
 
 function sl_scripts_styles() {
 	wp_enqueue_style('boostrap-css', get_template_directory_uri() . '/css/bootstrap.min.css', false, '1.0.0');
@@ -27,6 +27,23 @@ function sl_scripts_styles() {
 
 add_action('wp_enqueue_scripts', 'sl_scripts_styles');
 
+
+	add_theme_support( 'post-thumbnails' );
+
+
+	$et_theme_image_sizes = array(
+		'377x230' 	=> 'et-featured-small-thumb',
+	);
+
+	$et_theme_image_sizes = apply_filters( 'et_theme_image_sizes', $et_theme_image_sizes );
+	$crop = apply_filters( 'et_post_thumbnails_crop', true );
+
+	if ( is_array( $et_theme_image_sizes ) ){
+		foreach ( $et_theme_image_sizes as $image_size_dimensions => $image_size_name ){
+			$dimensions = explode( 'x', $image_size_dimensions );
+			add_image_size( $image_size_name, $dimensions[0], $dimensions[1], $crop );
+		}
+	}
 
 add_action('after_setup_theme', 'sleepinglion_language_setup');
 function sleepinglion_language_setup(){

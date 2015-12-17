@@ -168,7 +168,7 @@ hgroup h2 {font-weight:bold}
 hgroup h3 {color:#333}	
 
 .main_card_view article {border:1px solid #ccc;border-bottom-width:2px;margin:0 0 3%;padding:10px; background:#fff;text-align:center}
-.main_card_view article img { width:350px; height:244px; margin:0 auto}
+.main_card_view article img {margin:0 auto}
 
 .carousel-indicators li {width:50px;height:10px;border-radius:0;background:#fff;border:none}
 .carousel-indicators li.active {width:50px;background:#cc6666}
@@ -187,7 +187,7 @@ hgroup h3 {color:#333}
 
 #sl_main_field {padding-bottom:6%}
 #sl_main_field article {position:relative;margin-bottom:30px}
-#sl_main_field article h2 {position:absolute;top:235px;width:80%;margin:0 10%;padding:10px;background:#c74a4a;color:#fff;text-align:center;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
+#sl_main_field article h2 {position:absolute;top:195px;width:80%;margin:0 10%;padding:10px;background:#c74a4a;color:#fff;text-align:center;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
 #sl_main_field article h2 a {color:#fff}
 #sl_main_field article p a {font-size:16px}
 
@@ -1024,7 +1024,7 @@ footer .social_link {float:right}
 	#sl_main_message h1 {text-align:center;font-size:2em;padding:56px 0}
 	#sl_main_sub_message h3 {font-size:20px}
 	#sl_main_field article p {margin:10%}	
-	.main_card_view article {height:400px}
+	.main_card_view article {height:360px}
 	hgroup {margin:5% 0}
 	hgroup h2 {font-size:250%}
 	hgroup h3 {font-size:160%}	

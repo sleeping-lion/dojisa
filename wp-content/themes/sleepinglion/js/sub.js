@@ -40,8 +40,10 @@ $(document).ready(function(){
 					$("#sub_top_nav_menu .sub_menu:eq(2)").removeClass('over').find('ul.menu').animate({'height':'60'},300);
 				break;
 			case 2 :			
-				if($("#sub_top_nav_menu .sub_menu:eq(1)").hasClass('over'))
-					$("#sub_top_nav_menu .sub_menu:eq(1)").removeClass('over').find('ul.menu').animate({'height':'60'},300);					
+				if($("#sub_top_nav_menu .sub_menu:eq(1)").hasClass('over')) {
+					var ul_menu=$("#sub_top_nav_menu .sub_menu:eq(1)").removeClass('over').find('ul.menu');
+					$("#sub_top_nav_menu .sub_menu:eq(1)").removeClass('over').find('ul.menu').animate({'height':'60'},300);
+				}
 				break;
 		}
 		
@@ -50,7 +52,9 @@ $(document).ready(function(){
 				$(this).parent().removeClass('over');
 			}).next().removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
 		} else {
-			$(this).parent().parent().parent().addClass('over').find('ul.menu').animate({'height':'300'},300);
+			var ul_menu=$(this).parent().parent().parent().addClass('over').find('ul.menu');
+			var l=ul_menu.find('li').length;
+			ul_menu.animate({'height':l*57},300);
 			$(this).parent().parent().next().removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
 		}
 		
