@@ -174,7 +174,7 @@ hgroup h3 {color:#333}
 .carousel-indicators li {width:50px;height:10px;border-radius:0;background:#fff;border:none}
 .carousel-indicators li.active {width:50px;background:#cc6666}
 
-#sl_main_message {background:#333 url('/wp-content/uploads/page_img/bg_brown.jpg')}
+#sl_main_message {background:#333 url('/wp-content/themes/sleepinglion/images/bg_brown.jpg')}
 #sl_main_message q {line-height:30px; }
 #sl_main_message q div{ line-height:160%;  margin-top:10px;}
 #sl_main_message h1 {text-align:center;color:#fff;margin:0}
@@ -193,7 +193,7 @@ hgroup h3 {color:#333}
 #sl_main_field article h2 a {color:#fff}
 #sl_main_field article p a {font-size:16px}
 
-#sl_main_sub_message {padding-bottom:2%;background:#cc6666 url('/wp-content/uploads/page_img/bg_red.jpg');text-align:center}
+#sl_main_sub_message {padding-bottom:2%;background:#cc6666 url('/wp-content/themes/sleepinglion/images/bg_red.jpg');text-align:center}
 #sl_main_sub_message h2 {color:#fff}
 #sl_main_sub_message h2 .focus {color:#ffcc00}
 #sl_main_sub_message h3 {color:#ccc;font-weight:bold}
@@ -236,8 +236,8 @@ hgroup h3 {color:#333}
 
 
 .triangle {background-position:top center;background-repeat:no-repeat;height:70px;margin:0;padding:0}
-#sl_main_news .triangle {background-image:url('/wp-content/uploads/page_img/bg_point_brown.png')}
-#sl_main_field .triangle {background-image:url('/wp-content/uploads/page_img/bg_point_red.png')}
+#sl_main_news .triangle {background-image:url('/wp-content/themes/sleepinglion/images/bg_point_brown.png')}
+#sl_main_field .triangle {background-image:url('/wp-content/themes/sleepinglion/images/bg_point_red.png')}
 
 
  /*gnb*/
