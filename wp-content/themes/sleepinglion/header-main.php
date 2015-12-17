@@ -33,13 +33,13 @@
 				<?php require ABSPATH.'wp-content'.DIRECTORY_SEPARATOR.'cache'.DIRECTORY_SEPARATOR.'main_menu.html' ?>
 			</div>
 			<div id="top_right">
-				<div id="top_menu" class="col-lg-12">
+				<div id="top_menu">
 					<ul>
 						<li><a href="http://www.gg.go.kr" title="새창으로 열림(경기도 홈페이지)" target="_blank"><?php echo __('GG Home Page','sleepinglion') ?></a></li>
 						<li><a href="/sitemap" title="사이트맵"><?php echo __('Site Map','sleepinglion') ?></a></li>
 					</ul>
 				</div>
-				<div class="col-lg-12">
+				<div>
         	<form action="/">
       		<div class="input-group form-group-md">
       <input type="search" name="s" class="form-control" placeholder="검색어를 넣어주세요" />

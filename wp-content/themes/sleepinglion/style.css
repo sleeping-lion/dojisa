@@ -994,8 +994,9 @@ footer .social_link {float:right}
 	#sl_menu_content .carousel-control.left,#sl_menu_content .carousel-control.right {display:none}	
 	footer {background:#fff;border-radius:5px;width:100%;margin:1% 0}
 	footer address {display:block;color:#333;text-align:center}
-	footer .social_link {margin:3% 0}
-	
+	footer .social_link {float:left;margin:5px 0}
+	footer .visible-xs {margin-top:5px;margin-bottom:5px}
+	footer .btn {background:#524744;border-radius:5px;color:#fff;font-weight:bold}
 	#sl_menu_content .carousel-inner .item div:first-child {display:none}	
 	#sl_menu_content .carousel-inner .item div:last-child {display:none}
 	#sl_menu_content .carousel-inner .active.left {left: -50%}
