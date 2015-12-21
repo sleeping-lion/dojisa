@@ -11,7 +11,7 @@
 ?>
 <article>
 	<?php if($video): ?>
-	<span class="vvqbox vvqvimeo embed-responsive embed-responsive-4by3">		
+	<span class="vvqbox vvqvimeo embed-responsive embed-responsive-4by3" style="margin-top:0;margin-bottom:0">		
 	<?php echo $video ?>
 	</span>
 	<?php else: ?>			
@@ -23,5 +23,7 @@
 		<?php endif ?>
 	<?php endif ?>
 		<h2><a href="<?php the_permalink() ?>" title="<?php the_title_attribute() ?>" ><?php the_title(); ?></a></h2>
+		<?php if($video): ?>		
 		<p class="hidden-xs"><?php the_time('Y.m.d') ?></p>
+		<?php endif ?>
 </article>
