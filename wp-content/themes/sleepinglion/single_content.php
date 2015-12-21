@@ -4,7 +4,7 @@
 			<?php
 			$category = get_the_category();
 			$category_id=$category[0]->cat_ID;
-			$category_link = get_category_link($category_id);	
+			$category_link = get_category_link($category_id);
 			 ?>
 			<a href="<?php echo esc_url($category_link); ?>" title="Category Name"><?php echo __('list','sleepinglion') ?>&nbsp;&gt;&gt;</a>
 		</div>		
