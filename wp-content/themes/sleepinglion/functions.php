@@ -48,6 +48,21 @@ function sleepinglion_language_setup(){
 	load_theme_textdomain('sleepinglion', get_template_directory() . '/languages');
 }
 
+function get_first_embed_media($post_id) {
+    $post = get_post($post_id);
+    $embeds = get_media_embedded_in_content(  $post->post_content );
+
+    if( !empty($embeds) ) {
+        //return first embed
+        return $embeds[0];
+
+    } else {
+        //No embeds found
+        return false;
+    }
+
+}
+
 add_filter( 'body_class', 'my_class_names' );
 function my_class_names( $classes ) {
 	

@@ -149,7 +149,7 @@ aside #current_post,aside #menu_link,aside #side_banner {float:left;width:100%;m
 #profile .et_slidecontent li {margin-bottom:10px}
 
 #single_content .blog_header {}
-#single_content .blog_header .date {margin-top:10px}
+#single_content .blog_header .date {margin-top:15px;text-align:right}
 #respond {clear:both}
 
 #add_menu {border:1px solid #ccc;padding:15px 20px;background:url('/wp-content/themes/sleepinglion/images/action_btnbg.jpg') center right no-repeat}
@@ -157,6 +157,9 @@ aside #current_post,aside #menu_link,aside #side_banner {float:left;width:100%;m
 #add_menu li {list-style:none;display:inline-block}
 #add_menu li a {font-weight:bold;color:#643b39}
 .category_list {margin:0;padding:0}
+.blog-post-body {clear:both;width:100%;}
+
+#single_content .first_line {border-top: 3px solid #646464;font-weight: bold;font-size: 16px;color: #5a5a5a;padding: 10px 0;border-bottom: 1px solid #ccc;margin: 0 0 20px 0}
 
 #select_menu {position:absolute;top:50%;left:35%;margin:0;padding:0;display:none}
 #select_menu li {list-style:none;text-align:center;margin:0 0 5px;padding:0}
@@ -896,6 +899,8 @@ a.big-button, a.small-button, a.icon-button { cursor: pointer; }
 #sl_bottom_link {margin-bottom:20px}
 #sl_bottom_link .next {text-align:right}
 .pagination {float:left;width:100%}
+.pagination .prev a {float:left}
+.pagination .next a {float:right}
 .list_link {clear:both;text-align:right}
 
   

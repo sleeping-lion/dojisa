@@ -6,5 +6,5 @@
 		</div>
 		<?php endif; ?>
 		<h2><a href="<?php the_permalink() ?>" title="<?php the_title_attribute() ?>" ><?php the_title(); ?></a></h2>
-		<p class="hidden-xs"><?php the_time('Y.m.d'); ?></p>
+		<p class="hidden-xs"><?php the_time('Y.m.d') ?></p>
 </article>

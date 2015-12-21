@@ -40,8 +40,8 @@ function current_url() {
 			<?php get_template_part('single_content'); ?>
 			<?php comments_template('',true); ?>
 	<div id="content-foot" style="padding:7px 0 0 0;" data-id="<?php echo get_the_ID(); ?>">
-		<div id="ttalk_rating_div_<?php echo get_current_blog_id(); ?>_<?php global $post; echo $post->ID; ?>"></div>
-		<div id="ttalk_div_<?php echo get_current_blog_id(); ?>_<?php global $post; echo $post->ID; ?>"></div>
+		<div id="ttalk_rating_div_<?php echo get_current_blog_id(); ?>_<?php echo $post->ID; ?>"></div>
+		<div id="ttalk_div_<?php echo get_current_blog_id(); ?>_<?php echo $post->ID; ?>"></div>
 	</div>			
 			
 		</div>

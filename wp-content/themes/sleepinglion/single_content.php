@@ -11,7 +11,7 @@
 		<h1 class="col-sm-10 col-xs-12"><?php the_title(); ?></h1>
 		<div class="date col-sm-2 hidden-xs">
 			<?php if($category_id!=2038): ?>
-			<?php the_date('Y.m.d'); ?>
+			<?php the_time('Y.m.d') ?>
 			<?php endif ?>
 		</div>
 	</div>
