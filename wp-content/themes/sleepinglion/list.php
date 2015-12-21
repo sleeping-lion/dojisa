@@ -23,10 +23,10 @@
 	<?php endif ?>
 	
 	<h2><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" ><?php the_title(); ?></a></h2>
-	<p class="date"><?php the_date('Y.m.d'); ?></p>
 	<?php if($more_exists): ?>
 	<div class="blog-post-body"><?php the_content( __( 'Read More' , 'sleepinglion' ) ); ?></div>
-	<?php endif ?>
+	<?php endif ?>	
+	<p class="date"><?php the_date('Y.m.d'); ?></p>
 	<?php if(get_the_tag_list() != ''): ?>
 			<div class="tags">
 				<span class="icon"></span>
