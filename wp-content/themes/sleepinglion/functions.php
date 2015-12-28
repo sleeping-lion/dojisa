@@ -7,20 +7,18 @@ add_theme_support('post-formats',array('description'));
 // Menus
 register_nav_menus(array('main_menu' => 'Main Menu'));
 
-//  thumbnails
-set_post_thumbnail_size( 200, 200 );
 
 function sl_scripts_styles() {
 	wp_enqueue_style('boostrap-css', get_template_directory_uri() . '/css/bootstrap.min.css', false, '1.0.0');
 	wp_enqueue_style('style', get_template_directory_uri() . '/style.css', false, '1.0.0');
 	wp_enqueue_script('boostrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '1.0.0', true);
 	wp_enqueue_script('menu', get_template_directory_uri() . '/js/menu.js', array(), '1.0.0', true);
-	wp_enqueue_script('jquery-ttalk','http://v2.ttalk.co.kr/js/jquery.ttalk.min.js', array(), '1.0.0', true);
-	wp_enqueue_script('init-ttalk','http://v2.ttalk.co.kr/js/init.ttalk.min.js', array(), '1.0.0', true);
-	
+		
  	if(is_front_page()) {
 		wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array(), '1.0.0', true);
 	} else {
+		wp_enqueue_script('jquery-ttalk','http://v2.ttalk.co.kr/js/jquery.ttalk.min.js', array(), '1.0.0', true);
+		wp_enqueue_script('init-ttalk','http://v2.ttalk.co.kr/js/init.ttalk.min.js', array(), '1.0.0', true);
 		wp_enqueue_script('sub', get_template_directory_uri() . '/js/sub.js', array(), '1.0.0', true);
 	}
 }
@@ -28,9 +26,41 @@ function sl_scripts_styles() {
 add_action('wp_enqueue_scripts', 'sl_scripts_styles');
 
 
+	add_theme_support( 'post-thumbnails' );
+
+
+	$et_theme_image_sizes = array(
+		'377x230' 	=> 'et-featured-small-thumb',
+	);
+
+	$et_theme_image_sizes = apply_filters( 'et_theme_image_sizes', $et_theme_image_sizes );
+	$crop = apply_filters( 'et_post_thumbnails_crop', true );
+
+	if ( is_array( $et_theme_image_sizes ) ){
+		foreach ( $et_theme_image_sizes as $image_size_dimensions => $image_size_name ){
+			$dimensions = explode( 'x', $image_size_dimensions );
+			add_image_size( $image_size_name, $dimensions[0], $dimensions[1], $crop );
+		}
+	}
+
 add_action('after_setup_theme', 'sleepinglion_language_setup');
 function sleepinglion_language_setup(){
 	load_theme_textdomain('sleepinglion', get_template_directory() . '/languages');
+}
+
+function get_first_embed_media($post_id) {
+    $post = get_post($post_id);
+    $embeds = get_media_embedded_in_content(  $post->post_content );
+
+    if( !empty($embeds) ) {
+        //return first embed
+        return $embeds[0];
+
+    } else {
+        //No embeds found
+        return false;
+    }
+
 }
 
 add_filter( 'body_class', 'my_class_names' );

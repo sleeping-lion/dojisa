@@ -106,7 +106,7 @@ header #top_right form {float:right;margin-right:0;width:250px}
 header #top_right form div {float:left}
 header #top_right #top_menu {display:none}
 header #top_menu ul {width:100%;margin:0 0 10px;padding:0}
-header #top_menu li {float:right;list-style:none;margin:0 0 0 2%;padding:0}
+header #top_menu li {float:right;list-style:none;margin:0 0 0 20px;padding:0}
 header #top_menu li a {float:right;display:block;margin-left:20px}
 header #top_menu li:first-child:before {content:'|'}
 
@@ -149,13 +149,17 @@ aside #current_post,aside #menu_link,aside #side_banner {float:left;width:100%;m
 #profile .et_slidecontent li {margin-bottom:10px}
 
 #single_content .blog_header {}
-#single_content .blog_header .date {margin-top:10px}
+#single_content .blog_header .date {margin-top:15px;text-align:right}
 #respond {clear:both}
 
-#add_menu {margin:20px 0 0}
-#add_menu li {list-style:none;text-align:right}
-#add_menu li:last-child {text-align:left}
+#add_menu {border:1px solid #ccc;padding:15px 20px;background:url('/wp-content/themes/sleepinglion/images/action_btnbg.jpg') center right no-repeat}
+#add_menu ul {margin:0;padding:0}
+#add_menu li {list-style:none;display:inline-block}
+#add_menu li a {font-weight:bold;color:#643b39}
 .category_list {margin:0;padding:0}
+.blog-post-body {clear:both;width:100%;}
+
+#single_content .first_line {border-top: 3px solid #646464;font-weight: bold;font-size: 16px;color: #5a5a5a;padding: 10px 0;border-bottom: 1px solid #ccc;margin: 0 0 20px 0}
 
 #select_menu {position:absolute;top:50%;left:35%;margin:0;padding:0;display:none}
 #select_menu li {list-style:none;text-align:center;margin:0 0 5px;padding:0}
@@ -168,12 +172,12 @@ hgroup h2 {font-weight:bold}
 hgroup h3 {color:#333}	
 
 .main_card_view article {border:1px solid #ccc;border-bottom-width:2px;margin:0 0 3%;padding:10px; background:#fff;text-align:center}
-.main_card_view article img { width:350px; height:244px; margin:0 auto}
+.main_card_view article img {margin:0 auto}
 
 .carousel-indicators li {width:50px;height:10px;border-radius:0;background:#fff;border:none}
 .carousel-indicators li.active {width:50px;background:#cc6666}
 
-#sl_main_message {background:#333 url('/wp-content/uploads/page_img/bg_brown.jpg')}
+#sl_main_message {background:#333 url('/wp-content/themes/sleepinglion/images/bg_brown.jpg')}
 #sl_main_message q {line-height:30px; }
 #sl_main_message q div{ line-height:160%;  margin-top:10px;}
 #sl_main_message h1 {text-align:center;color:#fff;margin:0}
@@ -187,11 +191,12 @@ hgroup h3 {color:#333}
 
 #sl_main_field {padding-bottom:6%}
 #sl_main_field article {position:relative;margin-bottom:30px}
-#sl_main_field article h2 {position:absolute;top:235px;width:80%;margin:0 10%;padding:10px;background:#c74a4a;color:#fff;text-align:center;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
+#sl_main_field article .img {position:relative;}
+#sl_main_field article h2 {position:absolute;width:80%;margin:0 10%;padding:10px;background:#c74a4a;color:#fff;text-align:center;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
 #sl_main_field article h2 a {color:#fff}
 #sl_main_field article p a {font-size:16px}
 
-#sl_main_sub_message {padding-bottom:2%;background:#cc6666 url('/wp-content/uploads/page_img/bg_red.jpg');text-align:center}
+#sl_main_sub_message {padding-bottom:2%;background:#cc6666 url('/wp-content/themes/sleepinglion/images/bg_red.jpg');text-align:center}
 #sl_main_sub_message h2 {color:#fff}
 #sl_main_sub_message h2 .focus {color:#ffcc00}
 #sl_main_sub_message h3 {color:#ccc;font-weight:bold}
@@ -234,8 +239,8 @@ hgroup h3 {color:#333}
 
 
 .triangle {background-position:top center;background-repeat:no-repeat;height:70px;margin:0;padding:0}
-#sl_main_news .triangle {background-image:url('/wp-content/uploads/page_img/bg_point_brown.png')}
-#sl_main_field .triangle {background-image:url('/wp-content/uploads/page_img/bg_point_red.png')}
+#sl_main_news .triangle {background-image:url('/wp-content/themes/sleepinglion/images/bg_point_brown.png')}
+#sl_main_field .triangle {background-image:url('/wp-content/themes/sleepinglion/images/bg_point_red.png')}
 
 
  /*gnb*/
@@ -862,16 +867,16 @@ a.big-button, a.small-button, a.icon-button { cursor: pointer; }
 /* 도지사에게 바란다 끝 */
 
 
-#management_card {margin:40px 0}
+#management_card {margin:20px 0}
 #management_card h2 {
     border-bottom: 1px dotted #dddddd;
-    color: #4b90c9;
+    color: #fff;
     font-size: 24px;
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 15px;
-    padding-bottom: 10px;
-    padding-left: 10px;
+    padding:10px;
+    background-color:#524744;
 }
 #management_card .category_list li.category_name {margin-bottom:50px;list-style:none}
 #management_card article {margin:0 0 5px;padding:0 0 0 20px}
@@ -879,11 +884,12 @@ a.big-button, a.small-button, a.icon-button { cursor: pointer; }
 #management_card article a:hover {background-color:#eee;border-radius:5px;text-decoration:none}
 #management_card h3 {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    border: medium none;
+    border-bottom: 1px solid #e1e1e1;
     color: #666666;
     font-size: 15px;
     font-weight: 600;
     text-shadow: none;
+    
 }
 
 #management_card h3 span {float:right}
@@ -893,6 +899,8 @@ a.big-button, a.small-button, a.icon-button { cursor: pointer; }
 #sl_bottom_link {margin-bottom:20px}
 #sl_bottom_link .next {text-align:right}
 .pagination {float:left;width:100%}
+.pagination .prev a {float:left}
+.pagination .next a {float:right}
 .list_link {clear:both;text-align:right}
 
   
@@ -962,7 +970,7 @@ footer .social_link {float:right}
   #sub_top_nav_menu li.sub_menu {height:35px}
 	#sub_top_nav_menu li.sub_menu a {display:block;padding:10px}
 	#sub_top_nav_menu li.sub_menu >span {top:12px}	
-	
+	#add_menu {background:none}	
 	#sl_main_news article h2 {margin:2%} 
 	#sub_top_nav_menu li.sub_menu	{width:50%}
 	#sub_top_nav_menu nav ul {border:none}
@@ -993,8 +1001,9 @@ footer .social_link {float:right}
 	#sl_menu_content .carousel-control.left,#sl_menu_content .carousel-control.right {display:none}	
 	footer {background:#fff;border-radius:5px;width:100%;margin:1% 0}
 	footer address {display:block;color:#333;text-align:center}
-	footer .social_link {margin:3% 0}
-	
+	footer .social_link {float:left;margin:5px 0}
+	footer .visible-xs {margin-top:5px;margin-bottom:5px}
+	footer .btn {background:#524744;border-radius:7px;color:#fff;font-weight:bold;font-size:15px;height:37px;line-height:37px;padding:0}
 	#sl_menu_content .carousel-inner .item div:first-child {display:none}	
 	#sl_menu_content .carousel-inner .item div:last-child {display:none}
 	#sl_menu_content .carousel-inner .active.left {left: -50%}
@@ -1023,8 +1032,9 @@ footer .social_link {float:right}
 	#sub_top_nav_menu li.depth-home {text-align:center;width:10%}	
 	#sl_main_message h1 {text-align:center;font-size:2em;padding:56px 0}
 	#sl_main_sub_message h3 {font-size:20px}
+	#sl_main_field article h2 {bottom:-20px}
 	#sl_main_field article p {margin:10%}	
-	.main_card_view article {height:400px}
+	.main_card_view article {height:360px}
 	hgroup {margin:5% 0}
 	hgroup h2 {font-size:250%}
 	hgroup h3 {font-size:160%}	

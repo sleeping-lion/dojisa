@@ -3,19 +3,22 @@
 	<div class="container">
 		<div class="row">
 			<div id="sub_main" class="col-sm-12 col-lg-9">		
-				<h1 class="col-sm-12 col-md-6">공약실천계획</h1>
-				<ul id="add_menu" class="visible-md visible-lg col-md-6">
-				  <li class="col-md-6"><a href="http://ebook.gg.go.kr/20151103_165139" target="_blank" title="새창으로 열림(E-book으로 보기)" class="btn btn-default">E-book으로 보기</a></li>
-      		<li class="col-md-6"><a href="http://www.gg.go.kr/wp-content/uploads/2015/11/manifesto.pdf" target="_blank" title="새창으로열림(PDF 보기)" class="btn btn-default">PDF 보기</a></li>
-      	</ul>				
-				<section id="management_card"  class="col-sm-12">				
+				<h1 class="col-sm-12 col-md-6">공약실천계획</h1>			
+				<section id="management_card"  class="col-sm-12">
+				<div id="add_menu" class="col-xs-12">
+					<p>일자리 넘치는 안정하고 따뜻한 경기도 공약실천계획서를 한 눈에 볼 수 있습니다.</p>
+				<ul>
+				  <li><a href="http://ebook.gg.go.kr/20151103_165139" target="_blank" title="새창으로 열림(E-book으로 보기)" class="btn btn-default">E-book으로 보기</a></li>
+      		<li><a href="http://www.gg.go.kr/wp-content/uploads/2015/11/manifesto.pdf" target="_blank" title="새창으로열림(PDF 보기)" class="btn btn-default">PDF 보기</a></li>
+      	</ul>
+      	</div>										
 <?php
 $show=false;
 
 
  $terms = get_terms("manifesto-category", array( 	'hide_empty' => 0, 'parent' => 0 ) );
  if (count($terms)){
-     echo '<ul class="category_list">';
+     echo '<ul class="category_list col-xs-12">';
      foreach ( $terms as $term ) {
        echo '<li class="category_name"><h2>' . $term->name . '</h2>';
 
