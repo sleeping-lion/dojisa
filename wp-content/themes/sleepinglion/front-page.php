@@ -64,7 +64,7 @@ if(count($slide_info)>0):
 <section id="sl_main_message">
 	<div class="container">
 		<div class="row">
-			<h1><q><br /><div>이념과 정파를 뛰어넘은 소통과 협력만이<br />1260만 경기도민을 더욱 안전하고 따뜻하게 만들 수 있습니다.</div><br /></q></h1>
+			<h1>이념과 정파를 뛰어넘은 소통과 협력만이<br />1260만 경기도민을 더욱 안전하고 따뜻하게 만들 수 있습니다.</h1>
 		</div>		
 	</div>
 </section>
