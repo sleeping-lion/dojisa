@@ -133,6 +133,8 @@ aside #current_post,aside #menu_link,aside #side_banner {float:left;width:100%;m
 #menu_link li {margin:0;padding:0 0 0 20px;list-style:none;background:url('/wp-content/themes/sleepinglion/images/icon_listbar.jpg') no-repeat center left}
 #menu_link li a {display:block;padding:3px}
 
+#mergerFrame {height:700px}
+
 #top_image {position:relative;z-index:3;float:left;width:100%;border-top:1px solid red;background:url('/wp-content/themes/sleepinglion/images/sub_back.jpg') center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
