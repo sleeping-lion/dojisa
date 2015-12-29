@@ -39,7 +39,7 @@ if(count($slide_info)>0):
                     if ($sliderstatus == 'active'):
                     	?>
     <div class="item<?php if(!$i): ?> active<?php endif ?>">
-      <a <?php echo $target ?> href="<?php echo $link ?>"><img src="<?php echo $value["src"] ?>" alt="<?php echo $value['alt'] ?>" /></a>
+      <a <?php echo $target ?> href="<?php echo $link ?>"><img src="<?php echo $value["src"] ?>" width="1700" height="840" alt="<?php echo $value['alt'] ?>" /></a>
       <div class="carousel-caption"><?php echo $value["caption"] ?></div>
     </div>
     <?php endif ?>
