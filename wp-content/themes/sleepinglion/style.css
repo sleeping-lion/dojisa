@@ -52,19 +52,8 @@ mark, rp, rt, ruby, summary, time {display:inline;}
 
 
 /* Common Class */
-.arial {font-family:Arial}
-.noneData {text-align:center}
 .clear{clear:both}
 .none{display:none}
-.number {font-family:Arial;letter-spacing:0}
-.clear{clear:both}
-.none{display:none}
-.wrapper {margin:0 auto;width:728px}
-.ad_test {background:red}
-.jumbotron {margin:30px 0}
-.sl_categories span.hidden-xs {display:inline!important}
-.c_pointer {cursor:pointer}
-
 
 .carousel .item {
     width: 100%; /*slider width*/
@@ -134,14 +123,7 @@ aside #current_post,aside #menu_link,aside #side_banner {float:left;width:100%;m
 #menu_link li a {display:block;padding:3px}
 
 #mergerFrame {margin:30px 0;height:1500px}
-
-#top_image {position:relative;z-index:3;float:left;width:100%;border-top:1px solid red;background:url('/wp-content/themes/sleepinglion/images/sub_back.jpg') center center no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
+#top_image {position:relative;z-index:3;float:left;width:100%;border-top:1px solid red;background:url('/wp-content/themes/sleepinglion/images/sub_back.jpg') center center no-repeat;background-size: cover;}
 .page-id-81461 #top_image,.category-media #top_image,.category-speech #top_image,.page-id-122666 #top_image  {background-image:url('/wp-content/themes/sleepinglion/images/sub_top1.jpg')}
 .category-news #top_image,.category-meet_dojisa #top_image,.category-meet_dojisa_bujisa #top_image,.category-company_visit #top_image {background-image:url('/wp-content/themes/sleepinglion/images/sub_top2.jpg')}
 .page-id-81456 #top_image,.page-id-122624 #top_image {background-image:url('/wp-content/themes/sleepinglion/images/sub_top3.jpg')}
@@ -229,20 +211,11 @@ aside #current_post,aside #menu_link,aside #side_banner {float:left;width:100%;m
 #sl_menu_content article.active h3 {color:#fff}
 #sl_menu_content article.active p {color:#fff}
 
-
-
-
-
-
-
-
 .triangle {background-position:top center;background-repeat:no-repeat;height:70px;margin:0;padding:0}
 #sl_main_news .triangle {background-image:url('/wp-content/themes/sleepinglion/images/bg_point_brown.png')}
 #sl_main_field .triangle {background-image:url('/wp-content/themes/sleepinglion/images/bg_point_red.png')}
 
-
  /*gnb*/
-
  .gnb > li,#menu-gnb > li{position:relative;color:#fff;border-top:none;text-align:left;font-size:.95em}/* 1dep */
  .gnb > li > a{color:#fff;vertical-align:top;line-height:1;color:#fff}
  .gnb > li > ul{padding:10px 35px;text-align:left} /* 2dep*/
@@ -555,7 +528,7 @@ float: left;}
 /*------------------------------------------------*/
 
 
-
+.et-tabs-content-wrapper > div {display:none}
 
 .et-tabs-container ul.et_shortcodes_mobile_nav { border-bottom: 1px solid #e7e7e7; }
 	.et-tabs-container ul.et_shortcodes_mobile_nav li { float: right; line-height: 26px; }
