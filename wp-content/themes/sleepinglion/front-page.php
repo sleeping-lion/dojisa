@@ -74,10 +74,10 @@ if(count($slide_info)>0):
 	<div class="container">
 		<div class="row">
 			<div class="triangle">&nbsp;</div>					
-			<hgroup>
+			<div class="hgroup">
 				<h2>NEWS</h2>
 				<h3>함께 만들어가는 NEXT 경기 이야기</h3>
-			</hgroup>
+			</div>
 			<?php $query = new WP_Query(array( 'category_name' => 'news','posts_per_page' => 3) ); ?>
 			<?php if ( $query->have_posts() ) : $index=0; while ( $query->have_posts() ) : $query->the_post(); ?>
 			<div class="col xs-12 col-sm-6 col-md-4<?php if($index==2): ?> hidden-sm<?php endif ?>">				
@@ -191,11 +191,11 @@ if(count($slide_info)>0):
 
 <section id="sl_main_sub_message">
 	<div class="container">
-		<div class="row">	
-			<hgroup>
+		<div class="row">
+			<div class="hgroup">
 				<h2>소통과 참여</h2>
 				<h3>다양한 방법으로 의견을 듣겠습니다</h3>
-			</hgroup>
+			</div>
 <div class="col-md-12">
     	<div class="col-xs-12 col-sm-6 col-md-3">    	
       	<a href="/propose" title=""><img width="175" height="175" src="/wp-content/themes/sleepinglion/images/banner01_01.png" alt="" class="img-circle" /></a>
@@ -230,10 +230,10 @@ if(count($slide_info)>0):
 	<div class="container">
 		<div class="row">
 			<div class="triangle">&nbsp;</div>			
-			<hgroup>
+			<div class="hgroup">
 				<h2>소통 현장속으로</h2>
 				<h3>안전하고 따뜻한 경기도를 함께 만들어 나가겠습니다</h3>
-			</hgroup>
+			</div>
 			<?php $query = new WP_Query(array('cat' => 2130,'posts_per_page' => 1,'meta_query' => array(array( 'key' => '_thumbnail_id')))) ?>
 			<?php $category_link = get_category_link(2130) ?>			
 			<?php if ( $query->have_posts() ) :
