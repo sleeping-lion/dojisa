@@ -311,7 +311,7 @@ aside #current_post,aside #menu_link,aside #side_banner {float:left;width:100%;m
 #sl_menu_content a:hover article h3 {text-decoration:none}
 #sl_menu_content a:hover article p {text-decoration:none}
 #sl_menu_content article h3 {font-weight:bold;font-size:200%;color:#000;margin:10% 0;padding:0}
-#sl_menu_content article p {font-size:120%;#333}
+#sl_menu_content article p {font-size:120%;color:#333}
 #sl_menu_content article.active h3 {color:#fff}
 #sl_menu_content article.active p {color:#fff}
 
@@ -340,7 +340,7 @@ aside #current_post,aside #menu_link,aside #side_banner {float:left;width:100%;m
  .gnb > li > ul{float:left;width:100%; padding:0; background:none;}    
  .gnb > li > ul > li > a{display:block; padding:7px 0; font-size:1.063em; color:#757575; letter-spacing:-1px;}
  .gnb > li > ul > li > a:hover{color:#4b5ab3;}
- .bg_subnav{position:absolute; left:175; top:244px; width:100%;max-width:1024px; height:0; border-bottom:1px solid #e1e1e1; z-index:1000;}
+ .bg_subnav{position:absolute; left:175px; top:244px; width:100%;max-width:1024px; height:0; border-bottom:1px solid #e1e1e1; z-index:1000;}
  .gnb > li > ul > li > a > span{display:block;}
  .gnb > li > ul > li > ul{display:none}
 #menu-gnb > li {margin:0;padding:0}
