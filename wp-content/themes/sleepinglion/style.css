@@ -656,7 +656,7 @@ float: left;}
 	.tabs-left .et-tabs-content { padding: 30px 30px 20px; position: relative}
 	.tabs-left.et_sliderfx_slide .et-tabs-content-main-wrap { overflow: hidden}
 		.tabs-left .et-tabs-content h3 { padding-bottom: 14px; color: #333}
-	.et_left_tabs_bg { position: absolute; top: 0; left: 0; width: 148px; height: 100%; border-right: 1px solid #e7e7e7; border-left: 1px solid #fff; background: #f5f5f5;  background: -moz-linear-gradient(left, #f9f9f9 0%, #f5f5f5 100%); background: -webkit-gradient(linear, left top, right top, color-stop(0%,#f9f9f9), color-stop(100%,#f5f5f5)); background: -webkit-linear-gradient(left, #f9f9f9 0%,#f5f5f5 100%); background: -o-linear-gradient(left, #f9f9f9 0%,#f5f5f5 100%); background: -ms-linear-gradient(left, #f9f9f9 0%,#f5f5f5 100%); background: linear-gradient(to right, #f9f9f9 0%,#f5f5f5 100%); }
+	.et_left_tabs_bg { position: absolute; top: 0; left: 0; width: 148px; height: 100%; border-right: 1px solid #e7e7e7; border-left: 1px solid #fff; background: #f5f5f5; background: linear-gradient(to right, #f9f9f9 0%,#f5f5f5 100%) }
 
 	.tabs-left ul.et_shortcodes_mobile_nav  a { text-indent: -9999px; }
 		.tabs-left ul.et_shortcodes_mobile_nav a span { top: 50%; margin-top: -7px; }
@@ -667,7 +667,7 @@ float: left;}
 	.author-shortcodes .author-inner { position: relative; padding: 30px 30px 20px 117px; min-height: 60px; }
 		.author-shortcodes .author-image { position: absolute; top: 32px; left: 30px; width: 60px; height: 60px; }
 			.author-shortcodes .author-image img { max-width: 100%; height: auto; width: auto; }
-			.author-shortcodes .author-image .author-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.5); -moz-box-shadow: inset 0 0 4px rgba(0,0,0,0.5); box-shadow: inset 0 0 4px rgba(0,0,0,0.5); }
+			.author-shortcodes .author-image .author-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; box-shadow: inset 0 0 4px rgba(0,0,0,0.5)}
 
 .et-tabs-container .et-tabs-control { padding: 0; }
 .tabs-left .et-tabs-control { padding-left: 0; }
