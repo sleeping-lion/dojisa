@@ -262,8 +262,8 @@ aside #current_post,aside #menu_link,aside #side_banner {float:left;width:100%;m
 .main_card_view article {border:1px solid #ccc;border-bottom-width:2px;margin:0 0 3%;padding:10px; background:#fff;text-align:center}
 .main_card_view article img {margin:0 auto}
 
-.carousel-indicators li {width:50px;height:10px;border-radius:0;border:none}
-.carousel-indicators li.active {width:50px}
+.carousel-indicators li {width:50px;height:10px;border-radius:0;border:none;background:#fff}
+.carousel-indicators li.active {width:50px;background:#c74a4a}
 
 #sl_main_message {background:#333 url('/wp-content/themes/sleepinglion/images/bg_brown.jpg')}
 #sl_main_message q {line-height:30px; }
