@@ -769,6 +769,9 @@ footer #home_sitemap_link li {font-weight:bold;margin:0 6%}
 footer #home_sitemap_link a {margin-right:20px}
 footer .social_link {float:right}
 
+
+.ttalk200_layer * {box-sizing:content-box;!important}
+
 @media all and (max-width: 768px) {
 	html,body {background:#ccc;font-size:12px}
 	header {margin-bottom:1%;padding-bottom:3px;background:#fff;border-bottom-right-radius:5px;border-bottom-left-radius:5px}
@@ -963,3 +966,5 @@ footer .social_link {float:right}
 	header #top_right #top_menu {display:block}	
  	header #top_right form {margin-right:10px;width:200px}
 }
+
+box-sizing
